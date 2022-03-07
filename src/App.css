@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+:root {
+    --primary: hsl(190, 98%, 35%);
+    --secondary: hsl(165, 35%, 15%);
+    --tertiary: #6fc363;
+    --bg: #242526;
+    --bg-accent: #484a4d;
+    --text-color: #dadce1;
+    --nav-size: 100px;
+    --border: 1px solid #474a4d;
+    --border-radius: 8px;
+    --speed: 500ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: sans-serif;
+    background: url('./images/natural-background-green-fern-leaves-natural-pa-2021-08-29-20-13-25-utc.jpg') no-repeat center;
+    background-size: auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    height: 58px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: white;
+    background: linear-gradient(var(--secondary), var(--primary));
 }
 
-.App-link {
-  color: #61dafb;
+.nav-area {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 65px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-area .nav {
+    width: 750px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+}
+
+.logo-image {
+    width: 50%;
+    height: 100%;
+    margin-top: 85px;
+}
+
+.menus {
+    display: flex;
+    list-style: none;
+}
+
+.menu-items {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+}
+
+.menu-items a {
+    display: block;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    appearance: auto;
+    -webkit-appearance: button;
+}
+
+.menu-items button {
+    background: var(--secondary);
+    color: white;
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    -webkit-appearance: button;
+}
+
+.menu-items button :hover {
+    background: var(--secondary);
+    color: white;
+    font-size: inherit;
+    text-align: center;
+    -webkit-appearance: button;
+}
+
+.menu-items a,
+.menu-items button {
+    text-align: center;
+    padding: 0.7rem 1rem;
+    color: white;
+    -webkit-appearance: button;
+}
+
+.menu-items a:hover,
+.menu-items button:hover {
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+}
+
+.arrow::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.28em;
+    vertical-align: 0.09em;
+    border-top: 0.42em solid;
+    border-right: 0.32em solid transparent;
+    border-left: 0.32em solid transparent;
+}
+
+.dropdown {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: auto;
+    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    font-size: 0.875rem;
+    z-index: 9999;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    display: none;
+    color: white;
+    top: 65px;
+}
+
+.dropdown.show {
+    display: block;
+    text-align: center;
+}
+
+.dropdown .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: -5px;
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+.dropdown :hover {
+    background: var(--primary);
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+div .csel {
+    height: 750px;
+}
+
+.carousel {
+    z-index: -9999;
+}
+
+.carousel img {
+    width: 750px;
+    height: 800px;
+    position: center;
+}
+
+.carousel h1 {
+    font-size: 100px;
+    color: var(--tertiary);
+    text-shadow: -2px -2px black;
+}
+
+.carousel h2 {
+    font-size: 100px;
+    color: var(--tertiary);
+    text-shadow: -2px -2px black;
+    margin-bottom: 500px;
+}
+
+.carousel h3 {
+    font-size: 100px;
+    color: var(--tertiary);
+    text-shadow: -2px -2px black;
+    margin-bottom: 350px;
+}
+
+.csel hr {
+    color: var(--tertiary);
+    background: var(--tertiary);
+    border: 0;
+    border-bottom: 3px solid var(--tertiary);
+}
+
+@media (min-width: 768px) {
+
 }
