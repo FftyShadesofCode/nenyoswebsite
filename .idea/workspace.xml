@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="" />
+    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7001.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7001.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7002.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7002.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7003.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7003.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7004.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7004.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7005.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7005.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7006.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7006.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7007.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7007.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7008.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7008.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7009.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7009.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7010.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7010.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7011.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7011.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7012.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7012.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7013.NEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/PRM_7013.xmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gallery/Janet's House/2019 Auction Decompression/_notes/dwsync.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +55,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../NENYOS Website" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -37,5 +66,8 @@
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
