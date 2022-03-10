@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="" />
+    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="FiftyShadesofCode &lt;philiprmcdavid@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MajeraCodeReviewSettings">
@@ -22,6 +29,9 @@
         </StoredVcsRemote>
       </set>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26Aevxr1KhdtFbqybhgOXRjiNG0" />
   <component name="ProjectLevelVcsManager">
@@ -47,6 +57,11 @@
     <property name="settings.editor.selected.configurable" value="settings.space" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frame\OneDrive\Desktop\nenyoswebsite\public" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,14 +70,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646871060692</updated>
-      <workItem from="1646871065286" duration="1899000" />
+      <workItem from="1646871065286" duration="6424000" />
     </task>
+    <task id="LOCAL-00001" summary="Making needed changes">
+      <created>1646876020280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646876020280</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed the dropdown coloring">
+      <created>1646877283470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646877283471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Making needed changes" />
+    <MESSAGE value="Fixed the dropdown coloring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the dropdown coloring" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
