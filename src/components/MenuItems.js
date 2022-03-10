@@ -1,5 +1,6 @@
 import {useEffect, useRef, useState} from "react";
 import Dropdown from "./Dropdown";
+import '../App.css'
 
 const MenuItems = ({items, depthLevel}) => {
     const [dropdown, setDropdown] = useState(false);
