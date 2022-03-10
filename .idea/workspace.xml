@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ddMenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ddMenuItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,14 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MajeraCodeReviewSettings">
     <option name="processedVcsRemotes">
@@ -71,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646871060692</updated>
       <workItem from="1646871065286" duration="8813000" />
-      <workItem from="1646886355543" duration="240000" />
+      <workItem from="1646886355543" duration="4422000" />
     </task>
     <task id="LOCAL-00001" summary="Making needed changes">
       <created>1646876020280</created>

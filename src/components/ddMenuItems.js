@@ -1,9 +1,11 @@
 export const menuItems = [
     {
         title: 'Home',
+        link: '/',
     },
     {
         title: 'About',
+        link: '/about',
     },
     {
         title: "Galleries",
@@ -51,9 +53,15 @@ export const menuItems = [
                 submenu: [
                     {
                         title: "January",
+                        link: '/jan-22',
                     },
                     {
                         title: "February",
+                        link: '/feb-22',
+                    },
+                    {
+                        title: "March",
+                        link: '/march-22',
                     },
                 ],
             },
@@ -61,8 +69,10 @@ export const menuItems = [
     },
     {
         title: 'Contact',
+        link: '/contact',
     },
     {
         title: 'In-Bloom Uploader',
+        link: '/uploader',
     },
 ];
