@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cattleya-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cymbidium-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Cymbidium-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Dendrobium-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Dendrobium-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Dendrobium-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/GhostOrchid-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Miltonia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Paphiopedilum-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Paphiopedilum-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Paphiopedilum-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Paphiopedilum-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/Phalaenopsis-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/glitter-blue-purple-shiny-background-with-branch-2021-08-29-07-16-58-utc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/natural-background-green-fern-leaves-natural-pa-2021-08-29-20-13-25-utc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/natural-beauty-2021-08-28-21-40-43-utc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gallery/tropical-jungles-of-oslo-norway-2021-09-04-08-54-57-utc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-    </list>
+    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646871060692</updated>
-      <workItem from="1646871065286" duration="375000" />
+      <workItem from="1646871065286" duration="946000" />
     </task>
     <servers />
   </component>
