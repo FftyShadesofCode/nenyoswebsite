@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Logo from './images/logo.png'
+import Logo from './Gallery/logo.png'
 
 import './App.css';
 import Home from "./pages/Home";

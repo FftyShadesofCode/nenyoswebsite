@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import '../App.css'
-import Slide1 from '../images/Gallery/2022/01 January/Virtual Show Table-33.jpg'
-import Slide2 from '../images/Gallery/2022/01 January/Virtual Show Table-22.jpg'
+import Slide1 from '../Gallery/2022/01 January/Virtual Show Table-33.jpg'
+import Slide2 from '../Gallery/2022/01 January/Virtual Show Table-22.jpg'
 
 export default function Home() {
 
