@@ -597,7 +597,7 @@ form .col .form-group button {
 
 .view {
     display: flex;
-    width: 80%;
+    width: 40%;
     flex-wrap: wrap;
     flex:1;
     height:100%;
@@ -621,7 +621,7 @@ form .col .form-group button {
 }
 
 .pane form {
-    width:50%;
+    width:100%;
     min-height:8em;
     border: 2px dashed  var(--tertiary);
     border-radius: 0.5em;height: 80vh

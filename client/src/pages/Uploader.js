@@ -241,8 +241,6 @@ class Uploader extends Component {
                             name="orchidName"
                             required={true}
                         />
-                    </div>
-                    <div className="left-container">
                         <label htmlFor="orchidName">Grower Name</label>
                         <input
                             type="text"

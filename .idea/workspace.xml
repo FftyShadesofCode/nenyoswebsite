@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="Fixed the dropdown coloring">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Uploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1647147233954" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1647147866798" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1647184110517" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1647184193888" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
       <workItem from="1647052575368" duration="23681000" />
       <workItem from="1647137596562" duration="4621000" />
       <workItem from="1647144532387" duration="4819000" />
-      <workItem from="1647198694509" duration="12126000" />
+      <workItem from="1647198694509" duration="13280000" />
     </task>
     <task id="LOCAL-00001" summary="Making needed changes">
       <created>1646876020280</created>
