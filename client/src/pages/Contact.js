@@ -36,24 +36,24 @@ export default function Contact() {
             <form>
                 <div className="col">
                     <div className="form-group">
-                        <label htmlFor="">First Name</label>
-                        <input type="text" placeholder="First Name" />
+                        <label htmlFor="firstName">First Name</label>
+                        <input type="text" name="firstName" placeholder="First Name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="">Last Name</label>
-                        <input type="text" placeholder="Last Name" />
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="form-group">
-                        <label htmlFor="">E-Mail Address</label>
-                        <input type="email" placeholder="E-Mail Address" />
+                        <label htmlFor="lastName">Last Name</label>
+                        <input type="text" name="lastName" placeholder="Last Name" />
                     </div>
                 </div>
                 <div className="col">
                     <div className="form-group">
-                        <label htmlFor="">Message</label>
-                        <textarea placeholder="Message" />
+                        <label htmlFor="email">E-Mail Address</label>
+                        <input type="email" name="email" placeholder="E-Mail Address" />
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="form-group">
+                        <label htmlFor="message">Message</label>
+                        <input type="text" name="message" placeholder="Message" />
                     </div>
                 </div>
                 <div className="col">
