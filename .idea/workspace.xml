@@ -5,8 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="Fixed the dropdown coloring">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gallery2022/January.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/auth/custom_user_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/auth/providers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/data_sources/mongodb-atlas/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/data_sources/mongodb-atlas/todo/Task/relationships.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/data_sources/mongodb-atlas/todo/Task/rules.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/data_sources/mongodb-atlas/todo/Task/schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/environments/development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/environments/no-environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/environments/production.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/environments/qa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/environments/testing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/functions/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/functions/resetFunc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/graphql/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/http_endpoints/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/realm_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/backend/sync/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/AppName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/DraftTodoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/MoreInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/RealmApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/Theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/TodoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/TodoItemsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/components/WelcomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useDraftTodos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useErrorAlert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useTodos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useTodos_graphql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useTodos_local.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useTodos_mql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/useWatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/hooks/util-hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/realm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/OrchidsofNENYOS/frontend/web.mql.todo/src/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Uploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ddMenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ddMenuItems.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +166,7 @@
       <workItem from="1647052575368" duration="23681000" />
       <workItem from="1647137596562" duration="4621000" />
       <workItem from="1647144532387" duration="4819000" />
-      <workItem from="1647198694509" duration="14808000" />
+      <workItem from="1647198694509" duration="18797000" />
     </task>
     <task id="LOCAL-00001" summary="Making needed changes">
       <created>1646876020280</created>

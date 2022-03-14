@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
+import January2022 from './pages/gallery2022/January'
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                     <Route exact path='/about' element={<About/>}/>
                     <Route exact path='/contact' element={<Contact/>}/>
                     <Route exact path='/uploader' element={<Uploader/>}/>
+                    <Route exact path='/jan-22' element={<January2022/>}/>
                 </Routes>
             </Router>
         </div>

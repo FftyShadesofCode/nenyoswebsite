@@ -522,6 +522,13 @@ form .col .form-group button {
     margin-top: 35px;
 }
 
+/* Gallery Styling */
+.gallery-container {
+    margin: 5rem;
+    display: flex;
+    justify-items: center;
+}
+
 /* Uploader Styling */
 .form-upload-container {
     width:100%;
