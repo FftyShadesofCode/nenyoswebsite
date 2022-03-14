@@ -1,7 +1,17 @@
 import React,{Component} from 'react'
 import '../App.css'
 
+const growers = document.querySelectorAll(".grow-wrap")
+
+growers.forEach((grower) => {
+    const textarea = grower.querySelector("textarea")
+    textarea.addEventListener("input", () => {
+        grower.dataset.replicatedValue = textarea.value
+    })
+})
+
 class Uploader extends Component {
+
     constructor() {
         super();
         this.state = {
@@ -253,15 +263,17 @@ class Uploader extends Component {
                     </div>
                     <div className="right-container">
                         <label htmlFor="careInfo">Care Information</label>
-                        <textarea
-                            id="careInfo"
-                            name="careInfo"
-                            // value=""
-                            rows={2}
-                            placeholder="Care Information"
-                            required={true}
-                            defaultValue={"\t\t\t\t"}
-                        />
+                        <div className="grow-wrap">
+                            <textarea
+                                id="careInfo"
+                                name="careInfo"
+                                rows={2}
+                                placeholder={"Care Information"}
+                                required={true}
+                                defaultValue={"\t\t\t\t"}
+                                onInput="this.parentNode.dataset.replicatedValue = this.value"
+                            />
+                        </div>
                     </div>
                 </div>
                     <div className="view">
