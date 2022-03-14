@@ -551,9 +551,21 @@ form .col .form-group button {
 .form-upload-container .container .left-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: var(--tertiary);
     flex: 1;
     margin: 1rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.form-upload-container .container .left-container input[type="text"] {
+    margin-left: 1rem;
+    width: 35rem;
+    height: 2.25rem;
+}
+
+.form-upload-container .container .left-container .grower-wrapper {
+    margin-top: 2rem;
 }
 
 .form-upload-container .container .right-container {
@@ -620,6 +632,7 @@ form .col .form-group button {
     /* You could leave this, but after a user resizes, then it ruins the auto sizing */
     resize: none;
     height: 50vh;
+    margin-left: 1rem;
 }
 .form-upload-container .container .right-container .grow-wrap > textarea,
 .form-upload-container .container .right-container .grow-wrap::after {
@@ -627,7 +640,7 @@ form .col .form-group button {
     border: 1px solid black;
     padding: 0.5rem;
     font: inherit;
-    height: 50vh;
+    height: 35vh;
 
     /* Place on top of each other */
     grid-area: 1 / 1 / 2 / 2;
@@ -662,7 +675,8 @@ form .col .form-group button {
     width:100%;
     min-height:8em;
     border: 2px dashed  var(--tertiary);
-    border-radius: 0.5em;height: 80vh
+    border-radius: 0.5em;
+    height: 50vh
 
 }
 .pane form label {

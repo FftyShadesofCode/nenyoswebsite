@@ -1,14 +1,5 @@
-import React,{Component} from 'react'
+import React, {Component, useState} from 'react'
 import '../App.css'
-
-const growers = document.querySelectorAll(".grow-wrap")
-
-growers.forEach((grower) => {
-    const textarea = grower.querySelector("textarea")
-    textarea.addEventListener("input", () => {
-        grower.dataset.replicatedValue = textarea.value
-    })
-})
 
 class Uploader extends Component {
 
@@ -145,7 +136,7 @@ class Uploader extends Component {
 
 
         console.log("file" + counter);
-        formData.append("file", file, file.name);
+        formData.append("file", file, file.name)
 
         request.send(formData);
 
@@ -233,6 +224,11 @@ class Uploader extends Component {
 
     render() {
         const { progress, drag, fileList, showModal, message } = this.state;
+
+        const { state: orchidName, setState: setOrchidName } = this.state
+        const { state: growerName, setState: setGrowerName } = this.state
+        const { state: careInfo, setState: setCareInfo } = this.state
+
         return (
             <div className="form-upload-container">
                     <div className="heading">
@@ -242,36 +238,45 @@ class Uploader extends Component {
                     </div>
                 <div className="container">
                     <div className="left-container">
-                        <label htmlFor="orchidName">Orchid Name</label>
-                        <input
-                            type="text"
-                            id="orchidName"
-                            placeholder="Orchid Name"
-                            defaultValue=""
-                            name="orchidName"
-                            required={true}
-                        />
-                        <label htmlFor="orchidName">Grower Name</label>
-                        <input
-                            type="text"
-                            id="growerName"
-                            placeholder="Grower Name"
-                            defaultValue=""
-                            name="growerName"
-                            required={true}
-                        />
+                        <div className="orchid-wrapper">
+                            <label htmlFor="orchidName">Orchid Name</label>
+                            <input
+                                type="text"
+                                value={orchidName}
+                                id="orchidName"
+                                placeholder="Orchid Name"
+                                defaultValue=""
+                                name="orchidName"
+                                required={true}
+                                onChange={(e) => setOrchidName(e.target.value)}
+                            />
+                        </div>
+                        <div className="grower-wrapper">
+                            <label htmlFor="orchidName">Grower Name</label>
+                            <input
+                                type="text"
+                                value={growerName}
+                                id="growerName"
+                                placeholder="Grower Name"
+                                defaultValue=""
+                                name="growerName"
+                                required={true}
+                                onChange={(e) => setGrowerName(e.target.value)}
+                            />
+                        </div>
                     </div>
                     <div className="right-container">
                         <label htmlFor="careInfo">Care Information</label>
                         <div className="grow-wrap">
                             <textarea
+                                value={careInfo}
                                 id="careInfo"
                                 name="careInfo"
                                 rows={2}
                                 placeholder={"Care Information"}
                                 required={true}
                                 defaultValue={"\t\t\t\t"}
-                                onInput="this.parentNode.dataset.replicatedValue = this.value"
+                                onChange={(e) => setCareInfo(e.target.value)}
                             />
                         </div>
                     </div>
