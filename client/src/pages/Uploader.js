@@ -1,5 +1,6 @@
-import React, {Component, useState} from 'react'
-import '../App.css'
+import React, {Component} from "react";
+
+import "../App.css";
 
 class Uploader extends Component {
 
@@ -36,7 +37,7 @@ class Uploader extends Component {
             });
         } else {
             const size =
-                Array.from(fileList).reduce((acc, { size }) => acc + size, 0) /
+                Array.from(fileList).reduce((acc, {size}) => acc + size, 0) /
                 (1024 * 1024);
             if (size < 10) {
                 const date = new Date();
@@ -214,6 +215,7 @@ class Uploader extends Component {
         div.addEventListener("dragover", this.handleDrag);
         div.addEventListener("drop", this.handleDrop);
     }
+
     componentWillUnmount() {
         let div = this.dropRef.current;
         div.removeEventListener("dragenter", this.handleDragIn);
@@ -223,36 +225,49 @@ class Uploader extends Component {
     }
 
     render() {
-        const { progress, drag, fileList, showModal, message } = this.state;
+        const {progress, drag, fileList, showModal, message} = this.state;
 
-        const { state: orchidName, setState: setOrchidName } = this.state
-        const { state: growerName, setState: setGrowerName } = this.state
-        const { state: careInfo, setState: setCareInfo } = this.state
+        const {state: orchidGenera, setState: setOrchidGenera} = this.state
+        const {state: orchidSpecies, setState: setOrchidSpecies} = this.state
+        const {state: growerName, setState: setGrowerName} = this.state
+        const {state: careInfo, setState: setCareInfo} = this.state
 
         return (
             <div className="form-upload-container">
-                    <div className="heading">
+                <div className="heading">
 
-                        <h4> NENYOS In-Bloom Uploader </h4>
-                        <div onClick={this.toggleModal}> ? </div>
-                    </div>
+                    <h4> NENYOS In-Bloom Uploader </h4>
+                    <div onClick={this.toggleModal}> ?</div>
+                </div>
                 <div className="container">
                     <div className="left-container">
                         <div className="orchid-wrapper">
-                            <label htmlFor="orchidName">Orchid Name</label>
+                            <label htmlFor="orchidGenera">Orchid Genera</label>
                             <input
                                 type="text"
-                                value={orchidName}
-                                id="orchidName"
-                                placeholder="Orchid Name"
+                                value={orchidGenera}
+                                id="orchidGenera"
+                                placeholder="Orchid Genera"
                                 defaultValue=""
-                                name="orchidName"
+                                name="orchidGenera"
                                 required={true}
-                                onChange={(e) => setOrchidName(e.target.value)}
+                                onChange={(e) => setOrchidGenera(e.target.value)}
+                            />
+
+                            <label htmlFor="orchidSpecies">Orchid Species</label>
+                            <input
+                                type="text"
+                                value={orchidSpecies}
+                                id="orchidSpecies"
+                                placeholder="Orchid Species"
+                                defaultValue=""
+                                name="orchidSpecies"
+                                required={true}
+                                onChange={(e) => setOrchidSpecies(e.target.value)}
                             />
                         </div>
                         <div className="grower-wrapper">
-                            <label htmlFor="orchidName">Grower Name</label>
+                            <label htmlFor="growerName">Grower Name</label>
                             <input
                                 type="text"
                                 value={growerName}
@@ -281,62 +296,62 @@ class Uploader extends Component {
                         </div>
                     </div>
                 </div>
-                    <div className="view">
-                        <div className="pane">
-                            <form
-                                encType="multipart/form-data"
-                                className={drag ? "dragging" : ""}
-                                ref={this.dropRef}
-                            >
-                                <label htmlFor="upfile">
-                                    <span> Drag & drop files here </span>
-                                    <input
-                                        onChange={this.handleFiles}
-                                        type="file"
-                                        name="upfile"
-                                        id="upfile"
-                                        multiple
-                                    />
-                                    <SvgIcon name="cloud" />
-                                    <span> or click to select files. </span>
-                                </label>
-                            </form>
-                    <FileHistory history={this.state.history} />
-                    <div className="message"> {message} </div>
-                    {fileList.length <= 0 ? (
-                        ""
-                    ) : progress.every(item => {
-                        return item <= 0;
-                    }) ? (
-                        <button className="upload" onPointerDown={this.prepareUpload}>
+                <div className="view">
+                    <div className="pane">
+                        <form
+                            encType="multipart/form-data"
+                            className={drag ? "dragging" : ""}
+                            ref={this.dropRef}
+                        >
+                            <label htmlFor="upfile">
+                                <span> Drag & drop files here </span>
+                                <input
+                                    onChange={this.handleFiles}
+                                    type="file"
+                                    name="upfile"
+                                    id="upfile"
+                                    multiple
+                                />
+                                <SvgIcon name="cloud"/>
+                                <span> or click to select files. </span>
+                            </label>
+                        </form>
+                        <FileHistory history={this.state.history}/>
+                        <div className="message"> {message} </div>
+                        {fileList.length <= 0 ? (
+                            ""
+                        ) : progress.every(item => {
+                            return item <= 0;
+                        }) ? (
+                            <button className="upload" onPointerDown={this.prepareUpload}>
 
-                            <SvgIcon name="upload" /> Upload
-                        </button>
-                    ) : progress.every(item => {
-                        return item === 100;
-                    }) ? (
-                        <SvgIcon name="done" color="white" />
-                    ) : (
-                        <SvgIcon name="process" color="white" />
-                    )}
-        {fileList.length >= 1 && (
-            <FileList
-                fileList={fileList}
-                progress={progress}
-                handleList={this.handleList}
-            />
-        )}
-        )
-        {showModal && <ModalHelp triggerModal={this.toggleModal} />}
+                                <SvgIcon name="upload"/> Upload
+                            </button>
+                        ) : progress.every(item => {
+                            return item === 100;
+                        }) ? (
+                            <SvgIcon name="done" color="white"/>
+                        ) : (
+                            <SvgIcon name="process" color="white"/>
+                        )}
+                        {fileList.length >= 1 && (
+                            <FileList
+                                fileList={fileList}
+                                progress={progress}
+                                handleList={this.handleList}
+                            />
+                        )}
+                        {showModal && <ModalHelp triggerModal={this.toggleModal}/>}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    );
+        )
     }
 }
 
+
 const FileHistory = (props) => {
-    console.log(props.history.files)
+    // console.log(props.history.files)
     return (
         <div className="history">
             Uploaded: {props.history.files} files / {props.history.size} mb
