@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="Fixed the dropdown coloring" />
+    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Uploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +128,7 @@
       <workItem from="1647385978615" duration="1685000" />
       <workItem from="1647387764818" duration="6106000" />
       <workItem from="1647401655433" duration="5922000" />
-      <workItem from="1647410775117" duration="106000" />
+      <workItem from="1647410775117" duration="3388000" />
     </task>
     <task id="LOCAL-00001" summary="Making needed changes">
       <created>1646876020280</created>
@@ -136,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646877283471</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixing things and stuffs">
+      <created>1647410937375</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647410937375</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +162,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Making needed changes" />
     <MESSAGE value="Fixed the dropdown coloring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the dropdown coloring" />
+    <MESSAGE value="Fixing things and stuffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing things and stuffs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

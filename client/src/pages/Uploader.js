@@ -167,46 +167,7 @@ class Uploader extends Component {
         }
     }
 
-    handleDrag = e => {
-        e.preventDefault()
-        e.stopPropagation()
-    }
-
-    handleDragIn = e => {
-        e.preventDefault()
-        e.stopPropagation()
-        this.dragCounter++
-        if (e.dataTransfer.items && e.dataTransfer.items.length > 0) {
-            this.setState({
-                drag: true
-            })
-        }
-    }
-
-    handleDragOut = e => {
-        e.preventDefault()
-        e.stopPropagation()
-        this.dragCounter = 0
-        this.setState({
-            drag: false
-        })
-    }
-
-    handleDrop = e => {
-        e.preventDefault()
-        e.stopPropagation()
-        this.setState({
-            drag: false
-        })
-        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-            this.handleFiles(e)
-            //   e.dataTransfer.clearData()
-            this.dragCounter = 0
-        }
-    }
-
     render() {
-        const {progress, drag, fileList, showModal, message} = this.state
 
         const {state: orchidGenera, setState: setOrchidGenera} = this.state
         const {state: orchidSpecies, setState: setOrchidSpecies} = this.state
