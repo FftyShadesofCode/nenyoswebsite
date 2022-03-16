@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="Fixed the dropdown coloring">
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DragDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DragDrop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Uploader.js" afterDir="false" />
-    </list>
+    <list default="true" id="c32f6e70-b499-429f-9f25-93e12542bf80" name="Changes" comment="Fixed the dropdown coloring" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,6 +120,7 @@
       <workItem from="1647385978615" duration="1685000" />
       <workItem from="1647387764818" duration="6106000" />
       <workItem from="1647401655433" duration="5922000" />
+      <workItem from="1647410775117" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="Making needed changes">
       <created>1646876020280</created>
