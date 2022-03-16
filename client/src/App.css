@@ -647,6 +647,25 @@ form .col .form-group button {
     grid-area: 1 / 1 / 2 / 2;
 }
 
+.iciELI {
+    color: #6fc363;
+    border: dashed 2px #6fc363 !important;
+    width: 250rem;
+    height: 15rem !important;
+}
+
+.iciELI > input {
+    color: #6fc363 !important;
+}
+
+.iciELI svg {
+    color: #6fc363 !important;
+}
+
+.ebdQkY > span {
+    color: #6fc363 !important;
+}
+
 .view {
     display: flex;
     width: 40%;
