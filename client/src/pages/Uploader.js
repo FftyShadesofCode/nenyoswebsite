@@ -37,44 +37,7 @@ export default function Uploader({ formData }) {
                             return (
                                 <form onSubmit={onSubmit}>
                                     <h2>{currentPageData.label}</h2>
-                                    {currentPageData.fields.map(field => {
-                                        switch (field.component) {
-                                            case "field_group":
-                                                return (
-                                                    <FieldGroup
-                                                        key={field.uuid}
-                                                        field={field}
-                                                        fieldChanged={fieldChanged}
-                                                        values={values}
-                                                    />
-                                                )
-                                            case "options":
-                                                return (
-                                                    <Option
-                                                        key={field.uuid}
-                                                        field={field}
-                                                        fieldChanged={fieldChanged}
-                                                        value={values[field.uuid]}
-                                                    />
-                                                )
-                                            default:
-                                                return (
-                                                    <Field
-                                                        key={field.uuid}
-                                                        field={field}
-                                                        fieldChanged={fieldChanged}
-                                                        value={values[field.uuid]}
-                                                    />
-                                                )
-                                        }
-                                    })}
-                                    {page > 0 && (
-                                        <button onClick={() => setPage(page + 1)}>Next</button>
-                                    )}
-                                    &nbsp;
-                                    {page < formData.length - 1 && (
-                                        <button onClick={() => setPage(page - 1)}>Back</button>
-                                    )}
+                                    
                                 </form>
                             );
                         }
