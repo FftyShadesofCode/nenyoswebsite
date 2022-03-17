@@ -114,6 +114,7 @@ header {
     color: white;
     width: 225px;
     font-size: 20px;
+    top: -4px;
 }
 
 .menu-items a {
@@ -191,7 +192,7 @@ header {
     border-radius: 0.5rem;
     display: none;
     color: white;
-    top: 70px;
+    top: 57px;
 }
 
 .dropdown.show {
@@ -204,7 +205,7 @@ header {
 .dropdown .dropdown-submenu {
     position: absolute;
     left: 100%;
-    top: -10px;
+    top: -6px;
     width: 100%;
     text-align: center;
     color: white;
@@ -645,6 +646,26 @@ form .col .form-group button {
 
     /* Place on top of each other */
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.iciELI {
+    color: #6fc363;
+    border: dashed 2px #6fc363 !important;
+    width: 250rem;
+    height: 15rem !important;
+    font-size: 5rem !important;
+}
+
+.iciELI > input {
+    color: #6fc363 !important;
+}
+
+svg {
+    color: #6fc363 !important;
+}
+
+.ebdQkY > span {
+    color: #6fc363 !important;
 }
 
 .view {
