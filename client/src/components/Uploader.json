@@ -1,0 +1,89 @@
+[
+  {
+    "component": "Uploader",
+    "label": "Form",
+    "uuid": "",
+    "fields": [
+      {
+        "component": "field_group",
+        "label": "Name",
+        "uuid": "",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Last Name",
+            "uuid": "",
+            "type": "text"
+          },
+          {
+            "component": "text",
+            "label": "First Name",
+            "uuid": "",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "component": "field_group",
+        "label": "Orchid",
+        "uuid": "",
+        "fields": [
+          {
+            "component": "text",
+            "label": "Orchid Genera",
+            "uuid": "",
+            "type": "text"
+          },
+          {
+            "component": "text",
+            "label": "Orchid Species",
+            "uuid": "",
+            "type": "text"
+          },
+          {
+            "component": "field_group",
+            "label": "Orchid Information",
+            "uuid": "",
+            "fields": [
+              {
+                "component": "text",
+                "label": "Fragrant",
+                "uuid": "",
+                "type": "text"
+              },
+              {
+                "component": "text",
+                "label": "Heat",
+                "uuid": "",
+                "type": "text"
+              },
+              {
+                "component": "text",
+                "label": "Light",
+                "uuid": "",
+                "type": "text"
+              },
+              {
+                "component": "text",
+                "label": "Humidity",
+                "uuid": "",
+                "type": "text"
+              },{
+                "component": "text",
+                "label": "Temperature",
+                "uuid": "",
+                "type": "text"
+              },
+              {
+                "component": "text",
+                "label": "Water",
+                "uuid": "",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
