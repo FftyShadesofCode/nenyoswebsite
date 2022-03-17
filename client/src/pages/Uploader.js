@@ -4,7 +4,6 @@ import "../App.css"
 import DragDrop from "../components/DragDrop";
 
 class Uploader extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -166,14 +165,15 @@ class Uploader extends Component {
             )
         }
     }
+  
+  
+  render() {
+    const { progress, drag, fileList, showModal, message } = this.state;
 
-    render() {
-
-        const {state: orchidGenera, setState: setOrchidGenera} = this.state
-        const {state: orchidSpecies, setState: setOrchidSpecies} = this.state
-        const {state: growerName, setState: setGrowerName} = this.state
-        const {state: careInfo, setState: setCareInfo} = this.state
-
+    const { state: orchidGenera, setState: setOrchidGenera } = this.state;
+    const { state: orchidSpecies, setState: setOrchidSpecies } = this.state;
+    const { state: growerName, setState: setGrowerName } = this.state;
+    const { state: careInfo, setState: setCareInfo } = this.state;
         return (
             <div className="form-upload-container">
                 <div className="heading">
