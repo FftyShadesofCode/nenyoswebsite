@@ -9,19 +9,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
 import January2022 from './pages/gallery2022/January'
-import {createTheme, ThemeProvider} from "@mui/material";
-
-const theme = createTheme({
-    palette: {
-        main: '#6fc363'
-    },
-    secondary: '#feaec9'
-})
 
 function App() {
     return (
         <div>
-            <ThemeProvider theme={theme} >
                 <Router basename='/'>
                     <header>
                         <div className="nav-area">
@@ -39,7 +30,6 @@ function App() {
                         <Route exact path='/jan-22' element={<January2022/>}/>
                     </Routes>
                 </Router>
-            </ThemeProvider>
         </div>
     );
 }

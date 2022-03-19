@@ -531,67 +531,64 @@ form .col .form-group button {
 }
 
 /* Uploader Styling */
-.Uploader {
-    margin: 5rem;
+.uploader-container {
+    margin: 5rem 13rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0.3, .3);
 }
 
-.Uploader h3 {
+.uploader-container .header-one {
+    margin-bottom: 1rem;
     font-size: 3rem;
-    color: #014a59;
-    text-shadow: 1px 1px 2px white;
+    color: var(--tertiary);
+    text-shadow: 2px 2px 3px darkgrey;
 }
 
-.Uploader h4 {
-    font-size: 2.5rem;
-    color: #c535a0;
-    text-shadow: 1px 1px 2px white;
+.uploader-container .header-two {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #C535A0;
+    text-shadow: 1px 1px 3px white;
 }
 
-.MuiGrid-root label {
-    color: #c535a0;
-    transition: all 300ms ease-in-out;
+
+.uploader-wrapper .form-label {
+    font-size: 1rem;
+   text-align: start;
+    color: var(--primary);
+    text-shadow: 1px 1px 1px white;
 }
 
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: #c535a0 !important;
-    transition: all 300ms ease-in-out;
+.uploader-wrapper input {
+    margin-left: 1rem;
+    margin-top: .5rem;
+    width: 25rem;
 }
 
-#mui-1, #mui-2, #mui-3, #mui-4, #mui-5, #mui-6, #mui-7, #mui-8 #mui {
+.uploader-wrapper select {
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.dropzone {
     color: #6fc363;
-    border-bottom: 2px solid #c535a0;
+    text-align: center;
+    padding: 20px;
+    border: 3px #c535a0 dashed;
+    width: 100%;
+    height: 25vh;
+    margin: auto;
 }
 
-.css-ghsjzk-MuiInputBase-root-MuiInput-root:after, .css-wjz8f0-MuiInputBase-root-MuiInput-root:after {
-    color: #c535a0;
-    border-bottom: 2px solid #6fc363;
+.selected-images {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 16px;
+    background-color: rgba(230, 235, 215, 0.3);
 }
 
-.css-ghsjzk-MuiInputBase-root-MuiInput-root.Mui-focused:after, .css-wjz8f0-MuiInputBase-root-MuiInput-root.Mui-focused:after {
-    color: #6fc363;
-    border-bottom: 2px solid #c535a0;
-    transition: all 300ms ease-in-out;
-}
-
-#mui-1-focused:after, #mui-2-focused:after, #mui-3-focused:after, #mui-4-focused:after, #mui-5-focused:after, #mui-6-focused:after,#mui-7-focused:after, #mui-8-focused:after, #mui-focused:after {
-    color: #c535a0;
-    border-bottom: 2px solid #6fc363;
-    transition: all 300ms ease-in-out;
-}
-                                                .MuiInputBase-root {
-                                                     color: #6fc363;
-                                                 }
-
-button.MuiButton-root {
-    margin-top: 3rem;
-    color: #6fc363;
-    border: 2px solid #6fc363;
-    transition: all 300ms ease-in-out;
-}
-
-button.MuiButton-root:hover {
-    color:white;
-    background: #6fc363;
-    border: 3px solid #921469;
-    transition: all 300ms ease-in-out;
+.btn {
+    margin: 2rem 0;
 }

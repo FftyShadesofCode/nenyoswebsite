@@ -18,7 +18,7 @@ export default function Home() {
                     />
                     <Carousel.Caption>
                         <h3>Orchids of</h3>
-                        <h1>North Eastern New York Orchid Society</h1>
+                        <h1>North Eastern New York<br/>Orchid Society</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000}>
