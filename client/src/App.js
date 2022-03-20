@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Logo from "./Gallery/logo.png";
 
-import "./App.css";
+import "../src/CSS Files/App.css";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
@@ -33,9 +34,10 @@ function App() {
           </header>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route exact path='/about' element={<About/>}/>
+            <Route exact path='/about' element={<About />} />
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/uploader' element={<Uploader />} />
+            <Route exact path='/login' element={<Login />} />
             <Route exact path='/jan-22' element={<January2022 />} />
           </Routes>
         </Router>
