@@ -2,36 +2,77 @@ const express = require('express')
 const router = require('express').Router();
 const OrchidPost = require('../models/OrchidPost')
 
-router.get('/', (req, res) => {
-
-  OrchidPost.find({  })
-      .then((data) => {
-        console.log('Data', data)
-        res.json(data)
-      })
-      .catch((error) => {
-        console.log('error: ', error)
-      })
+router.get('/orchids', async (req, res) => {
+  const posts = await OrchidPost.find()
+  res.send(posts)
 })
 
-router.post('/uploader', (req, res) => {
-  const dbConnect = dbo.getDb()
-  const matchDocument = {
+router.post('/orchids', async (req, res) => {
+  const post = new OrchidPost ({
+    name: {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+    },
+    orchid: {
+      orchidGenera: req.body.orchidGenera,
+      orchidSpecies: req.body.orchidSpecies,
+      basicInformation: {
+        fragrant: req.body.fragrant,
+        careInformation: {
+          water: req.body.water,
+          light: {
+            lightIntensity: req.body.lightIntensity,
+            lightType: req.body.lightType,
+          },
+          temp: req.body.temp,
+          humidity: req.body.humidity,
+        },
+        images: req.body.images,
+      },
+    },
+  })
+  await post.save()
+  res.send(post)
+})
 
+router.get('/orchids/:id', async (req, res) => {
+  try {
+  const post = await OrchidPost.findOne({ _id: req.params.id })
+  res.send(post)
+} catch {
+    res.status(404)
+    res.send({error: 'Orchid not in Bloom!'})
+  }
+})
+
+router.patch('/orchids/:id', async( req, res) => {
+  try {
+    const post = await OrchidPost.findOne({ _id: req.params.id })
+
+    if (req.body.firstName + req.body.lastName) {
+      post.name = req.body.firstName + req.body.lastName
+    }
+
+  if (req.body.orchidGenera + req.body.orchidSpecies) {
+    post.orchidName = req.body.orchidGenera + req.body.orchidSpecies
   }
 
-  const newOrchidPost = new OrchidPost(data);
+  await post.save()
+    res.send(post)
+} catch {
+  res.status(404)
+  res.send({ error: 'Orchid never Bloomed!' })
+  }
+})
 
-  newOrchidPost.save((error) => {
-    if (error) {
-      res.status(500).json({ msg: 'Sorry, internal server errors' });
-      return;
-    }
-    // OrchidPost
-    return res.json({
-      msg: 'Your orchid has bloomed!'
-    });
-  })
+router.delete('/orchids/:id', async (req, res) => {
+  try {
+    await OrchidPost.deleteOne({ _id: req.params.id })
+    res.status(204).send()
+  } catch {
+    res.status(404)
+    res.send({ error: 'Orchid never Bloomed!' })
+  }
 })
 
 router.get('/name', (req, res) => {
@@ -39,7 +80,7 @@ router.get('/name', (req, res) => {
     username: 'peterson',
     age: 5
   };
-  res.json(data);
-});
+  res.json(data)
+})
 
-module.exports = router;
+module.exports = router

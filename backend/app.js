@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+const router = require("./routes/api.route");
 require('dotenv').config();
 
 const app = express();
@@ -17,6 +18,8 @@ mongoose.connect(process.env.MONGO_URI,  {
 mongoose.connection.on('connected', () => {
   console.log('AYYOOOOOOO!!!')
 })
+
+app.use('/api', router)
 
 
 const PORT = process.env.PORT || 5000

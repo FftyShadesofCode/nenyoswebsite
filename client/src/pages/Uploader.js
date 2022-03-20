@@ -1,6 +1,5 @@
 import React from "react";
-import Folio from "folio-forms";
-import { Form, Grid, Cell, CellItem, GridItem } from "folio-forms";
+import { Form, Field } from "folo-forms";
 import { Button, Label } from "reactstrap";
 import Dropzone from "../components/Dropzone";
 import cuid from "cuid";
@@ -128,17 +127,16 @@ class Uploader extends React.Component {
 
   render() {
     return (
-      <Folio>
+      <div className='form-container'>
         <div className='uploader-container'>
           <h3 className='header-one'>Orchids of NENYOS</h3>
           <h4 className='header-two'>In-Bloom Uploader</h4>
           <Form className='uploader-wrapper' onSubmit={this.submit}>
-            <Grid>
-              <GridItem row={1} col={1}>
+              <div row={1} col={1}>
                 <Label>
                   {" "}
                   First Name
-                  <Cell
+                  <Field
                     valueKey='firstName'
                     type='text'
                     placeholder='First Name'
@@ -146,12 +144,12 @@ class Uploader extends React.Component {
                     onChange={this.handleChange}
                   />
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={1} col={2}>
+              <div row={1} col={2}>
                 <Label>
                   Last Name
-                  <Cell
+                  <Field
                     valueKey='lastName'
                     type='text'
                     placeholder='Last Name'
@@ -159,12 +157,12 @@ class Uploader extends React.Component {
                     onChange={this.handleChange}
                   />
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={2} col={1}>
+              <div row={2} col={1}>
                 <Label>
                   Orchid Genera
-                  <Cell
+                  <Field
                     valueKey='orchidGenera'
                     type='text'
                     placeholder='Orchid Genera'
@@ -172,12 +170,12 @@ class Uploader extends React.Component {
                     onChange={this.handleChange}
                   />
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={2} col={2}>
+              <div row={2} col={2}>
                 <Label>
                   Orchid Species
-                  <Cell
+                  <Field
                     valueKey='orchidSpecies'
                     type='text'
                     placeholder='Orchid Species'
@@ -185,12 +183,12 @@ class Uploader extends React.Component {
                     onChange={this.handleChange}
                   />
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={3} col={1}>
+              <div row={3} col={1}>
                 <Label>
                   Is it Fragrant?
-                  <Cell
+                  <Field
                     valueKey='fragrance'
                     groupName='fragrant'
                     type='select'
@@ -198,17 +196,17 @@ class Uploader extends React.Component {
                     value={this.state.fragrant}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='Yes'>Yes</CellItem>
-                    <CellItem value='No'>No</CellItem>
-                    <CellItem value='At Night'>At Night</CellItem>
-                  </Cell>
+                    <option value='Yes'>Yes</option>
+                    <option value='No'>No</option>
+                    <option value='At Night'>At Night</option>
+                  </Field>
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={3} col={2}>
+              <div row={3} col={2}>
                 <Label>
                   How often do you water?
-                  <Cell
+                  <Field
                     valueKey='water'
                     groupName='water'
                     type='select'
@@ -216,20 +214,20 @@ class Uploader extends React.Component {
                     value={this.state.water}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='Daily'>Daily</CellItem>
-                    <CellItem value='Twice Daily'>Twice Daily</CellItem>
-                    <CellItem value='Once a Week'>Once a Week</CellItem>
-                    <CellItem value='As Needed'>As Needed</CellItem>
-                  </Cell>
+                    <option value='Daily'>Daily</option>
+                    <option value='Twice Daily'>Twice Daily</option>
+                    <option value='Once a Week'>Once a Week</option>
+                    <option value='As Needed'>As Needed</option>
+                  </Field>
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={3} col={3}>
+              <div row={3} col={3}>
                 <Label>
                   How much light
                   <br />
                   do you give your orchid?
-                  <Cell
+                  <Field
                     valueKey='lightIntensity'
                     groupName='lightIntensity'
                     type='select'
@@ -237,11 +235,11 @@ class Uploader extends React.Component {
                     value={this.state.lightIntensity}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='Low'>Low</CellItem>
-                    <CellItem value='Medium'>Medium</CellItem>
-                    <CellItem value='High'>High</CellItem>
-                  </Cell>
-                  <Cell
+                    <option value='Low'>Low</option>
+                    <option value='Medium'>Medium</option>
+                    <option value='High'>High</option>
+                  </Field>
+                  <Field
                     valueKey='lightType'
                     groupName='lightType'
                     type='select'
@@ -249,19 +247,19 @@ class Uploader extends React.Component {
                     value={this.state.lightType}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='LED'>LED</CellItem>
-                    <CellItem value='T5'>T5</CellItem>
-                    <CellItem value='Natural Sun'>Natural Sun</CellItem>
-                  </Cell>
+                    <option value='LED'>LED</option>
+                    <option value='T5'>T5</option>
+                    <option value='Natural Sun'>Natural Sun</option>
+                  </Field>
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={4} col={1}>
+              <div row={4} col={1}>
                 <Label>
                   At what temperature
                   <br />
                   do keep your orchid?
-                  <Cell
+                  <Field
                     valueKey='temp'
                     groupName='temp'
                     type='select'
@@ -269,17 +267,17 @@ class Uploader extends React.Component {
                     value={this.state.temp}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='Low'>Low</CellItem>
-                    <CellItem value='Medium'>Medium</CellItem>
-                    <CellItem value='High'>High</CellItem>
-                  </Cell>
+                    <option value='Low'>Low</option>
+                    <option value='Medium'>Medium</option>
+                    <option value='High'>High</option>
+                  </Field>
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={4} col={2}>
+              <div row={4} col={2}>
                 <Label>
                   What level of humidity do give your orchid?
-                  <Cell
+                  <Field
                     valueKey='humidity'
                     groupName='humidity'
                     type='select'
@@ -287,24 +285,23 @@ class Uploader extends React.Component {
                     value={this.state.humidity}
                     onChange={this.handleChange}
                   >
-                    <CellItem value='Low'>Low</CellItem>
-                    <CellItem value='Medium'>Medium</CellItem>
-                    <CellItem value='High'>High</CellItem>
-                  </Cell>
+                    <option value='Low'>Low</option>
+                    <option value='Medium'>Medium</option>
+                    <option value='High'>High</option>
+                  </Field>
                 </Label>
-              </GridItem>
+              </div>
 
-              <GridItem row={5} col={2}>
+              <div row={5} col={2}>
                 <Dropzone
                   value={this.state.images}
                   onChange={this.handleChange}
                 />
-              </GridItem>
-            </Grid>
+              </div>
             <Button>Submit</Button>
           </Form>
         </div>
-      </Folio>
+      </div>
     );
   }
 }
