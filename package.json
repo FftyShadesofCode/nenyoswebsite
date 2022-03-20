@@ -2,13 +2,13 @@
     "name": "nenyoswebsite",
     "version": "0.1.0",
     "private": true,
-    "main": "server.js",
+    "main": "./backend/app.js",
     "scripts": {
-        "start": "node server.js",
-        "server": "nodemon server.js",
+        "start": "cd backend && node ./backend/app.js",
+        "server": "cd backend && nodemon ./backend/app.js --ignore client ",
         "client": "npm run start --prefix client",
-        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-        "iall": "npm i --force && cd client && npm i --force && cd"
+        "all": "npm-run-all --parallel server client",
+        "iall": "cd backend && npm i --force && cd client && npm i --force && cd"
     },
     "eslintConfig": {
         "extends": [
@@ -32,7 +32,8 @@
         "concurrently": "^7.0.0",
         "dotenv": "^16.0.0",
         "eslint-plugin-react": "7.28.0",
-        "nodemon": "^2.0.15"
+        "nodemon": "^2.0.15",
+        "npm-run-all": "^4.1.5"
     },
     "dependencies": {
         "all": "^0.0.0",
@@ -47,6 +48,7 @@
         "mongodb": "^4.4.1",
         "mongoose": "^6.2.6",
         "multer": "^1.4.4",
-        "oracledb": "^5.3.0"
+        "oracledb": "^5.3.0",
+        "react-uuid": "^1.0.2"
     }
 }
