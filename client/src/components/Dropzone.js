@@ -5,17 +5,13 @@ import {useDropzone} from "react-dropzone";
 const Dropzone = () => {
     const [images, setImages] = useState([])
 
-    const onDrop = useCallback((acceptedFiles, rejectedFiles) => {
-        acceptedFiles.forEach(file => {
-            const reader = new FileReader()
-            reader.onload = () => {
-            setImages(prevState => [...prevState, reader.result])
-            }
-            reader.readAsDataURL(file)
+    const onDrop = useCallback(acceptedFiles => {
+        setImages(acceptedFiles.map(file =>
+        Object.assign(file, {
+            preview: URL.createObjectURL(file)
         })
-        console.log('acceptedFiles:', acceptedFiles)
-        console.log('rejectedFiles', rejectedFiles)
-    })
+        ))
+    }, [])
 
     useEffect(() => {
     console.log(images)

@@ -5,7 +5,7 @@ import { Button, Label } from "reactstrap";
 import Dropzone from "../components/Dropzone";
 import cuid from "cuid";
 
-import "../CSS Files/App.css";
+import "../CSS Files/Uploader.css";
 import axios from "axios";
 
 class Uploader extends React.Component {

@@ -2,18 +2,23 @@ const express = require('express')
 const router = require('express').Router();
 const OrchidPost = require('../models/OrchidPost')
 
-router.get('/api', (req, res) => {
+router.get('/', (req, res) => {
+
   OrchidPost.find({  })
       .then((data) => {
-        console.log('Data: ', data)
+        console.log('Data', data)
+        res.json(data)
       })
       .catch((error) => {
-        console.log('Data: ', error)
+        console.log('error: ', error)
       })
 })
 
 router.post('/uploader', (req, res) => {
-  const data = req.body;
+  const dbConnect = dbo.getDb()
+  const matchDocument = {
+
+  }
 
   const newOrchidPost = new OrchidPost(data);
 

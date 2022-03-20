@@ -1,0 +1,5 @@
+.gallery-container {
+    margin: 5rem;
+    display: flex;
+    justify-items: center;
+}

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import ReactBnbGallery from 'react-bnb-gallery'
 
 import 'react-bnb-gallery/dist/style.css'
+import '../../CSS Files/Gallery.css'
 
 const PHOTOS = [
 

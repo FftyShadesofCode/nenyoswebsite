@@ -1,0 +1,235 @@
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+#contact-container h1 {
+    font-size: 3.5rem;
+    /* text-shadow: 3px 3px 3px black; */
+}
+
+.contact-info {
+    width: 1200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    margin-top: 3rem;
+    /* -webkit-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75); */
+    -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75);
+}
+
+.contact {
+    background-color: rgba(58, 119, 86, 0.5);
+    border-radius: 15px;
+    flex: 0 1 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* -webkit-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75); */
+    -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75);
+}
+
+.contact h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.contact p {
+    font-size: 1rem;
+}
+
+.contact .icon-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .icon-text .fa-solid {
+    font-size: 2.5rem;
+    margin-right: 2.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .icon-text .fa-map-pin {
+    color: darkred;
+    text-shadow: 1px 1px 1px white;
+}
+
+.contact .icon-text span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.social-media {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.social-media .icon-circle {
+    flex: 0 1 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.social-media .icon-circle .fa {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social-media .icon-circle .fa-laptop {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media .icon-circle .fa-facebook-square {
+    text-decoration: none;
+    color: #0570e6;
+}
+
+.social-media .icon-circle .fa-instagram {
+    text-decoration: none;
+    color: #c535a0;
+}
+
+form {
+    padding: 40px;
+    width: 100%;
+}
+
+form .col {
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+form .col .form-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 0 1 100%;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+
+form .col .form-group label {
+    color: rgba(21, 135, 159, 0.85);
+    text-shadow: 2px 2px 2px black;
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-top: 15px;
+}
+
+form .col .form-group input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(21, 135, 159, 0.75);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+form .col .form-group input[type="text"]:focus {
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgba(21, 135, 159, 0.75);
+}
+
+form .col .form-group input::placeholder {
+    /* color: rgb(197, 53, 160); */
+    color: #fff;
+    /* text-shadow: 1px 1px rgb(254, 174, 201); */
+    /* text-shadow: 1px 1px #000; */
+}
+
+form .col .form-group label:nth-child(2) {
+    padding-right: 0;
+}
+
+form .col .form-group input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(21, 135, 159, 0.75);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+form .col .form-group input[type="email"]:focus {
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgba(21, 135, 159, 0.75);
+}
+
+form .col .form-group label:nth-child(2) {
+    padding-right: 0;
+}
+
+form .col .form-group textarea {
+    width: 75%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(21, 135, 159, 0.75);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+form .col .form-group textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgba(21, 135, 159, 0.75);
+}
+
+form .col .form-group label:nth-child(2) {
+    padding-right: 0;
+}
+
+form .col .right {
+    align-items: flex-end;
+}
+
+form .col .form-group button {
+    width: 125px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 7px;
+    background: rgba(21, 135, 159, 0.75);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+form .col .form-group button:hover {
+    background: var(--primary);
+}

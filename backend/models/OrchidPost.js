@@ -27,6 +27,4 @@ const OrchidPostSchema = new Schema({
     }
 })
 
-const OrchidPost = mongoose.model('OrchidPost', OrchidPostSchema)
-
-module.exports = OrchidPost
+module.exports = mongoose.model('OrchidPost', OrchidPostSchema)

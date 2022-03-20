@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS Files/App.css";
+import "../CSS Files/Home.css";
 import Image1 from "../Gallery/Stock Photos/bloom-of-orchid-2021-08-26-15-58-27-utc.jpg";
 import Image2 from "../Gallery/Stock Photos/close-up-of-thai-orchid-on-a-blurred-background-m-2021-12-14-02-37-59-utc.jpg";
 import Image3 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-water-drops-2021-08-27-09-32-39-utc.jpg";

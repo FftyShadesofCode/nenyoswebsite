@@ -1,5 +1,5 @@
 import { menuItems } from "./ddMenuItems";
-import "../CSS Files/App.css";
+import "../CSS Files/Navbar.css";
 import MenuItems from "./MenuItems";
 
 const Navbar = () => {
