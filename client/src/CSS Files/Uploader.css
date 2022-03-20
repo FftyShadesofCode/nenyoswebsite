@@ -1,60 +1,60 @@
 .uploader-container {
-    margin: 5rem 13rem;
-    text-align: center;
-    border-radius: 0.5rem;
-    background: rgba(0, 0, 0.3, 0.3);
+  margin: 5rem 13rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0.3, 0.3);
 }
 
 .uploader-container .header-one {
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    color: var(--tertiary);
-    text-shadow: 2px 2px 3px darkgrey;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--tertiary);
+  text-shadow: 2px 2px 3px darkgrey;
 }
 
 .uploader-container .header-two {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #c535a0;
-    text-shadow: 1px 1px 3px white;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #c535a0;
+  text-shadow: 1px 1px 3px white;
 }
 
 .uploader-wrapper .form-label {
-    font-size: 1rem;
-    text-align: start;
-    color: var(--primary);
-    text-shadow: 1px 1px 1px white;
+  font-size: 1rem;
+  text-align: start;
+  color: var(--primary);
+  text-shadow: 1px 1px 1px white;
 }
 
 .uploader-wrapper input {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    width: 25rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 25rem;
 }
 
 .uploader-wrapper select {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 .dropzone {
-    color: #6fc363;
-    text-align: center;
-    padding: 20px;
-    border: 3px #c535a0 dashed;
-    width: 100%;
-    height: 25vh;
-    margin: auto;
+  color: #6fc363;
+  text-align: center;
+  padding: 20px;
+  border: 3px #c535a0 dashed;
+  width: 100%;
+  height: 25vh;
+  margin: auto;
 }
 
 .selected-images {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    margin: 16px;
-    background-color: rgba(230, 235, 215, 0.3);
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin: 16px;
+  background-color: rgba(230, 235, 215, 0.3);
 }
 
 .btn {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
