@@ -1,7 +1,7 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 
-import "../App.css";
+import "../CSS Files/App.css";
 
 export default function Contact() {
   return (

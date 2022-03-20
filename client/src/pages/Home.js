@@ -1,39 +1,5 @@
-// import React from "react";
-// import "bootstrap/dist/css/bootstrap.css";
-// import Carousel from "react-bootstrap/Carousel";
-// import "../App.css";
-// import Slide1 from "../Gallery/2022/01 January/Virtual Show Table-33.jpg";
-// import Slide2 from "../Gallery/2022/01 January/Virtual Show Table-22.jpg";
-
-// export default function Home() {
-//   return (
-//     <div className='csel'>
-//       <Carousel>
-//         <Carousel.Item interval={5000}>
-//           <img
-//             className='d-block w-100'
-//             src={Slide1}
-//             alt='Restrepia Frank Feysa'
-//           />
-//           <Carousel.Caption>
-//             <h3>Orchids of</h3>
-//             <h1>North Eastern New York Orchid Society</h1>
-//           </Carousel.Caption>
-//         </Carousel.Item>
-//         <Carousel.Item interval={5000}>
-//           <img className='d-block w-100' src={Slide2} alt='Cattleya' />
-//           <Carousel.Caption>
-//             <h2>Together We Grow</h2>
-//           </Carousel.Caption>
-//         </Carousel.Item>
-//       </Carousel>
-//     </div>
-//   );
-// }
-
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.css"; Do I need this???
-import "../App.css";
+import "../CSS Files/App.css";
 import Image1 from "../Gallery/Stock Photos/bloom-of-orchid-2021-08-26-15-58-27-utc.jpg";
 import Image2 from "../Gallery/Stock Photos/close-up-of-thai-orchid-on-a-blurred-background-m-2021-12-14-02-37-59-utc.jpg";
 import Image3 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-water-drops-2021-08-27-09-32-39-utc.jpg";
