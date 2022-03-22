@@ -7,10 +7,6 @@ export const menuItems = [
     title: "Contact",
     link: "/contact",
   },
-  //   {
-  //     title: "About",
-  //     link: "/about",
-  //   },
   {
     title: "Galleries",
     submenu: [
@@ -80,10 +76,14 @@ export const menuItems = [
           },
         ],
       },
+      {
+        title: "Uploader",
+        link: "/uploader",
+      },
     ],
   },
   {
-    title: "In-Bloom Uploader",
+    title: "Uploader",
     link: "/uploader",
   },
   {

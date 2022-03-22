@@ -1,5 +1,4 @@
-.app {
-  font-family: sans-serif;
+.login-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,6 +6,11 @@
   gap: 20px;
   height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
 }
 
 input[type="text"],
@@ -36,6 +40,8 @@ input[type="submit"]:hover {
 }
 
 .login-form {
+  display: flex;
+  flex-direction: column;
   backdrop-filter: blur(15px);
   border: 1px solid #c9c9c980;
   padding: 2rem;
