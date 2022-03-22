@@ -6,6 +6,7 @@ import Logo from "./Gallery/logo.png";
 import "../src/CSS Files/App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
@@ -38,6 +39,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/uploader' element={<Uploader />} />
             <Route exact path='/login' element={<Login />} />
+            <Route exact path='/signup' element={<Signup />} />
             <Route exact path='/jan-22' element={<January2022 />} />
           </Routes>
         </Router>

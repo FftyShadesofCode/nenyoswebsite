@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "@mui/material";
+import { useState } from "react";
+import { Button } from "@mui/material";
 import ModalDialog from "../components/ModalDialog";
 
-function Signup() {
+const Signup = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -21,6 +21,6 @@ function Signup() {
       <ModalDialog open={open} handleClose={handleClose} />
     </div>
   );
-}
+};
 
 export default Signup;
