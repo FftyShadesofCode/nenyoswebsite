@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
 import ModalDialog from "../components/ModalDialog";
+import "../CSS Files/Signup.css";
 
 const Signup = () => {
   const [open, setOpen] = useState(false);
@@ -16,6 +17,7 @@ const Signup = () => {
   return (
     <div className='App'>
       <Button
+        className='button'
         variant='contained'
         size='large'
         color='success'
