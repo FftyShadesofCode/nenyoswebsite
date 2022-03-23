@@ -9,8 +9,8 @@
 }
 
 form {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="text"],
@@ -72,4 +72,20 @@ input[type="submit"]:hover {
   gap: 1rem;
   margin: 1rem;
   color: #fff;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--tertiary);
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign-link a:hover {
+  text-decoration: none;
+  color: var(--primary);
 }
