@@ -15,7 +15,12 @@ const Signup = () => {
 
   return (
     <div className='App'>
-      <Button variant='contained' color='primary' onClick={handleOpen}>
+      <Button
+        variant='contained'
+        size='large'
+        color='success'
+        onClick={handleOpen}
+      >
         Sign Up
       </Button>
       <ModalDialog open={open} handleClose={handleClose} />

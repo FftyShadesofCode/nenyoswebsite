@@ -30,7 +30,16 @@ const Form = ({ handleClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(firstName, lastName, email, password);
+    // console.log(
+    //   "First Name: ",
+    //   firstName,
+    //   "Last Name: ",
+    //   lastName,
+    //   "Email: ",
+    //   email,
+    //   "Password: ",
+    //   password
+    // );
     handleClose();
   };
 
