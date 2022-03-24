@@ -32,7 +32,6 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                         }}
                     >
                         <Container component='main' maxWidth='xs'>
-                            <UploaderHeader />
                             <div>
                                 <Typography component='h1' variant='h5'>
                                     Orchid's Identity

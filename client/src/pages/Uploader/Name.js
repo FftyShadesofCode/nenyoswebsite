@@ -27,7 +27,6 @@ const Name = ({ nextStep, handleChange, values }) => {
                         }}
                     >
                     <Container component='main' maxWidth='xs'>
-                        <UploaderHeader />
                         <div>
                             <Typography component='h1' variant='h5'>
                                 Grower's Name
