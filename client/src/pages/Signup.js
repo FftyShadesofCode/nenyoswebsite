@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import ModalDialog from "../components/ModalDialog";
 import "../CSS Files/Signup.css";
+import Form from "../components/Form";
 
 const Signup = () => {
   const [open, setOpen] = useState(false);
@@ -25,6 +26,7 @@ const Signup = () => {
       >
         Sign Up
       </Button>
+      {/* <Form onClick={handleOpen} /> */}
       <ModalDialog open={open} handleClose={handleClose} />
     </div>
   );

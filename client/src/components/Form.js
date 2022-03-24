@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import "../CSS Files/Signup.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,16 +31,6 @@ const Form = ({ handleClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(
-    //   "First Name: ",
-    //   firstName,
-    //   "Last Name: ",
-    //   lastName,
-    //   "Email: ",
-    //   email,
-    //   "Password: ",
-    //   password
-    // );
     handleClose();
   };
 
