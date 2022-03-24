@@ -17,19 +17,6 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
 
     const theme = createTheme();
 
-    const customStyles = {
-        option: (provided, state) => ({
-            ...provided,
-            borderBottom: '2px dotted green',
-            color: state.isSelected ? 'black' : 'black',
-            backgroundColor: state.isSelected ? 'green' : 'white'
-        }),
-        control: (provided) => ({
-            ...provided,
-            marginTop: "5%",
-        })
-    }
-
     return (
         <ThemeProvider theme={theme} >
             <Container component='main' maxWidth='s'>
