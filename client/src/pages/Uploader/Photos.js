@@ -3,10 +3,22 @@ import {UploaderHeader} from "../../components/Uploader/UploaderHeader"
 import { Container, Typography, Grid, Button } from '@material-ui/core'
 import Dropzone from "../../components/Dropzone"
 
-const Photos = () => {
+const Photos = ({ prevStep, nextStep, values }) => {
+
+    const Continue = e => {
+        e.preventDefault();
+        nextStep();
+    }
+
+    const Previous = e => {
+        e.preventDefault()
+        prevStep()
+    }
+
     return (
-        <UploaderHeader>
-            <Container>
+
+            <Container component='main' maxWidth='xs'>
+                <UploaderHeader />
                 <div>
                     <Typography component='h1' variant='h5' >
                         Photos
@@ -17,10 +29,32 @@ const Photos = () => {
                                 <Dropzone />
                             </Grid>
                         </Grid>
+                        <br />
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} sm={6}>
+                                <Button
+                                    onClick= { Previous }
+                                    type='submit'
+                                    fullWidth
+                                    variant='contained'
+                                    color='primary'
+                                >
+                                    Previous
+                                </Button>
+                                <Button
+                                    onClick={ Continue }
+                                    type='submit'
+                                    fullWidth
+                                    variant='contained'
+                                    color='primary'
+                                >
+                                    Next
+                                </Button>
+                            </Grid>
+                        </Grid>
                     </form>
                 </div>
             </Container>
-        </UploaderHeader>
     )
 }
 

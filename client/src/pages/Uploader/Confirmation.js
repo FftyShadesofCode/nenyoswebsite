@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Grid, List, ListItem, ListItemText, Button } from '@material-ui/core'
+import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 
 const Confirmation = ({ prevStep, nextStep, values }) => {
     console.log(values);
@@ -17,6 +18,7 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
 
     return (
         <Container  component="main" maxWidth="xs">
+            <UploaderHeader />
             <div>
                 <List>
                     <ListItem>
@@ -56,6 +58,18 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                             color="primary"
                         >
                             Previous
+                        </Button>
+                    </Grid>
+                    <br />
+                    <Grid item xs={12} sm={6}>
+                        <Button
+                            onClick={ Continue }
+                            type='submit'
+                            fullWidth
+                            variant='contained'
+                            color='primary'
+                        >
+                            Next
                         </Button>
                     </Grid>
                     <Grid item xs={12} sm={6}>

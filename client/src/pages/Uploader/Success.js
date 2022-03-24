@@ -1,9 +1,13 @@
 import React from 'react'
+import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 
 const Success = () => {
     return (
         <div>
-            <h1>Orchid has Bloomed!</h1>
+            <UploaderHeader />
+            <div>
+                <h1>Orchid has Bloomed!</h1>
+            </div>
         </div>
     )
 }
