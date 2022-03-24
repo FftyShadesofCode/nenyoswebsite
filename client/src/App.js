@@ -12,7 +12,6 @@ import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
 import January2022 from "./pages/gallery2022/January";
 
-
 function App() {
   return (
     <div>
