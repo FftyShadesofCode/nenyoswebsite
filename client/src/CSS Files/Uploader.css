@@ -56,6 +56,14 @@ form select {
   text-shadow: 2px 2px 3px darkgrey;
 }
 
+input[type='text'] {
+  color: white;
+}
+
+input .MuiInputBase-root {
+  color:white;
+}
+
 .input-container {
   font-size: 1.2rem;
   text-align: start;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
-import {Container, createTheme, CssBaseline, Grid, ThemeProvider} from "@mui/material";
+import {Container, createTheme, CssBaseline, Grid, ThemeProvider, Typography} from "@mui/material";
 
 const theme = createTheme();
 
@@ -21,7 +21,7 @@ const Success = () => {
                     >
                         <div>
                             <div>
-                                <h1>Orchid has Bloomed!</h1>
+                                <Typography style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5'>Orchid has Bloomed!</Typography>
                             </div>
                         </div>
                     </Grid>

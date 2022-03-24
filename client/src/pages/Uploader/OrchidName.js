@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Typography, Grid, TextField, Button } from '@material-ui/core'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import {createTheme, CssBaseline, styled, ThemeProvider} from "@mui/material";
 
 const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
 
@@ -14,6 +14,27 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
         e.preventDefault()
         prevStep()
     }
+
+
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+            color: 'green',
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: 'green',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+                borderColor: 'darkpink',
+            },
+            '&:hover fieldset': {
+                borderColor: 'lightpink',
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: 'green',
+            },
+        },
+    });
 
     const theme = createTheme();
 
@@ -33,27 +54,33 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                     >
                         <Container component='main' maxWidth='xs'>
                             <div>
-                                <Typography component='h1' variant='h5'>
+                                <Typography style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5'>
                                     Orchid's Identity
                                 </Typography>
                                 <form action=''>
                                     <Grid container spacing={2}>
                                         <Grid item xs={12}>
-                                            <TextField
+                                            <CssTextField
                                                 placeholder='Orchids Genera'
                                                 label='Orchid Genera'
                                                 onChange={handleChange('orchidGenera')}
                                                 defaultValue={values.orchidGenera}
+                                                variant='standard'
+                                                required
+                                                error
                                                 fullWidth
                                             />
                                         </Grid>
                                         <br/>
                                         <Grid item xs={12}>
-                                            <TextField
+                                            <CssTextField
                                                 placeholder='Orchid Species'
                                                 label='Orchid Species'
                                                 onChange={handleChange('orchidSpecies')}
                                                 defaultValue={values.orchidSpecies}
+                                                variant='standard'
+                                                required
+                                                error
                                                 fullWidth
                                             />
                                         </Grid>
@@ -70,6 +97,9 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                                                 >
                                                 Previous
                                             </Button>
+                                        </Grid>
+                                        <br />
+                                        <Grid item xs={12} sm={6}>
                                             <Button
                                                 onClick={ Continue }
                                                 type='submit'

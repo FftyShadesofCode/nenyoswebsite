@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Grid, List, ListItem, ListItemText, Button } from '@material-ui/core'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import {createTheme, CssBaseline, ThemeProvider, Typography} from "@mui/material";
 
 const Confirmation = ({ prevStep, nextStep, values }) => {
     console.log(values);
-    const { firstName, lastName, orchidGenera, orchidSpecies, fragrant, careInfo, temp, lightIntensity, lightType, water, humidity, location } = values
+    const { firstName, lastName, orchidGenera, orchidSpecies, basicInfo, fragrant, careInfo, temp, lightIntensity, lightType, water, humidity, location } = values
 
     const Continue = e => {
         e.preventDefault();
@@ -33,32 +33,38 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                             alignItems: 'center',
                         }}
                     >
-                    <Container  component="main" maxWidth="xs">
-                        <div>
+                    <Container  component="main" maxWidth="xl">
+                        <Grid component="form" noValidate sx={{ mt: 3 }}>
+                            <Typography  style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5'>
+                                Please Review Your Information
+                            </Typography>
                             <List>
                                 <ListItem>
-                                    <ListItemText primary="First Name" secondary={firstName}/>
+                                    <ListItemText primary="First Name:" secondary={firstName}/>
+                                    <ListItemText primary="Last Name:" secondary={lastName}/>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Last Name" secondary={lastName}/>
+                                    <ListItemText primary="Orchid Genera:" secondary={orchidGenera}/>
+                                    <ListItemText primary="Orchid Species:" secondary={orchidSpecies}/>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Orchid Genera" secondary={orchidGenera}/>
+                                    <ListItemText primary="Basic Information:" secondary={basicInfo}/>
+                                    <ListItemText primary="Fragrant:" secondary={fragrant}/>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Orchid Species" secondary={orchidSpecies}/>
+                                    <ListItemText primary="Care Information:" secondary={careInfo} />
+                                    <ListItemText primary='Temperature:' secondary={temp} />
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Basic Information" secondary={fragrant}/>
+                                    <ListItemText primary='Light Intensity:' secondary={lightIntensity} />
+                                    <ListItemText primary='Light Type:' secondary={lightType} />
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Care Information" secondary={careInfo} />
-                                    <ListItemText primary='Temperature' secondary={temp} />
-                                    <ListItemText primary='Light Intensity' secondary={lightIntensity} />
-                                    <ListItemText primary='Light Type' secondary={lightType} />
-                                    <ListItemText primary='Water' secondary={water} />
-                                    <ListItemText primary='Humidity' secondary={humidity} />
-                                    <ListItemText primary='Location' secondary={location} />
+                                    <ListItemText primary='Water:' secondary={water} />
+                                    <ListItemText primary='Humidity:' secondary={humidity} />
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary='Location:' secondary={location} />
                                 </ListItem>
                             </List>
 
@@ -84,11 +90,11 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                                         variant="contained"
                                         color="primary"
                                     >
-                                        Confirm & Continue
+                                        Confirm
                                     </Button>
                                 </Grid>
                             </Grid>
-                        </div>
+                        </Grid>
                     </Container>
                     </Grid>
                 </div>

@@ -34,7 +34,7 @@ const Photos = ({ prevStep, nextStep, values }) => {
                     >
                     <Container component='main' maxWidth='xs'>
                         <div>
-                            <Typography component='h1' variant='h5' >
+                            <Typography style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5' >
                                 Photos
                             </Typography>
                             <form action=''>
@@ -55,6 +55,9 @@ const Photos = ({ prevStep, nextStep, values }) => {
                                         >
                                             Previous
                                         </Button>
+                                    </Grid>
+                                    <br />
+                                    <Grid item xs={12} sm={6}>
                                         <Button
                                             onClick={ Continue }
                                             type='submit'

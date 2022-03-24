@@ -1,23 +1,34 @@
 import React from 'react'
 import { Container, Typography, Grid, TextField, Button } from '@material-ui/core'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-    h3: {
-        color: 'white',
-        textShadow: '1px 1px 1px black'
-    }
-})
+import {createTheme, CssBaseline, styled, ThemeProvider} from "@mui/material";
 
 const Name = ({ nextStep, handleChange, values }) => {
-    const styles = useStyles()
 
   const Continue = (e) => {
     e.preventDefault();
     nextStep();
   };
+
+    const CssTextField = styled(TextField)({
+        '& label.Mui-focused': {
+            color: 'green',
+        },
+        '& .MuiInput-underline:after': {
+            borderBottomColor: 'green',
+        },
+        '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+                borderColor: 'darkpink',
+            },
+            '&:hover fieldset': {
+                borderColor: 'lightpink',
+            },
+            '&.Mui-focused fieldset': {
+                borderColor: 'green',
+            },
+        },
+    });
 
     const theme = createTheme();
 
@@ -37,27 +48,33 @@ const Name = ({ nextStep, handleChange, values }) => {
                     >
                     <Container component='main' maxWidth='xs'>
                         <div>
-                            <Typography className={styles.overrides} component='h1' variant='h3' >
+                            <Typography style={{ color: 'white', textShadow: '1px 1px black' }} component='h3' variant='h4' >
                                 Grower's Name
                             </Typography>
                             <form action=''>
                                 <Grid container spacing={2}>
                                     <Grid item xs={12}>
-                                        <TextField
+                                        <CssTextField
                                             placeholder='First Name'
                                             label='First Name'
                                             onChange={handleChange('firstName')}
                                             defaultValue={values.firstName}
+                                            variant='standard'
+                                            required
+                                            error
                                             fullWidth
                                         />
                                     </Grid>
                                     <br/>
                                     <Grid item xs={12}>
-                                        <TextField
+                                        <CssTextField
                                             placeholder='Last Name'
                                             label='Last Name'
                                             onChange={handleChange('lastName')}
                                             defaultValue={values.lastName}
+                                            variant='standard'
+                                            required
+                                            error
                                             fullWidth
                                         />
                                     </Grid>

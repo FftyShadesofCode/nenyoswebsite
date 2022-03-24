@@ -103,7 +103,7 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
                         }}
                     >
                         <Grid>
-                            <Typography component='h1' variant='h5' >
+                            <Typography style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5' >
                                 Orchid Information
                             </Typography>
                             <Grid component="form" noValidate sx={{ mt: 3 }}>
@@ -192,6 +192,9 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
                                         >
                                             Previous
                                         </Button>
+                                    </Grid>
+                                    <br />
+                                    <Grid item xs={12} sm={6}>
                                         <Button
                                             onClick={ Continue }
                                             type='submit'
