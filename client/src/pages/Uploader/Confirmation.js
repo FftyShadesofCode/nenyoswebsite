@@ -21,7 +21,7 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
 
     return (
         <ThemeProvider theme={theme} >
-            <Container component='main' maxWidth='s'>
+            <Container component='main' maxWidth='xl'>
                 <div  className='uploader-container' >
                     <CssBaseline />
                     <UploaderHeader />
@@ -76,17 +76,6 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                                     </Button>
                                 </Grid>
                                 <br />
-                                <Grid item xs={12} sm={6}>
-                                    <Button
-                                        onClick={ Continue }
-                                        type='submit'
-                                        fullWidth
-                                        variant='contained'
-                                        color='primary'
-                                    >
-                                        Next
-                                    </Button>
-                                </Grid>
                                 <Grid item xs={12} sm={6}>
                                     <Button
                                         onClick={ Continue }

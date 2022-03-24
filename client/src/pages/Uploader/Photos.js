@@ -20,7 +20,7 @@ const Photos = ({ prevStep, nextStep, values }) => {
 
     return (
         <ThemeProvider theme={theme} >
-            <Container component='main' maxWidth='s'>
+            <Container component='main' maxWidth='lg'>
                 <div  className='uploader-container' >
                     <CssBaseline />
                     <UploaderHeader />

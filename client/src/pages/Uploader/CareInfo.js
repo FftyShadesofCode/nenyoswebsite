@@ -90,7 +90,7 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
 
     return (
         <ThemeProvider theme={theme} >
-            <Container component='main' maxWidth='s'>
+            <Container component='main' maxWidth='xl'>
                 <div  className='uploader-container' >
                     <CssBaseline />
                     <UploaderHeader />
