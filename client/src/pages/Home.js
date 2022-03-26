@@ -7,42 +7,31 @@ import Image3 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-wat
 export default function Home() {
   return (
     <div className='csel'>
-      <div>
-        <div>
-          <div className='home-banner'>
-            <img className='h1-img' src={Image3} alt='' />
-            <div className='banner-text'>
-              Welcome to the
-              <br />
-              North Eastern New York Orchid Society
-            </div>
-          </div>
+      <div className='home-banner'>
+        <img className='h1-img' src={Image3} alt='' />
+        <div className='banner-text'>
+          Welcome to the
+          <br />
+          North Eastern New York Orchid Society
         </div>
-        <div>
-          <div className='about-container'>
-            {/* <h2>Together We Grow</h2> */}
-            <div className='about-us'>
-              {/* <div className='about-us-h1'>
-                <h1>About Us</h1>
-              </div> */}
-              <div className='about-us-p'>
-                <p className='about-us-p-header'>About Us</p>
-                <p>
-                  We are a non-profit membership organization chartered by New
-                  York State and open without restriction to all who are
-                  interested in orchids. The organization was formed in 1963 by
-                  orchid lovers in the Capital district who were passionate
-                  about growing, studying and enjoying orchids. Members range
-                  for beginner to expert and grow them in a variety of
-                  conditions, from windowsill to greenhouse.
-                </p>
-              </div>
-              <img className='about-us-img' src={Image1} alt='' />
+      </div>
+        <div className='about-container'>
+          <div className='about-us'>
+            <div className='about-us-p'>
+              <p className='about-us-p-header'>About Us</p>
+              <p>
+                We are a non-profit membership organization chartered by New
+                York State and open without restriction to all who are
+                interested in orchids. The organization was formed in 1963 by
+                orchid lovers in the Capital district who were passionate
+                about growing, studying and enjoying orchids. Members range
+                for beginner to expert and grow them in a variety of
+                conditions, from windowsill to greenhouse.
+              </p>
             </div>
+            <img className='about-us-img' src={Image1} alt='' />
+          </div>
             <div className='about-orchids'>
-              {/* <div className='about-orchids-h1'>
-                <h1>About Orchids</h1>
-              </div> */}
               <div className='about-orchids-p'>
                 <p className='about-orchids-p-header'>About Orchids</p>
                 <p>
@@ -68,11 +57,9 @@ export default function Home() {
                   orchids are less demanding than the species.
                 </p>
               </div>
-              <img className='about-orchids-img' src={Image2} alt='' />
+                <img className='about-orchids-img' src={Image2} alt='' />
             </div>
-          </div>
         </div>
-      </div>
     </div>
   );
 }
