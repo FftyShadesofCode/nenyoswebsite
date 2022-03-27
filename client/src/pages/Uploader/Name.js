@@ -11,11 +11,17 @@ const Name = ({ nextStep, handleChange, values }) => {
   };
 
     const CssTextField = styled(TextField)({
+        '& label.MuiFormLabel-root': {
+            color: 'white',
+        },
+        '& span.MuiFormLabel-asterisk': {
+            color: 'white',
+        },
         '& label.Mui-focused': {
-            color: 'green',
+            color: 'white',
         },
         '& .MuiInput-underline:after': {
-            borderBottomColor: 'green',
+            borderColor: 'green',
         },
         '& .MuiOutlinedInput-root': {
             '& fieldset': {

@@ -1,12 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader"
 import { Container, Typography, Grid, Button } from '@material-ui/core'
 import Select from 'react-select'
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 
 const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
-
-    const [ value, setValue ] = useState('')
 
     const optionsFragrant = [
         {value: 'Yes', label: 'Yes'},
@@ -67,10 +65,6 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
     const Previous = e => {
         e.preventDefault()
         prevStep()
-    }
-
-    const changeValue = e => {
-        setValue(e.target.value)
     }
 
     const theme = createTheme();
@@ -169,7 +163,9 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
                                     </Grid>
 
                                     <Grid item xs={12} sm={6}>
-                                        <label htmlFor='location'>Where do you grow it?</label>
+                                        <label htmlFor='location'>Where do you grow it?
+                                            <span style={{ fontSize: '12px' }} ><em> (Can choose more than one)</em></span>
+                                        </label>
                                         <Select
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
