@@ -172,6 +172,15 @@ header {
   .nav-area, .menu-items {
     width: inherit;
     margin-left: 0;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
   }
+  
+  /* .nav {
+    font-size: 100px;
+  } */
+
+  /* header {
+    height: 5rem;
+    width: 100%;
+  } */
 }

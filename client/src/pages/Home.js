@@ -6,7 +6,7 @@ import Image3 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-wat
 
 export default function Home() {
   return (
-    <div className='csel'>
+    <>
       <div className='home-banner'>
         <img className='h1-img' src={Image3} alt='' />
         <div className='banner-text'>
@@ -18,7 +18,7 @@ export default function Home() {
         <div className='about-container'>
           <div className='about-us'>
             <div className='about-us-p'>
-              <p className='about-us-p-header'>About Us</p>
+              <h2 className='about-us-p-header'>About Us</h2>
               <p>
                 We are a non-profit membership organization chartered by New
                 York State and open without restriction to all who are
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
             <div className='about-orchids'>
               <div className='about-orchids-p'>
-                <p className='about-orchids-p-header'>About Orchids</p>
+                <h2 className='about-orchids-p-header'>About Orchids</h2>
                 <p>
                   Contrary to popular belief, orchids are not difficult to grow
                   once we understand their requirements. The majority are
@@ -60,6 +60,6 @@ export default function Home() {
                 <img className='about-orchids-img' src={Image2} alt='' />
             </div>
         </div>
-    </div>
+    </>
   );
 }
