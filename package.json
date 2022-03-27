@@ -38,6 +38,7 @@
         "@emotion/styled": "^11.8.1",
         "@mui/material": "^5.5.2",
         "eslint-config-react-app": "^7.0.0",
-        "http-errors": "^2.0.0"
+        "http-errors": "^2.0.0",
+        "react-select": "^5.2.2"
     }
 }

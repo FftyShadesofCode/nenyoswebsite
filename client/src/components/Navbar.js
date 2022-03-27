@@ -5,12 +5,14 @@ import MenuItems from "./MenuItems";
 const Navbar = () => {
   return (
     <nav>
-      <ul className='menus'>
-        {menuItems.map((menu, index) => {
-          const depthLevel = 0;
-          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
-        })}
-      </ul>
+      <div className="nav">
+        <ul className='menus'>
+          {menuItems.map((menu, index) => {
+            const depthLevel = 0;
+            return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
+          })}
+        </ul>
+      </div>
     </nav>
   );
 };
