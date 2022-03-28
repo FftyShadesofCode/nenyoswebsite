@@ -1,4 +1,4 @@
-/* .login-container {
+.login-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,9 +88,11 @@ input[type="submit"]:hover {
 .signup-link a:hover {
   text-decoration: none;
   color: var(--contrast);
-} */
+}
 
-.App {
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* .App {
   text-align: center;
 }
 
@@ -121,7 +123,7 @@ form {
   justify-content: center;
   align-items: center;
   padding: 90px 0px 90px 0;
-  /* background-color: rgb(252, 252, 252); */
+  /* background-color: rgb(252, 252, 252);
 }
 
 .sub-main {
@@ -277,4 +279,4 @@ select::-ms-expand {
 
 .select:hover::after {
   color: #f39c12;
-}
+} */
