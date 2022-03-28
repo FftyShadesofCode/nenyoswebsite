@@ -81,8 +81,8 @@ import React, { useState } from "react";
 // import Signup from "./Signup";
 import "../CSS Files/Login.css";
 import { Link } from "react-router-dom";
-import email from "../Gallery/Login Images/email.png";
-import lock from "../Gallery/Login Images/lock.png";
+// import email from "../Gallery/Login Images/email.png";
+// import lock from "../Gallery/Login Images/lock.png";
 import profile from "../Gallery/Login Images/icon.jpg";
 
 function Login() {
@@ -94,15 +94,9 @@ function Login() {
       <div className='main'>
         <div className='sub-main'>
           <div>
-            <h1 className='LHeader'>Log In</h1>
-            <div className='imgs'>
-              <div className='container-image'>
-                <img src={profile} alt='profile' className='profile' />
-              </div>
-            </div>
+            <h1 className='header'>Log In</h1>
             <div className='inputs-container'>
               <div className='email-input'>
-                {/* <img src={email} alt='email' /> */}
                 <input
                   type='text'
                   placeholder='Email'
@@ -111,7 +105,6 @@ function Login() {
                 />
               </div>
               <div className='password-input'>
-                {/* <img src={lock} alt='password' /> */}
                 <input
                   type='password'
                   placeholder='Password'
@@ -124,11 +117,12 @@ function Login() {
                   <button type='button'>Log In</button>
                 </Link>
               </div>
-              {/* <div className='reg-link'> */}
-              <div className='signup-link'>
-                Don't have an account? <a href='/signup'>Sign Up!</a>{" "}
+              <div className='reg-link'>
+                <p>Don't have an account?</p>
+                <Link className='link' to='/signup'>
+                  <li>Sign Up</li>
+                </Link>
               </div>
-              {/* </div> */}
             </div>
           </div>
         </div>

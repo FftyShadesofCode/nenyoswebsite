@@ -131,14 +131,14 @@ form {
   width: 25vw;
   padding-top: 30px;
   border-radius: 60px;
-  background-color: white;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(201, 201, 201, 0.5);
 }
 
 input {
   width: 19rem;
   height: 3rem;
   border-radius: 20px;
-  /* box-shadow: inset 0px 0px 25px 0px #888; */
 }
 
 .imgs {
@@ -147,30 +147,23 @@ input {
   display: flex;
 }
 
-.container-image {
+.container-image img {
   background-color: rgb(223, 221, 221);
   border-radius: 150px;
-  align-items: center;
-  display: flex;
-  height: 115px;
-  width: 115px;
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 1rem;
 }
 
 .inputs-container {
   height: 20rem;
+  margin-top: 3rem;
 }
 
-.profile {
-  margin-bottom: 3rem;
-  height: 130px;
-  width: 130px;
-  border-radius: 130px;
-}
-
-.LHeader {
+.header {
   text-align: center;
   font-size: 5rem;
-  margin-bottom: 3rem;
+  color: white;
 }
 
 .fill {
@@ -187,27 +180,12 @@ input {
   height: 3.5rem;
 }
 
-/* .password-input img {
-  border: 1px solid red;
-  height: 40px;
-  width: 40px;
-  position: absolute;
-}
-
-.email-input img {
-  border: 1px solid blue;
-  height: 40px;
-  width: 40px;
-  position: absolute;
-} */
-
 button {
   width: 260px;
   height: 50px;
   border-radius: 60px;
   background-color: darkgreen;
   color: white;
-  /* box-shadow: inset 0px 0px 25px 0px rgb(14, 14, 15); */
   font-size: 25px;
   border: none;
 }
@@ -216,12 +194,16 @@ button {
   padding-top: 20px;
 }
 
-/* .reg-link {
+.reg-link {
   padding-top: 10px;
-} */
+}
 
 .signup-link {
   margin-top: 2rem;
+}
+
+.signup-link:hover {
+  color: magenta;
 }
 
 .mail-id {
@@ -234,6 +216,7 @@ button {
 }
 
 select {
+  border: 1px solid red;
   appearance: none;
   outline: 0;
   background: rgb(92, 2, 110);
