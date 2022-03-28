@@ -4,3 +4,32 @@
   align-items: center;
   justify-content: center;
 }
+
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  /* color: var(--contrast); */
+  color: #000;
+}
+
+.login-link a {
+  text-decoration: none;
+  color: green;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+  color: var(--tertiary);
+}
+
+.signup-form {
+  border: 1px solid red;
+  width: 15vw;
+  height: 25vw;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  /* border: 1px solid #c9c9c980; */
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1.5rem;
+}

@@ -67,7 +67,7 @@ function Login() {
           <input type='submit' />
         </div>
         <div className='signup-link'>
-          Don't have an account? <a href='/signup'>Join Us!</a>
+          Don't have an account? <a href='/signup'>Sign Up</a>
         </div>
       </form>
     </div>
