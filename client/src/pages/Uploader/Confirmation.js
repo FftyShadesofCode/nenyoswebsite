@@ -38,7 +38,7 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                             <Typography  style={{ color: 'white', textShadow: '1px 1px black' }} component='h1' variant='h5'>
                                 Please Review Your Information
                             </Typography>
-                            <List>
+                            <List style={{ color: 'white', textShadow: '1px 1px black' }} >
                                 <ListItem>
                                     <ListItemText primary="First Name:" secondary={firstName}/>
                                     <ListItemText primary="Last Name:" secondary={lastName}/>
