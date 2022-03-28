@@ -64,7 +64,7 @@ const Name = ({ nextStep, handleChange, values }) => {
                                             placeholder='First Name'
                                             label='First Name'
                                             onChange={handleChange('firstName')}
-                                            defaultValue={values.firstName}
+                                            value={values.firstName}
                                             variant='standard'
                                             required
                                             error
@@ -77,7 +77,7 @@ const Name = ({ nextStep, handleChange, values }) => {
                                             placeholder='Last Name'
                                             label='Last Name'
                                             onChange={handleChange('lastName')}
-                                            defaultValue={values.lastName}
+                                            value={values.lastName}
                                             variant='standard'
                                             required
                                             error

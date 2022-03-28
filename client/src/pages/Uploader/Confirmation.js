@@ -40,31 +40,31 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
                             </Typography>
                             <List style={{ color: 'white', textShadow: '1px 1px black' }} >
                                 <ListItem>
-                                    <ListItemText primary="First Name:" secondary={firstName}/>
-                                    <ListItemText primary="Last Name:" secondary={lastName}/>
+                                    <ListItemText primary="First Name:" secondary={firstName} >{values.firstName}</ListItemText>
+                                    <ListItemText primary="Last Name:" secondary={lastName} >{values.lastName}</ListItemText>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Orchid Genera:" secondary={orchidGenera}/>
-                                    <ListItemText primary="Orchid Species:" secondary={orchidSpecies}/>
+                                    <ListItemText primary="Orchid Genera:" secondary={orchidGenera} >{values.orchidGenera}</ListItemText>
+                                    <ListItemText primary="Orchid Species:" secondary={orchidSpecies} >{values.orchidSpecies}</ListItemText>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary="Basic Information:" secondary={basicInfo}/>
-                                    <ListItemText primary="Fragrant:" secondary={fragrant}/>
+                                    <ListItemText primary="Basic Information:" secondary={basicInfo} />
+                                    <ListItemText primary="Fragrant:" secondary={fragrant} >{values.fragrant}</ListItemText>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemText primary="Care Information:" secondary={careInfo} />
-                                    <ListItemText primary='Temperature:' secondary={temp} />
+                                    <ListItemText primary='Temperature:' secondary={temp} >{values.temp}</ListItemText>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary='Light Intensity:' secondary={lightIntensity} />
-                                    <ListItemText primary='Light Type:' secondary={lightType} />
+                                    <ListItemText primary='Light Intensity:' secondary={lightIntensity} >{values.lightIntensity}</ListItemText>
+                                    <ListItemText primary='Light Type:' secondary={lightType} >{values.lightType}</ListItemText>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary='Water:' secondary={water} />
-                                    <ListItemText primary='Humidity:' secondary={humidity} />
+                                    <ListItemText primary='Water:' secondary={water} >{values.water}</ListItemText>
+                                    <ListItemText primary='Humidity:' secondary={humidity} >{values.humidity}</ListItemText>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemText primary='Location:' secondary={location} />
+                                    <ListItemText primary='Location:' secondary={location} >{values.location}</ListItemText>
                                 </ListItem>
                             </List>
 

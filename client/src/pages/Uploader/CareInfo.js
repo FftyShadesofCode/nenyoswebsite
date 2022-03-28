@@ -1,8 +1,9 @@
 import React from 'react'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader"
 import { Container, Typography, Grid, Button } from '@material-ui/core'
-import Select from 'react-select'
+import CreatableSelect from 'react-select/creatable'
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
+import makeAnimated from 'react-select/animated'
 
 const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
 
@@ -104,61 +105,79 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
                                 <Grid container spacing={2}>
                                     <Grid item xs={12} sm={6}>
                                         <label htmlFor='fragrant'>Is it Fragrant?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsFragrant}
+                                            defaultValue={values.fragrant}
                                             autoFocus={true}
+                                            name='fragrant'
+                                            isSearchable
                                         />
 
                                         <label htmlFor='temp'>What temperature do you keep it in?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsTemp}
+                                            defaultValue={values.temp}
                                             autoFocus={true}
+                                            name='temp'
+                                            isSearchable
                                         />
                                     </Grid>
 
                                     <Grid item xs={12} sm={6}>
                                         <label htmlFor='lightIntensity'>How much light do you give it?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsLightIntensity}
+                                            defaultValue={values.lightIntensity}
                                             autoFocus={true}
+                                            name='lightIntensity'
+                                            isSearchable
                                         />
 
                                         <label htmlFor='lightType'>What type of light do you give it?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsLightType}
+                                            defaultValue={values.lightType}
                                             autoFocus={true}
+                                            name='lightType'
+                                            isSearchable
                                         />
                                     </Grid>
 
                                     <Grid item xs={12} sm={6}>
                                         <label htmlFor='water'>How often do you water?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsWater}
+                                            defaultValue={values.water}
                                             autoFocus={true}
+                                            name='water'
+                                            isSearchable
                                         />
 
                                         <label htmlFor='humidity'>How much humidity do you give it?</label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsHumidity}
+                                            defaultValue={values.humidity}
                                             autoFocus={true}
+                                            name='humidity'
+                                            isSearchable
                                         />
                                     </Grid>
 
@@ -166,12 +185,16 @@ const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
                                         <label htmlFor='location'>Where do you grow it?
                                             <span style={{ fontSize: '12px' }} ><em> (Can choose more than one)</em></span>
                                         </label>
-                                        <Select
+                                        <CreatableSelect
                                             className="col-12 px-lg-5 m-auto"
                                             styles = { customStyles }
                                             onChange={handleChange}
                                             options={optionsLocation}
+                                            defaultValue={values.location}
+                                            components={makeAnimated()}
                                             autoFocus={true}
+                                            name='location'
+                                            isSearchable
                                             isMulti
                                         />
                                     </Grid>

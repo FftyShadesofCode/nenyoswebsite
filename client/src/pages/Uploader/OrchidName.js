@@ -70,7 +70,7 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                                                 placeholder='Orchids Genera'
                                                 label='Orchid Genera'
                                                 onChange={handleChange('orchidGenera')}
-                                                defaultValue={values.orchidGenera}
+                                                value={values.orchidGenera}
                                                 variant='standard'
                                                 required
                                                 error
@@ -83,7 +83,7 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                                                 placeholder='Orchid Species'
                                                 label='Orchid Species'
                                                 onChange={handleChange('orchidSpecies')}
-                                                defaultValue={values.orchidSpecies}
+                                                value={values.orchidSpecies}
                                                 variant='standard'
                                                 required
                                                 error
