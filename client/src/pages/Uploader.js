@@ -9,6 +9,7 @@ import Confirmation from "./Uploader/Confirmation";
 import "../CSS Files/Uploader.css";
 
 export default class Uploader extends Component {
+
   state = {
     step: 1,
     firstName: "",
