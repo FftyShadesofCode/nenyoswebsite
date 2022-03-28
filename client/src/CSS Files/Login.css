@@ -194,16 +194,29 @@ button {
   padding-top: 20px;
 }
 
+.login-btn:hover {
+  background-color: var(--tertiary);
+}
+
 .reg-link {
   padding-top: 10px;
+  color: white;
+  border: 1px solid red;
 }
 
 .signup-link {
+  font-size: 20px;
   margin-top: 2rem;
+  color: white;
 }
 
-.signup-link:hover {
-  color: magenta;
+.signup-link a {
+  text-decoration: underline;
+  color: var(--tertiary);
+}
+.signup-link a:hover {
+  text-decoration: none;
+  color: var(--contrast);
 }
 
 .mail-id {

@@ -78,19 +78,21 @@
 // export default Login;
 
 import React, { useState } from "react";
-// import Signup from "./Signup";
+import Signup from "./Signup";
 import "../CSS Files/Login.css";
 import { Link } from "react-router-dom";
-// import email from "../Gallery/Login Images/email.png";
-// import lock from "../Gallery/Login Images/lock.png";
-import profile from "../Gallery/Login Images/icon.jpg";
 
-function Login() {
+export default function Login() {
   const [emaillog, setEmaillog] = useState("");
   const [passwordlog, setPasswordlog] = useState("");
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    let { username, password } = document.forms[0];
+    const userData = database.find((user) => user.username === username.value);
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className='main'>
         <div className='sub-main'>
           <div>
@@ -117,11 +119,14 @@ function Login() {
                   <button type='button'>Log In</button>
                 </Link>
               </div>
-              <div className='reg-link'>
+              {/* <div className='reg-link'>
                 <p>Don't have an account?</p>
                 <Link className='link' to='/signup'>
                   <li>Sign Up</li>
                 </Link>
+              </div> */}
+              <div className='signup-link'>
+                Don't have an account? <a href='/signup'>Sign Up!</a>
               </div>
             </div>
           </div>
@@ -130,5 +135,3 @@ function Login() {
     </form>
   );
 }
-
-export default Login;
