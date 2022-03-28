@@ -94,24 +94,24 @@ function Login() {
       <div className='main'>
         <div className='sub-main'>
           <div>
+            <h1 className='LHeader'>Log In</h1>
             <div className='imgs'>
               <div className='container-image'>
                 <img src={profile} alt='profile' className='profile' />
               </div>
             </div>
             <div className='inputs-container'>
-              {/* <h1 className='LHeader'>Login</h1> */}
-              <div>
-                <img src={email} alt='email' className='email-input' />
+              <div className='email-input'>
+                {/* <img src={email} alt='email' /> */}
                 <input
-                  type='email'
+                  type='text'
                   placeholder='Email'
                   className='fill'
                   onChange={(event) => setEmaillog(event.target.value)}
                 />
               </div>
               <div className='password-input'>
-                <img src={lock} alt='password' className='email' />
+                {/* <img src={lock} alt='password' /> */}
                 <input
                   type='password'
                   placeholder='Password'
