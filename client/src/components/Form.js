@@ -114,6 +114,8 @@ const Form = ({ handleClose }) => {
   //   </form>
   // );
 
+  //! MOVING TEXTFIELDS ABOVE DOWN TO INPUTS BELOW
+
   const renderErrorMessage = (name) =>
     name === errorMessages.name && (
       <div className='error'>{errorMessages.message}</div>
@@ -125,6 +127,7 @@ const Form = ({ handleClose }) => {
         <div className='input-container'>
           <input
             label='First Name'
+            placeholder=' First Name'
             variant='filled'
             required
             value={firstName}
@@ -133,10 +136,29 @@ const Form = ({ handleClose }) => {
           {renderErrorMessage("username")}
           <input
             label='Last Name'
+            placeholder=' Last Name'
             variant='filled'
             required
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
+          />
+          <input
+            label='Email'
+            placeholder=' Email'
+            variant='filled'
+            type='email'
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            label='Password'
+            placeholder=' Password'
+            variant='filled'
+            type='password'
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           {renderErrorMessage("password")}
         </div>
