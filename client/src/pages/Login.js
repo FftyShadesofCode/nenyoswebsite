@@ -46,20 +46,28 @@ function Login() {
     <div className='form'>
       <form onSubmit={handleSubmit}>
         <div className='input-container'>
-          <label>Username </label>
-          <input type='text' name='username' required />
+          <input
+            placeholder='  Username'
+            type='text'
+            name='username'
+            required
+          />
           {renderErrorMessage("username")}
         </div>
         <div className='input-container'>
-          <label>Password </label>
-          <input type='password' name='password' required />
+          <input
+            placeholder='  Password'
+            type='password'
+            name='password'
+            required
+          />
           {renderErrorMessage("password")}
         </div>
         <div className='button-container'>
           <input type='submit' />
         </div>
         <div className='signup-link'>
-          Don't have an account? <a href='/signup'>Join Us!</a>
+          Don't have an account? <a href='/signup'>Sign Up</a>
         </div>
       </form>
     </div>

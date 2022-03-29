@@ -6,7 +6,7 @@ import Logo from "./Gallery/logo.png";
 import "../src/CSS Files/App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Signup from "./components/Signup";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
