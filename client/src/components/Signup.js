@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: theme.spacing(2),
     width: "18vw",
-    height: "60vh",
-    marginTop: "10%",
+    height: "65vh",
+    marginTop: "8%",
     marginLeft: "40%",
     borderRadius: "2rem",
     backgroundColor: "transparent",
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #c9c9c980",
 
     "& .MuiTextField-root": {
-      margin: theme.spacing(1),
+      margin: theme.spacing(0.5),
       width: "19rem",
       backgroundColor: "white",
       borderRadius: "1rem",
@@ -37,6 +37,7 @@ const Signup = ({ handleClose }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
@@ -70,7 +71,15 @@ const Signup = ({ handleClose }) => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <TextField
-        label='Password'
+        label='Pick a Username'
+        variant='filled'
+        type='text'
+        required
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <TextField
+        label='Set your Password'
         variant='filled'
         type='password'
         required
