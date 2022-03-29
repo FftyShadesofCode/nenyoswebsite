@@ -11,10 +11,20 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     padding: theme.spacing(2),
+    width: "18vw",
+    height: "60vh",
+    marginTop: "10%",
+    marginLeft: "40%",
+    borderRadius: "2rem",
+    backgroundColor: "transparent",
+    backdropFilter: "blur(15px)",
+    border: "1px solid #c9c9c980",
 
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: "300px",
+      width: "19rem",
+      backgroundColor: "white",
+      borderRadius: "1rem",
     },
     "& .MuiButtonBase-root": {
       margin: theme.spacing(2),
@@ -22,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Form = ({ handleClose }) => {
+const Signup = ({ handleClose }) => {
   const classes = useStyles();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -36,6 +46,7 @@ const Form = ({ handleClose }) => {
 
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
+      <h1>Sign Up</h1>
       <TextField
         label='First Name'
         variant='filled'
@@ -73,9 +84,12 @@ const Form = ({ handleClose }) => {
         <Button type='submit' variant='contained' color='primary'>
           Sign Up
         </Button>
+        <div className='login-link'>
+          Already have an account? <a href='/login'>Log In</a>
+        </div>
       </div>
     </form>
   );
 };
 
-export default Form;
+export default Signup;

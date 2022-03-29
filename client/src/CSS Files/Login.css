@@ -86,6 +86,6 @@ input[type="submit"]:hover {
 }
 
 .signup-link a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--contrast);
 }
