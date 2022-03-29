@@ -76,7 +76,7 @@ function Login() {
   return (
     <div className='login-container'>
       <div className='login-form'>
-        <div className='title'>Log In</div>
+        <div className='login-title'>Log In</div>
         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
       </div>
     </div>

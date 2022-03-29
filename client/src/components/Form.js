@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { makeStyles } from "@material-ui/core";
-import TextField from "@material-ui/core/TextField";
+// import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import "../CSS Files/Signup.css";
 
@@ -114,8 +114,6 @@ const Form = ({ handleClose }) => {
   //   </form>
   // );
 
-  //! MOVING TEXTFIELDS ABOVE DOWN TO INPUTS BELOW
-
   const renderErrorMessage = (name) =>
     name === errorMessages.name && (
       <div className='error'>{errorMessages.message}</div>
@@ -126,57 +124,53 @@ const Form = ({ handleClose }) => {
       <form onSubmit={handleSubmit}>
         <div className='input-container'>
           <input
-            label='First Name'
-            placeholder=' First Name'
-            variant='filled'
+            placeholder='  First Name'
+            type='text'
+            name='firstname'
             required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
           />
           {renderErrorMessage("username")}
           <input
-            label='Last Name'
-            placeholder=' Last Name'
-            variant='filled'
+            placeholder='  Last Name'
+            type='text'
+            name='lastname'
             required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
           />
+          <input placeholder='  Email' type='text' name='email' required />
           <input
-            label='Email'
-            placeholder=' Email'
-            variant='filled'
-            type='email'
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            label='Password'
-            placeholder=' Password'
-            variant='filled'
+            placeholder='  Password'
             type='password'
+            name='password'
             required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
           />
           {renderErrorMessage("password")}
         </div>
-        <div className='button-container'>
-          <input type='submit' />
+        {/* <div>
+          <Button variant='contained' onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button type='submit' variant='contained' color='primary'>
+            Sign Up
+          </Button>
         </div>
-        <div className='signup-link'>
-          Don't have an account? <a href='/signup'>Sign Up</a>
+        <div className='login-link'>
+          Already have an account? <a href='/login'>Log In</a>
+        </div> */}
+        <div className='button-container'>
+          <input placeholder='Sign Up' type='submit' />
+        </div>
+        <div className='login-link'>
+          Already have an account? <a href='/signup'>Log In</a>
         </div>
       </form>
     </div>
   );
 
   return (
-    <div className='login-container'>
-      <div className='login-form'>
-        <div className='title'>Log In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+    <div className='signup-container'>
+      <div className='signup-form'>
+        <div className='signup-title'>Sign Up</div>
+        {isSubmitted ? <div>User has successfully signed up</div> : renderForm}
       </div>
     </div>
   );
