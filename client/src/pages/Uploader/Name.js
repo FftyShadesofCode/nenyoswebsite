@@ -3,6 +3,8 @@ import { Container, Typography, Grid, TextField, Button } from '@material-ui/cor
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 import {createTheme, CssBaseline, styled, ThemeProvider} from "@mui/material";
 
+import '../../CSS Files/Uploader.css'
+
 const Name = ({ nextStep, handleChange, values }) => {
 
   const Continue = (e) => {
@@ -60,7 +62,7 @@ const Name = ({ nextStep, handleChange, values }) => {
                             <form action=''>
                                 <Grid container spacing={2}>
                                     <Grid item xs={12}>
-                                        <CssTextField
+                                        <TextField
                                             placeholder='First Name'
                                             label='First Name'
                                             onChange={handleChange('firstName')}
@@ -73,7 +75,7 @@ const Name = ({ nextStep, handleChange, values }) => {
                                     </Grid>
                                     <br/>
                                     <Grid item xs={12}>
-                                        <CssTextField
+                                        <TextField
                                             placeholder='Last Name'
                                             label='Last Name'
                                             onChange={handleChange('lastName')}

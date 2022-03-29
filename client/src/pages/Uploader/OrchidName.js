@@ -3,6 +3,8 @@ import { Container, Typography, Grid, TextField, Button } from '@material-ui/cor
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 import {createTheme, CssBaseline, styled, ThemeProvider} from "@mui/material";
 
+import '../../CSS Files/Uploader.css'
+
 const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
 
     const Continue = e => {
@@ -66,7 +68,7 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                                 <form action=''>
                                     <Grid container spacing={2}>
                                         <Grid item xs={12}>
-                                            <CssTextField
+                                            <TextField
                                                 placeholder='Orchids Genera'
                                                 label='Orchid Genera'
                                                 onChange={handleChange('orchidGenera')}
@@ -79,7 +81,7 @@ const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
                                         </Grid>
                                         <br/>
                                         <Grid item xs={12}>
-                                            <CssTextField
+                                            <TextField
                                                 placeholder='Orchid Species'
                                                 label='Orchid Species'
                                                 onChange={handleChange('orchidSpecies')}

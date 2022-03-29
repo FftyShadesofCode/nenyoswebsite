@@ -5,6 +5,8 @@ import CreatableSelect from 'react-select/creatable'
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import makeAnimated from 'react-select/animated'
 
+import '../../CSS Files/Uploader.css'
+
 const CareInfo = ({ prevStep, nextStep, handleChange, values }) => {
 
     const optionsFragrant = [
