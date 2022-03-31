@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& .MuiButtonBase-root": {
       margin: theme.spacing(2),
+      display: "flex",
     },
   },
 }));
@@ -87,11 +88,11 @@ const Signup = ({ handleClose }) => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <div>
-        <Button variant='contained' onClick={handleClose}>
-          Cancel
-        </Button>
         <Button type='submit' variant='contained' color='primary'>
           Sign Up
+        </Button>
+        <Button variant='contained' onClick={handleClose}>
+          Cancel
         </Button>
         <div className='login-link'>
           Already have an account? <a href='/login'>Log In</a>
