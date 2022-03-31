@@ -38,7 +38,6 @@ const Signup = ({ handleClose }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
@@ -70,14 +69,6 @@ const Signup = ({ handleClose }) => {
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-      />
-      <TextField
-        label='Pick a Username'
-        variant='filled'
-        type='text'
-        required
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
       />
       <TextField
         label='Set your Password'

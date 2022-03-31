@@ -14,11 +14,7 @@ function Login() {
 
   async function handleSignup() {
     setLoading(true);
-    try {
       await signup(emailRef.current.value, passwordRef.current.value);
-    } catch {
-      alert("Error!");
-    }
     setLoading(false);
   }
 
