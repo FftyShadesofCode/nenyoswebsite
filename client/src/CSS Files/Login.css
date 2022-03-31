@@ -1,16 +1,27 @@
 .login-container {
+  position: absolute;
+  top: 0;
+  left: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   height: 100vh;
+  width: 35vw;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 form {
   display: flex;
   flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 2.5rem;
+  border: var(--border);
+  border-radius: 0.5rem;
 }
 
 input[type="text"],
@@ -36,17 +47,47 @@ input[type="submit"]:hover {
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: .5rem .5rem;
+}
+
+button {
+  margin-top: 2rem;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  background: var(--tertiary);
+  padding: 25px 25px;
+  text-decoration: none;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   backdrop-filter: blur(15px);
   border: 1px solid #c9c9c980;
   padding: 2rem;
+  height: 50vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1.5rem;
+}
+
+.login-form .title {
+  font-size: 5rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+.login-form .currentUser {
+  color: white;
 }
 
 .list-container {
@@ -71,6 +112,7 @@ input[type="submit"]:hover {
   font-size: 1.5rem;
   gap: 1rem;
   margin: 1rem;
+  width: 25vw;
   color: #fff;
 }
 

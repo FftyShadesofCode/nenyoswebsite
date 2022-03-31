@@ -1,85 +1,81 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { signup, login, logout, useAuth } from '../firebase'
+
+import UserProfile from './UserProfile'
+
 import "../CSS Files/Login.css";
 
+
+
 function Login() {
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false)
+  const currentUser = useAuth()
 
-  const database = [
-    {
-      username: "user1",
-      password: "pass1",
-    },
-    {
-      username: "user2",
-      password: "pass2",
-    },
-  ];
+  const emailRef = useRef()
+  const passwordRef = useRef()
 
-  const errors = {
-    username: "Invalid Username",
-    password: "Invalid Password",
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let { username, password } = document.forms[0];
-    const userData = database.find((user) => user.username === username.value);
-
-    if (userData) {
-      if (userData.password !== password.value) {
-        setErrorMessages({ name: "password", message: errors.password });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      setErrorMessages({ name: "username", message: errors.username });
+  async function handleSignup() {
+    setLoading(true);
+    try {
+      await signup(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      alert("Error!");
     }
-  };
+    setLoading(false);
+  }
 
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className='error'>{errorMessages.message}</div>
-    );
+  async function handleLogin() {
+    setLoading(true);
+    try {
+      await login(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      alert("Error!");
+    }
+    setLoading(false);
+  }
 
-  const renderForm = (
-    <div className='form'>
-      <form onSubmit={handleSubmit}>
-        <div className='input-container'>
-          <input
-            placeholder='  Username'
-            type='text'
-            name='username'
-            required
-          />
-          {renderErrorMessage("username")}
-        </div>
-        <div className='input-container'>
-          <input
-            placeholder='  Password'
-            type='password'
-            name='password'
-            required
-          />
-          {renderErrorMessage("password")}
-        </div>
-        <div className='button-container'>
-          <input type='submit' />
-        </div>
-        <div className='signup-link'>
-          Don't have an account? <a href='/signup'>Sign Up</a>
-        </div>
-      </form>
-    </div>
-  );
+  async function handleLogout() {
+    setLoading(true);
+    try {
+      await logout();
+    } catch {
+      alert("Error!");
+    }
+    setLoading(false);
+  }
 
   return (
-    <div className='login-container'>
-      <div className='login-form'>
-        <div className='title'>Log In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+      <div className="login-container">
+
+        {!currentUser &&
+            <div className='login-form'>
+              <div className='title'>Log In</div>
+              <div className='currentUser'>Currently logged in as: { currentUser?.email } </div>
+
+              <form>
+                <div className="input-container">
+                  <input ref={emailRef} type='email' placeholder="Email" />
+                </div>
+                <div className='input-container'>
+                  <input ref={passwordRef} type="password" placeholder="Password" />
+                </div>
+
+                <div className='button-container'>
+                  <button disabled={ loading } onClick={handleSignup}><a href='../components/Signup.js'>Sign Up</a></button>
+                  <button disabled={ loading } onClick={handleLogin}>Log In</button>
+                </div>
+              </form>
+            </div>
+        }
+
+        {currentUser &&
+            <>
+              <UserProfile />
+              <button disabled={ loading || !currentUser } onClick={handleLogout}>Log Out</button>
+            </>
+        }
+
       </div>
-    </div>
   );
 }
 

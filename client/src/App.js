@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
 import January2022 from "./pages/gallery2022/January";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
           <Route exact path='/jan-22' element={<January2022 />} />
+          <Route exact path='/user-profile' element={<UserProfile />} />
         </Routes>
       </Router>
     </div>
