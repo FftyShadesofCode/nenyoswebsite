@@ -91,8 +91,8 @@ const Signup = ({ handleClose }) => {
         <Button type='submit' variant='contained' color='primary'>
           Sign Up
         </Button>
-        <Button variant='contained' onClick={handleClose}>
-          Cancel
+        <Button variant='contained' onClick={handleClose} color='secondary'>
+          <a href='/'>Cancel</a>
         </Button>
         <div className='login-link'>
           Already have an account? <a href='/login'>Log In</a>
