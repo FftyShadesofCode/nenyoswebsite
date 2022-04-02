@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "orchidGenera": "Cattleya",
+    "orchidSpecies": "Dowiana var Rosita",
+    "basicInfo": [
+      {
+        "fragrant": "No"
+      }
+    ],
+    "careInfo": [
+      {
+        "temp": "Intermediate",
+        "lightIntensity": "Bright",
+        "lightType": "Natural Light",
+        "water": "Intermittently",
+        "humidity": "Intermediate",
+        "location": "Greenhouse All Year"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "orchidGenera": "Dendrobium",
+    "orchidSpecies": "Anosmum",
+    "basicInfo": [
+      {
+        "fragrant": "Yes"
+      }
+    ],
+    "careInfo": [
+      {
+        "temp": "Intermediate",
+        "lightIntensity": "Bright",
+        "lightType": "Natural Light",
+        "water": "Intermittently",
+        "humidity": "Intermediate",
+        "location": "Greenhouse All Year"
+      }
+    ]
+  }
+]

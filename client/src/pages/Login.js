@@ -1,82 +1,110 @@
-import React, { useRef, useState } from "react";
-import { signup, login, logout, useAuth } from "../firebase";
-
-import UserProfile from "./UserProfile";
+import React, {useEffect, useRef, useState, useContext} from "react";
+import AuthContext from '../context/AuthProvider'
 
 import "../CSS Files/Login.css";
 
-function Login() {
-  const [loading, setLoading] = useState(false);
-  const currentUser = useAuth();
+import axios from '../api/axios'
+const LOGIN_URL = '/auth'
 
-  const emailRef = useRef();
-  const passwordRef = useRef();
+const Login = () => {
+  const { setAuth } = useContext(AuthContext)
+  const emailRef = useRef()
+  const errRef = useRef()
 
-  async function handleSignup() {
-    setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
-    setLoading(false);
-  }
+  const [email, setEmail] = useState('')
+  const [pwd, setPwd] = useState('')
+  const [errMsg, setErrMsg] = useState('')
+  const [success, setSuccess] = useState(false)
 
-  async function handleLogin() {
-    setLoading(true);
+  useEffect(() => {
+    emailRef.current.focus()
+  }, [])
+
+  useEffect(() => {
+    setErrMsg('')
+  }, [email, pwd])
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
     try {
-      await login(emailRef.current.value, passwordRef.current.value);
-    } catch {
-      alert("Error!");
+      const response = await axios.post(LOGIN_URL,
+          JSON.stringify({email, pwd}),
+      {
+          headers: { 'Content-Type': 'application/json'},
+          withCredentials: true
+        }
+      )
+      const accessToken = response?.data?.accessToken
+      const roles = response?.data?.roles
+      setAuth({ email, pwd, roles, accessToken })
+      setEmail('')
+      setPwd('')
+      setSuccess(true)
+    } catch (err) {
+        if (!err?.response) {
+          setErrMsg('No Server Response')
+        } else if (err.response?.status === 400) {
+          setErrMsg('Missing Email or Password')
+        } else if (err.response?.status === 401) {
+          setErrMsg('Unauthorized')
+        } else {
+          setErrMsg('Login Failed')
+        }
+        errRef.current.focus()
     }
-    setLoading(false);
-  }
 
-  async function handleLogout() {
-    setLoading(true);
-    try {
-      await logout();
-    } catch {
-      alert("Error!");
-    }
-    setLoading(false);
+
   }
 
   return (
-    <div className='login-container'>
-      {!currentUser && (
-        <div className='login-form'>
-          <div className='title'>Log In</div>
-          <div className='currentUser'>
-            Currently logged in as: {currentUser?.email}{" "}
-          </div>
+      <>
+        {success ? (
+            <section>
+              <h1>You are logged in!</h1>
+              <br />
+              <p>
+                <a href='/user-profile'>Go to Profile</a>
+              </p>
+            </section>
+            ) : (
+          <section>
+            <p ref={errRef} className={errMsg ? 'errMsg' : 'offscreen'} aria-live='assertive'>{errMsg}</p>
+            <h1>Log In</h1>
+            <form onSubmit={handleSubmit} >
+              <label htmlFor='email'>Email:</label>
+              <input
+                  type='email'
+                  id='email'
+                  ref={emailRef}
+                  autoComplete='off'
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  required
+              />
 
-          <form>
-            <div className='input-container'>
-              <input ref={emailRef} type='email' placeholder='Email' />
-            </div>
-            <div className='input-container'>
-              <input ref={passwordRef} type='password' placeholder='Password' />
-            </div>
+              <label htmlFor='password'>Password:</label>
+              <input
+                  type='password'
+                  id='password'
+                  autoComplete='off'
+                  onChange={(e) => setPwd(e.target.value)}
+                  value={pwd}
+                  required
+              />
 
-            <div className='button-container'>
-              <button disabled={loading} onClick={handleSignup}>
-                <a href='/signup'>Sign Up</a>
-              </button>
-              <button disabled={loading} onClick={handleLogin}>
-                Log In
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
-
-      {currentUser && (
-        <>
-          <UserProfile />
-          <button disabled={loading || !currentUser} onClick={handleLogout}>
-            Log Out
-          </button>
-        </>
-      )}
-    </div>
-  );
+              <button>Log In</button>
+              <p>
+                Need an Account?<br/>
+                <span className='line'>
+                  <a href='/signup'>Sign Up</a>
+                </span>
+              </p>
+            </form>
+          </section>
+            )}
+      </>
+  )
 }
 
 export default Login;

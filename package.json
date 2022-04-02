@@ -2,11 +2,11 @@
     "name": "nenyoswebsite",
     "version": "0.1.0",
     "private": true,
-    "main": "./backend/app.js",
+    "main": "./backend/server.js",
     "scripts": {
-        "start": "cd backend && node ./backend/app.js",
+        "start": "cd backend && node ./backend/server.js",
         "imain": "npm i",
-        "server": "cd backend && nodemon ./backend/app.js --ignore client ",
+        "server": "cd backend && nodemon ./backend/server.js --ignore client ",
         "iserver": "cd backend && npm i --force",
         "client": "npm run start --prefix client",
         "iclient": "cd client && npm i --force",
@@ -42,7 +42,6 @@
         "@emotion/styled": "^11.8.1",
         "@mui/material": "^5.5.2",
         "eslint-config-react-app": "^7.0.0",
-        "http-errors": "^2.0.0",
-        "react-select": "^5.2.2"
+        "http-errors": "^2.0.0"
     }
 }

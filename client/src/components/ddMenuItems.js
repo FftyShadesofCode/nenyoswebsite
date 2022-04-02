@@ -90,8 +90,4 @@ export const menuItems = [
     title: "Log In",
     link: "/login",
   },
-  // {
-  //   title: "Sign Up",
-  //   link: "/signup",
-  // },
 ];
