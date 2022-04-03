@@ -1,5 +1,5 @@
 const data = {
-    orchids: require('../data/orchids.json'),
+    orchids: require('../model/orchids.json'),
     setOrchids: function (data) { this.orchids = data}
 }
 
