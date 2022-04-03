@@ -144,5 +144,7 @@ table {
 
 body {
   background-size: cover;
-  background: url("../Gallery/tropical-jungles-of-oslo-norway-2021-09-04-08-54-57-utc.jpg") no-repeat fixed;
+  /* background: url("../Gallery/tropical-jungles-of-oslo-norway-2021-09-04-08-54-57-utc.jpg")
+    no-repeat fixed; */
+  background-color: #95d5b2;
 }
