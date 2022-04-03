@@ -29,7 +29,6 @@ export default function Home() {
             </p>
           </div>
           <img className='about-us-img' src={Image1} alt='' />
-          {/* <img className='about-us-img' src={Img1} alt='' /> */}
         </div>
         <div className='about-orchids'>
           <div className='about-orchids-p'>

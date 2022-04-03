@@ -16,7 +16,7 @@
   text-align: center;
   width: 82rem;
   margin-left: 20vw;
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: #081c15;
 }
 
@@ -27,7 +27,6 @@
 .banner-text h4 {
   font-size: 2rem;
   margin-top: 1rem;
-  /* text-decoration: underline; */
 }
 
 .about-container {
@@ -76,9 +75,10 @@
 }
 
 .about-us-img {
-  height: 30rem;
-  width: 40rem;
+  height: 100%;
+  width: 100%;
   display: inline-block;
+  border-radius: 3rem;
 }
 
 .about-orchids {
@@ -102,15 +102,11 @@
   text-align: center;
 }
 
-/* .about-orchids-p-header {
-  margin-bottom: 2rem;
-  font-size: 5rem;
-  font-weight: 600;
-} */
-
 .about-orchids-img {
-  height: 30rem;
-  width: 40rem;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 3rem;
 }
 
 /* For Tablets */
