@@ -1,14 +1,12 @@
 import React from "react";
 import "../CSS Files/Home.css";
-import Image1 from "../Gallery/Stock Photos/bloom-of-orchid-2021-08-26-15-58-27-utc.jpg";
-import Image2 from "../Gallery/Stock Photos/close-up-of-thai-orchid-on-a-blurred-background-m-2021-12-14-02-37-59-utc.jpg";
-// import Image3 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-water-drops-2021-08-27-09-32-39-utc.jpg";
+import Image1 from "../Gallery/Stock Photos/orchid-15.png";
+import Image2 from "../Gallery/Stock Photos/openorchid.png";
 
 export default function Home() {
   return (
     <>
       <div className='home-banner'>
-        {/* <img className='h1-img' src={Image3} alt='' /> */}
         <div className='banner-text'>
           <h1>Welcome to NENYOS</h1>
           <h4>The North Eastern New York Orchid Society</h4>
@@ -28,7 +26,7 @@ export default function Home() {
               greenhouse.
             </p>
           </div>
-          <img className='about-us-img' src={Image1} alt='' />
+          <img className='about-us-img' src={Image2} alt='' />
         </div>
         <div className='about-orchids'>
           <div className='about-orchids-p'>
@@ -54,7 +52,7 @@ export default function Home() {
               rule of thumb, hybrid orchids are less demanding than the species.
             </p>
           </div>
-          <img className='about-orchids-img' src={Image2} alt='' />
+          <img className='about-orchids-img' src={Image1} alt='' />
         </div>
       </div>
     </>

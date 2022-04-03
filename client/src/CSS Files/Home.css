@@ -17,6 +17,7 @@
   width: 82rem;
   margin-left: 20vw;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   color: #081c15;
 }
 
@@ -38,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #081c15;
   margin: 2rem 100px 100px;
 }
 
@@ -54,7 +55,6 @@
 
 .about-us-p-header,
 .about-orchids-p-header {
-  text-decoration: underline;
   font-size: 5rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -64,14 +64,16 @@
   margin: 0 0 100px;
   width: 75vw;
   height: 30vw;
-  border-radius: 15px;
+  border-radius: 3rem;
   overflow: hidden;
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(201, 201, 201, 0.5);
+  /* backdrop-filter: blur(15px); */
+  /* border: 1px solid rgba(201, 201, 201, 0.5); */
+  background-color: #fff;
+  /* border: 1px solid #081c15; */
 }
 
 .about-us-img {
@@ -84,15 +86,15 @@
 .about-orchids {
   margin: 0 0 100px;
   width: 75vw;
-  height: 30vw;
-  border-radius: 15px;
+  /* height: 37vw; */
+  height: inherit;
+  border-radius: 3rem;
   overflow: hidden;
   padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(201, 201, 201, 0.5);
+  background-color: #fff;
 }
 
 .about-orchids-p {
@@ -103,8 +105,8 @@
 }
 
 .about-orchids-img {
-  height: 100%;
-  width: 100%;
+  height: 60vh;
+  width: 50%;
   display: inline-block;
   border-radius: 3rem;
 }
