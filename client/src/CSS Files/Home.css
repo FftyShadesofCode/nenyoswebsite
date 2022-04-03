@@ -14,13 +14,20 @@
 .banner-text {
   color: white;
   text-align: center;
-  position: absolute;
   width: 82rem;
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 4px #000;
+  margin-left: 20vw;
+  margin-top: 2rem;
+  color: #081c15;
+}
+
+.banner-text h1 {
+  font-size: 5rem;
+}
+
+.banner-text h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  /* text-decoration: underline; */
 }
 
 .about-container {
@@ -46,7 +53,8 @@
   position: center;
 }
 
-.about-us-p-header, .about-orchids-p-header {
+.about-us-p-header,
+.about-orchids-p-header {
   text-decoration: underline;
   font-size: 5rem;
   font-weight: 600;
@@ -111,11 +119,11 @@
   .home-banner {
     position: relative;
   }
-  
+
   .home-banner img {
     height: 20rem;
   }
-  
+
   .banner-text {
     font-size: 3rem;
     position: absolute;
@@ -133,20 +141,23 @@
     max-height: 100%;
   }
 
-  .about-us, .about-orchids {
+  .about-us,
+  .about-orchids {
     height: inherit;
     width: inherit;
     margin-left: 0;
   }
 
-  .about-us-img, .about-orchids-img {
+  .about-us-img,
+  .about-orchids-img {
     display: none;
     /* height: 14rem;
     width: 20rem;
     display: inline-block; */
   }
 
-  .about-us-p, .about-orchids-p {
+  .about-us-p,
+  .about-orchids-p {
     margin: 1rem;
     font-size: 1.5rem;
     height: inherit;
@@ -154,7 +165,8 @@
     /* border: 1px solid turquoise; */
   }
 
-  .about-us-p-header, .about-orchids-p-header {
+  .about-us-p-header,
+  .about-orchids-p-header {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
