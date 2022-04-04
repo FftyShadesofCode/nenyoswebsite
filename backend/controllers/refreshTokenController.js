@@ -1,34 +1,31 @@
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data }
-}
-
+const User = require('../model/User')
 const jwt = require('jsonwebtoken')
-require('dotenv').config()
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
     const cookies = req.cookies
-    if (!cookies?.jwt) return res.sendStatus(401)
+    if (!cookies?.jwt)
+        return res.sendStatus(401)
     const refreshToken = cookies.jwt
 
-    const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken)
+    const foundUser = await User.findOne({ refreshToken }).exec()
     if (!foundUser)
         return res.sendStatus(403)
     jwt.verify(
         refreshToken,
         process.env.REFRESH_TOKEN_SECRET,
         (err, decoded) => {
-            if (err ||  foundUser.user !== decoded.user)
+            if (err || foundUser.user !== decoded.user)
                 return res.sendStatus(403)
             const accessToken = jwt.sign(
                 {
-                    "user": decoded.user },
+                    "user": decoded.user
+                },
                 process.env.ACCESS_TOKEN_SECRET,
                 {
                     expiresIn: '7d'
                 }
             )
-            res.json({ accessToken })
+            res.json({accessToken})
         }
     )
 }

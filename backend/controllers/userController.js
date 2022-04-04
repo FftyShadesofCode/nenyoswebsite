@@ -1,54 +1,60 @@
-const data = {
-    user: require('../model/user.json'),
-    setUser: function (data) { this.user = data}
+const User = require('../model/User')
+
+const getAllUsers = async (req, res) => {
+    const users = await User.find()
+    if (!users)
+        return res.status(204).json({'message': 'No users found.'})
 }
 
-const getAllUsers = (req, res) => {
-    res.json(data.user)
-}
-
-const createNewUser = (req, res) => {
-    const newUser = {
-        id: data.user[data.user.length - 1].id + 1 || 1,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName
+const createNewUser = async (req, res) => {
+    if (!req?.body?.firstName || !req?.body?.lastName) {
+        return res.status(400).json({'message': 'First and Last Names are required.'})
     }
 
-    if (!newUser.firstName || !newUser.lastName) {
-        return res.status(400).json({ 'message': 'First and Last names are required.' })
-    }
+    try {
+        const result = await User.create({
+            firstName: req.body.firstName,
+            lastName: req.body.lastName
+        })
 
-    data.setUser([...data.user, newUser])
-    res.status(201).json(data.user)
+        res.status(201).json(result)
+    } catch (err) {
+        console.error(err)
+    }
 }
 
-const updateUser = (req, res) => {
-    const user = data.user.find(user => user. parseInt(req.body.id))
+const updateUser = async (req, res) => {
+    if (!req?.body?.id) {
+        return res.status(400).json({ 'message': 'ID parameter is required.'})
+    }
+
+    const user = await User.findOne({ _id: req.body.id }).exec()
     if (!user) {
-        return res.status(400).json({ "message": `User ${req.body.id} not found.`})
+        return res.status(204).json({ "message": `No user matches ID ${req.body.id}`})
     }
-    if (req.body.firstName) user.firstName = req.body.firstName
-    if (req.body.lastName) user.lastName = req.body.lastName
-    const filteredArray = data.user.filter(user => user.id !== parseInt(req.body.id))
-    const unsortedArray = [...filteredArray, user]
-    data.setUser(unsortedArray.sort((a, b) => a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
-    res.json(data.user)
+    if (req.body?.firstName) user.firstName = req.body.firstName
+    if (req.body?.lastName) user.lastName = req.body.lastName
+    const result = await user.save()
+    res.json(result)
 }
 
-const deleteUser = (req, res) => {
-    const user = data.user.find(user => user.id === parseInt(req.body.id))
+const deleteUser = async (req, res) => {
+    if (!req?.body?.id)
+        return res.status(400).json({ 'message': 'User ID required.' })
+    const user = await User.findOne({ _id: req.body.id }).exec()
     if (!user) {
-        return res.status(400).json({ "message": `User ${req.body.id} not found.`})
+        return res.status(204).json({ "message": `No user matches ID ${req.body.id}`})
     }
-    const filteredArray = data.user.filter(user => user.id !== parseInt(req.body.id))
-    data.setUser([...filteredArray])
-    res.json(data.user)
+    const result = await user.deleteOne({ _id: req.body.id })
+    res.json(result)
 }
 
-const getUser = (req, res) => {
-    const user = data.user.find(user => user.id === parseInt(req.params.id))
+const getUser = async (req, res) => {
+    if (!req?.params?.id)
+        return res.status(400).json({'message': 'User ID required.'})
+    const user = await User.findOne({_id: req.params.id}).exec()
     if (!user) {
-        return res.status(400).json({ "message": `User ${req.params.id} not found.`})
+        return res.status(204).json({ "message": `No user matches ID ${req.params.id}`})
     }
     res.json(user)
 }

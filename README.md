@@ -1,6 +1,8 @@
 # nenyoswebsite
 Website for North Eastern New York Orchid Society
 
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button-v2.svg)](https://glitch.com/edit/#!/remix/nenyoswebsite)
+
 First run "npm i" in the main folder. This installs a Dev-dependency script that is the mechanics of the 
 multi-script functionality
 
