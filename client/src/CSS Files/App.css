@@ -134,6 +134,18 @@ table {
   --border: 1px solid #474a4d;
   --border-radius: 8px;
   --speed: 500ms;
+
+  /* Green Palette from Coolors */
+
+  --one: #081c15;
+  --two: #1b4332;
+  --three: #2d6a4f;
+  --four: #40916c;
+  --five: #52b788;
+  --six: #74c69d;
+  --seven: #95d5b2;
+  --eight: #b7e4c7;
+  --nine: #d8f3dc;
 }
 
 * {
