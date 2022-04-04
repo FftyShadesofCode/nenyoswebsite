@@ -1,8 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  useState,
+  useEffect,
+  useRef
+} from "react";
 import Dropdown from "./Dropdown";
-import "../CSS Files/App.css";
+import '../CSS Files/App.css'
 
-const MenuItems = ({ items, depthLevel }) => {
+const MenuItems = ({items, depthLevel}) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef();
@@ -10,7 +14,7 @@ const MenuItems = ({ items, depthLevel }) => {
   useEffect(() => {
     const handler = (event) => {
       if (dropdown && ref.current && !ref.current.contains(event.target)) {
-        setDropdown(true);
+        setDropdown(false);
       }
     };
     document.addEventListener("mousedown", handler);
@@ -30,35 +34,17 @@ const MenuItems = ({ items, depthLevel }) => {
     window.innerWidth > 960 && setDropdown(false);
   };
 
-  return (
-    <li
-      className='menu-items'
-      ref={ref}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
-      {items.submenu ? (
+  return ( <li className = "menu-items" ref = {ref} onMouseEnter = {onMouseEnter} onMouseLeave = {onMouseLeave} >
+    {items.submenu ? (
         <>
-          <button
-            type='button'
-            aria-haspopup='menu'
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
-          >
-            {items.title}{" "}
-            {depthLevel > 0 ? <span>&raquo;</span> : <span className='arrow' />}
+          <button type = "button" aria-haspopup = "menu" aria-expanded = {dropdown ? "true" : "false"}
+          onClick = {() => setDropdown((prev) => !prev)} >
+            {items.title} {" "} {depthLevel > 0 ? < span > &raquo; < /span> : <span className="arrow" /> }
           </button>
-          <Dropdown
-            depthLevel={depthLevel}
-            submenus={items.submenu}
-            dropdown={dropdown}
-          />
-        </>
-      ) : (
-        <a href={items.link}>{items.title}</a>
-      )}
-    </li>
-  );
-};
+          <Dropdown depthLevel = {depthLevel} submenus = {items.submenu} dropdown = {dropdown}/>
+            </> ) : ( <a href = "/#" > {items.title} < /a>)}
+          </li>
+      );
+    };
 
-export default MenuItems;
+    export default MenuItems;

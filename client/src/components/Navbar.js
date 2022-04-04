@@ -1,22 +1,22 @@
-import { menuItems } from "./ddMenuItems";
-import "../CSS Files/Navbar.css";
+import {
+    menuItems
+} from "./ddMenuItems";
 import MenuItems from "./MenuItems";
+import '../CSS Files/Navbar.css'
 
 const Navbar = () => {
-  return (
-    <nav>
-      <div className='nav'>
-        <ul className='menus'>
-          {menuItems.map((menu, index) => {
-            const depthLevel = 0;
-            return (
-              <MenuItems items={menu} key={index} depthLevel={depthLevel} />
-            );
-          })}
-        </ul>
-      </div>
-    </nav>
-  );
+    return (
+        <nav>
+            <ul className = "menus" > {
+                menuItems.map((menu, index) => {
+                    const depthLevel = 0;
+                    return <MenuItems items = {menu} key = {index} depthLevel = {depthLevel}
+                    />;
+                })
+            }
+            </ul>
+        </nav>
+    );
 };
 
 export default Navbar;
