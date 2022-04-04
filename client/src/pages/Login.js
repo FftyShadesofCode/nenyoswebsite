@@ -89,7 +89,6 @@ const Login = () => {
                 value={email}
                 required
               />
-
               {/* <label htmlFor='password'>Password:</label> */}
               <input
                 placeholder='   Password'
@@ -106,10 +105,10 @@ const Login = () => {
               <div className='signup-link'>
                 <p>
                   Need an Account?
-                  <br />
-                  <span className='line'>
-                    <a href='/signup'>Sign Up Here</a>
-                  </span>
+                  {/* <br /> */}
+                  {/* <span className='line'> */}
+                  <a href='/signup'> Sign Up</a>
+                  {/* </span> */}
                 </p>
               </div>
             </form>
