@@ -1,6 +1,4 @@
-import {
-    menuItems
-} from "./ddMenuItems";
+import { menuItems } from "./ddMenuItems";
 import MenuItems from "./MenuItems";
 import '../CSS Files/Navbar.css'
 
@@ -12,8 +10,7 @@ const Navbar = () => {
                     const depthLevel = 0;
                     return <MenuItems items = {menu} key = {index} depthLevel = {depthLevel}
                     />;
-                })
-            }
+                })}
             </ul>
         </nav>
     );
