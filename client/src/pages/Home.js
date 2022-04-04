@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS Files/Home.css";
 import Image1 from "../Gallery/Stock Photos/orchid-15.png";
-import Image2 from "../Gallery/Stock Photos/openorchid.png";
+import Image2 from "../Gallery/Phalaenopsis-3.png";
 
 export default function Home() {
   return (
