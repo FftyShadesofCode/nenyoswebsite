@@ -35,7 +35,7 @@ header {
 }
 
 .menu-items {
-  position: relative;
+  position: center;
   text-align: center;
   width: 20rem;
   font-size: 1.25rem;
