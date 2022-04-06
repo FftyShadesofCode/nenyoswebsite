@@ -1,9 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./components/Navbar";
-// import Logo from "./Gallery/logo.png";
 
+// CSS Files
+import "../src/CSS Files/Footer.css";
 import "../src/CSS Files/App.css";
+
+// Pages and Components
+import NavBar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -21,9 +24,6 @@ function App() {
       <Router basename='/'>
         <header>
           <div className='nav-area'>
-            {/* <a href='/' className='logo'>
-              <img src={Logo} alt='NENYOS Logo' className='logo-image' />
-            </a> */}
             <NavBar />
           </div>
         </header>
@@ -38,8 +38,8 @@ function App() {
           <Route exact path='/user-profile' element={<UserProfile />} />
           <Route exact path='/devteam' element={<DevTeam />} />
         </Routes>
-        <Footer />
       </Router>
+      <Footer />
     </div>
   );
 }

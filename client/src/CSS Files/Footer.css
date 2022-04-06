@@ -1,10 +1,9 @@
-footer {
+.footer-container {
   display: flex;
   justify-content: space-evenly;
   height: 4rem;
-  background-color: #7fbf7c;
+  background-color: var(--four);
   padding: 1% 4% 0 4%;
-  position: fixed;
   bottom: 0px;
   width: 100%;
 }
@@ -12,9 +11,13 @@ footer {
 footer a {
   margin-right: 2rem;
   text-decoration: none;
-  color: darkgreen;
+  color: var(--nine);
 }
 
 footer a:hover {
+  color: #fff;
+}
+
+.copyright {
   color: #fff;
 }

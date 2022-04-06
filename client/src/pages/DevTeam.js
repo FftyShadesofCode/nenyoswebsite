@@ -1,12 +1,13 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import "../CSS Files/DevTeam.css";
+import "../CSS Files/Footer.css";
 
 function DevTeam() {
   return (
     <div className='background'>
       <div className='team'>
-        <h1>Meet the Dev Team</h1>
+        <h1>Meet BroCode</h1>
       </div>
       <div className='container'>
         <div className='member'>

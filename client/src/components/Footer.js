@@ -8,7 +8,7 @@ function Footer() {
         <p>Copyright © 2022 NENYOS. All Rights Reserved</p>
       </div>
       <div className='team-link'>
-        <a href='/devteam'>Meet the Dev Team</a>
+        Site built by <a href='/devteam'>BroCode</a>
       </div>
     </footer>
   );
