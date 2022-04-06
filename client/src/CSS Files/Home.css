@@ -112,10 +112,17 @@
 }
 
 .about-orchids-p {
-  margin-left: 1rem;
-  font-size: 1.8rem;
+  /*margin-left: 1rem;*/
+  /*font-size: 1.8rem;*/
+  /*font-weight: 400;*/
+  /*text-align: center;*/
+  margin: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
+  width: inherit;
+  height: inherit;
+  position: center;
 }
 
 .about-orchids-img {

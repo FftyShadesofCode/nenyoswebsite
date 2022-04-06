@@ -11,6 +11,7 @@ header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07);
   overflow: hidden;
   color: white;
+  z-index: -9999;
 }
 
 div .nav-area {
@@ -23,6 +24,7 @@ div .nav-area {
   height: 4rem;
   font-size: 1.25rem;
   color: white;
+  z-index: -9999;
 }
 
 .nav .navbar {
@@ -31,6 +33,7 @@ div .nav-area {
   justify-content: space-between;
   padding: 10px 0;
   color: white;
+  z-index: -9999;
 }
 
 .navbar-nav a {
@@ -41,6 +44,10 @@ div .nav-area {
   margin: 0 25px;
   width: 10rem;
   text-wrap: none;
+}
+
+.navbar .dropdown-menu .show {
+  z-index: 9999;
 }
 
 .nav-area form {
