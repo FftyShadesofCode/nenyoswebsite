@@ -17,7 +17,7 @@ function DevTeam() {
           />
           <div className='member-title'>
             <h3>
-              Philip R. McDavid
+              Philip R. McDavid{" "}
               <a
                 href='https://github.com/FftyShadesofCode'
                 target='_blank'
@@ -36,7 +36,7 @@ function DevTeam() {
           />
           <div className='member-title'>
             <h3>
-              Ryan G. Howard
+              Ryan G. Howard{" "}
               <a
                 href='https://github.com/ryanghoward'
                 target='_blank'

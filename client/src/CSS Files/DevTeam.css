@@ -1,11 +1,15 @@
 .background {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  margin-top: 10%;
 }
 
 .member {
@@ -26,17 +30,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #000;
+  color: var(--one);
   font-size: 1.5rem;
 }
 
+.member-title h5 {
+  margin-top: 0.5rem;
+}
+
 .github-icon {
-  color: #000;
+  color: var(--one);
 }
 
 .team {
   text-align: center;
   padding: 3%;
   font-size: 3rem;
-  color: darkgreen;
+  color: var(--one);
 }
