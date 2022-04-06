@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/Navbar";
 // import Logo from "./Gallery/logo.png";
 
 import "../src/CSS Files/App.css";
@@ -22,7 +22,7 @@ function App() {
             {/* <a href='/' className='logo'>
               <img src={Logo} alt='NENYOS Logo' className='logo-image' />
             </a> */}
-            <Navbar />
+            <NavBar />
           </div>
         </header>
         <Routes>

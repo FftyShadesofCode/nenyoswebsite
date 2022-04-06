@@ -1,19 +1,36 @@
-import { menuItems } from "./ddMenuItems";
-import MenuItems from "./MenuItems";
+import React, { useState } from 'react'
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
+
 import '../CSS Files/Navbar.css'
 
-const Navbar = () => {
+export default function NavBar() {
+
     return (
-        <nav>
-            <ul className = "menus" > {
-                menuItems.map((menu, index) => {
-                    const depthLevel = 0;
-                    return <MenuItems items = {menu} key = {index} depthLevel = {depthLevel}
-                    />;
-                })}
-            </ul>
-        </nav>
+        <Navbar expand='lg' collapseOnSelect >
+            <Navbar.Toggle />
+            <Navbar.Collapse>
+                <Nav>
+                    <Nav.Link href='/'>Home</Nav.Link>
+                    <Nav.Link href='/contact'>Contact Us</Nav.Link>
+                    <NavDropdown title='Galleries' >
+                        <NavDropdown title='2022'>
+                            <NavDropdown.Item href='/jan-2022'>January</NavDropdown.Item>
+                            <NavDropdown.Item href='/feb-2022'>February</NavDropdown.Item>
+                            <NavDropdown.Item href='/march-2022'>March</NavDropdown.Item>
+                            <NavDropdown.Item href='/april-2022'>April</NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href='/uploader'>Uploader</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link href='/uploader'>Uploader</Nav.Link>
+                    <Nav.Link href='/login'>Login</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+
+            <form action=''>
+                <input type='search'/>
+                <button>Search</button>
+            </form>
+        </Navbar>
     );
 };
-
-export default Navbar;
