@@ -1,0 +1,50 @@
+.background {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  margin-top: 10%;
+}
+
+.member {
+  margin-right: 5rem;
+}
+
+.member img {
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  padding: 2%;
+  margin-right: 5%;
+}
+
+.member-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--one);
+  font-size: 1.5rem;
+}
+
+.member-title h5 {
+  margin-top: 0.5rem;
+}
+
+.github-icon {
+  color: var(--one);
+}
+
+.team {
+  text-align: center;
+  padding: 3%;
+  font-size: 3rem;
+  color: var(--one);
+}
