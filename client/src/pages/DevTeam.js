@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import "../CSS Files/DevTeam.css";
 
 function DevTeam() {
   return (

@@ -1,0 +1,42 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.member {
+  margin-right: 5rem;
+}
+
+.member img {
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  padding: 2%;
+  margin-right: 5%;
+}
+
+.member-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.github-icon {
+  color: #000;
+}
+
+.team {
+  text-align: center;
+  padding: 3%;
+  font-size: 3rem;
+  color: darkgreen;
+}
