@@ -78,7 +78,6 @@ const Login = () => {
           <div className='container'>
             {/* <h1>Log In</h1> */}
             <form onSubmit={handleSubmit}>
-              {/* <label htmlFor='email'>Email:</label> */}
               <input
                 placeholder='   Email'
                 type='email'
@@ -89,7 +88,6 @@ const Login = () => {
                 value={email}
                 required
               />
-              {/* <label htmlFor='password'>Password:</label> */}
               <input
                 placeholder='   Password'
                 type='password'
@@ -104,11 +102,7 @@ const Login = () => {
               </div>
               <div className='signup-link'>
                 <p>
-                  Need an Account?
-                  {/* <br /> */}
-                  {/* <span className='line'> */}
-                  <a href='/signup'> Sign Up</a>
-                  {/* </span> */}
+                  Need an Account? <a href='/signup'>Sign Up</a>
                 </p>
               </div>
             </form>
