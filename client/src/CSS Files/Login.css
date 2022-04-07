@@ -1,22 +1,27 @@
 #login-page-wrapper {
-  height: 100vh;
+  height: 87.7vh;
 }
 
 .container {
-  height: 100vh;
-  width: 30vw;
-}
-
-/* .container h1 {
-  text-align: center;
-  font-size: 5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-} */
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 5rem;
+}
 
 .container input {
   height: 4rem;
   margin: 1.5rem;
+  width: 30rem;
 }
 
 form {
@@ -30,20 +35,6 @@ input[type="password"] {
   border-radius: 1rem;
 }
 
-/* input[type="submit"] {
-  margin-top: 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  background: var(--primary);
-  border-radius: 0.5rem;
-  color: #fff;
-  padding: 10px 20px;
-} */
-
-/* input[type="submit"]:hover {
-  background: rgba(21, 135, 159, 0.75);
-} */
-
 .button-container {
   display: flex;
   justify-content: space-around;
@@ -53,7 +44,7 @@ input[type="password"] {
 
 button {
   width: 10rem;
-  height: 5rem;
+  height: 4rem;
   border-radius: 1rem;
   font-size: 1.5rem;
   color: white;
@@ -65,57 +56,10 @@ button:hover {
   text-decoration: underline;
 }
 
-/* button a {
-  text-decoration: none;
-  color: white;
-} */
-
-/* .login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  backdrop-filter: blur(15px);
-  border: 1px solid #c9c9c980;
-  padding: 2rem;
-  height: 50vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 1.5rem;
-} */
-
-/* .login-form .title {
-  font-size: 5rem;
-  text-shadow: 2px 2px 2px black;
-} */
-
-/* .login-form .currentUser {
-  color: white;
-}
-
-.list-container {
-  display: flex;
-} */
-
 .error {
   color: red;
   font-size: 1rem;
 }
-
-/* .title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #fff;
-} */
-
-/* .input-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  gap: 1rem;
-  margin: 1rem;
-  width: 25vw;
-  color: #fff;
-} */
 
 .signup-link {
   font-size: 1.3rem;
