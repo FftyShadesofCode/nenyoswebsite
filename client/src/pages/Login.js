@@ -57,7 +57,7 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div id='login-page-wrapper'>
       {success ? (
         <section>
           <h1>You are logged in!</h1>
@@ -75,49 +75,47 @@ const Login = () => {
           >
             {errMsg}
           </p>
-          <div id='the-whole-fucking-thing'>
-            <div className='container'>
-              {/* <h1>Log In</h1> */}
-              <form onSubmit={handleSubmit}>
-                {/* <label htmlFor='email'>Email:</label> */}
-                <input
-                  placeholder='   Email'
-                  type='email'
-                  id='email'
-                  ref={emailRef}
-                  autoComplete='off'
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  required
-                />
-                {/* <label htmlFor='password'>Password:</label> */}
-                <input
-                  placeholder='   Password'
-                  type='password'
-                  id='password'
-                  autoComplete='off'
-                  onChange={(e) => setPwd(e.target.value)}
-                  value={pwd}
-                  required
-                />
-                <div className='button-container'>
-                  <button>Log In</button>
-                </div>
-                <div className='signup-link'>
-                  <p>
-                    Need an Account?
-                    {/* <br /> */}
-                    {/* <span className='line'> */}
-                    <a href='/signup'> Sign Up</a>
-                    {/* </span> */}
-                  </p>
-                </div>
-              </form>
-            </div>
+          <div className='container'>
+            {/* <h1>Log In</h1> */}
+            <form onSubmit={handleSubmit}>
+              {/* <label htmlFor='email'>Email:</label> */}
+              <input
+                placeholder='   Email'
+                type='email'
+                id='email'
+                ref={emailRef}
+                autoComplete='off'
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                required
+              />
+              {/* <label htmlFor='password'>Password:</label> */}
+              <input
+                placeholder='   Password'
+                type='password'
+                id='password'
+                autoComplete='off'
+                onChange={(e) => setPwd(e.target.value)}
+                value={pwd}
+                required
+              />
+              <div className='button-container'>
+                <button>Log In</button>
+              </div>
+              <div className='signup-link'>
+                <p>
+                  Need an Account?
+                  {/* <br /> */}
+                  {/* <span className='line'> */}
+                  <a href='/signup'> Sign Up</a>
+                  {/* </span> */}
+                </p>
+              </div>
+            </form>
           </div>
         </section>
       )}
-    </>
+    </div>
   );
 };
 
