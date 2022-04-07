@@ -21,7 +21,7 @@ function DevTeam() {
               <a
                 href='https://github.com/FftyShadesofCode'
                 target='_blank'
-                rel='noferrer'
+                // rel='noferrer'
               >
                 <FaGithub className='github-icon' />
               </a>
