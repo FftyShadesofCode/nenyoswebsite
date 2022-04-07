@@ -1,5 +1,5 @@
 .background {
-  height: 100vh;
+  height: 87.7vh;
   width: 100%;
 }
 
@@ -9,11 +9,7 @@
   justify-content: space-around;
   align-items: center;
   height: 50vh;
-  margin-top: 10%;
-}
-
-.member {
-  margin-right: 5rem;
+  /* border: 1px solid red; */
 }
 
 .member img {
@@ -23,6 +19,8 @@
   border-radius: 50%;
   padding: 2%;
   margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .member-title {
@@ -36,11 +34,21 @@
 
 .member-title h5 {
   margin-top: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
-.github-icon {
+.icons {
   color: var(--one);
 }
+
+/* .github-icon {
+  color: var(--one);
+}
+
+.linkedin-icon {
+  color: var(--one);
+} */
 
 .team {
   text-align: center;

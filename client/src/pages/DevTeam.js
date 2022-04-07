@@ -1,13 +1,13 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../CSS Files/DevTeam.css";
-import "../CSS Files/Footer.css";
+// import "../CSS Files/Footer.css";
 
 function DevTeam() {
   return (
     <div className='background'>
       <div className='team'>
-        <h1>Meet BroCode</h1>
+        <h1>The BroCode Dev Team is:</h1>
       </div>
       <div className='container'>
         <div className='member'>
@@ -16,17 +16,19 @@ function DevTeam() {
             alt='Philip R. McDavid'
           />
           <div className='member-title'>
-            <h3>
-              Philip R. McDavid{" "}
-              <a
-                href='https://github.com/FftyShadesofCode'
-                target='_blank'
-                // rel='noferrer'
-              >
-                <FaGithub className='github-icon' />
-              </a>
-            </h3>
+            <h3>Philip R. McDavid</h3>
             <h5>Fullstack Engineer</h5>
+            <div className='icons'>
+              <a href='https://github.com/FftyShadesofCode' target='_blank'>
+                <FaGithub />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/fiftyshadesofcode/'
+                target='_blank'
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
         <div className='member'>
@@ -35,17 +37,40 @@ function DevTeam() {
             alt='Ryan G. Howard'
           />
           <div className='member-title'>
-            <h3>
-              Ryan G. Howard{" "}
-              <a
-                href='https://github.com/ryanghoward'
-                target='_blank'
-                rel='noferrer'
-              >
-                <FaGithub className='github-icon' />
-              </a>
-            </h3>
+            <h3>Ryan G. Howard</h3>
             <h5>Frontend Engineer</h5>
+            <div className='icons'>
+              <a href='https://github.com/ryanghoward' target='_blank'>
+                <FaGithub />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/ryanxhoward/'
+                target='_blank'
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className='member'>
+          <img
+            src={require("../Gallery/Dev Team/Danielle.PNG")}
+            alt='Danielle Y. Strazzeri'
+          />
+          <div className='member-title'>
+            <h3>Danielle Y. Strazzeri</h3>
+            <h5>Woman</h5>
+            <div className='icons'>
+              <a href='https://github.com/dstrazzeri' target='_blank'>
+                <FaGithub />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/danielle-yvette-strazzeri/'
+                target='_blank'
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </div>
