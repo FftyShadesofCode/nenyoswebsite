@@ -20,13 +20,13 @@ function DevTeam() {
             <h5>Fullstack Engineer</h5>
             <div className='icons'>
               <a href='https://github.com/FftyShadesofCode' target='_blank'>
-                <FaGithub />
+                <FaGithub className='github-icon' />
               </a>
               <a
                 href='https://www.linkedin.com/in/fiftyshadesofcode/'
                 target='_blank'
               >
-                <FaLinkedin />
+                <FaLinkedin className='linkedin-icon' />
               </a>
             </div>
           </div>
@@ -41,13 +41,13 @@ function DevTeam() {
             <h5>Frontend Engineer</h5>
             <div className='icons'>
               <a href='https://github.com/ryanghoward' target='_blank'>
-                <FaGithub />
+                <FaGithub className='github-icon' />
               </a>
               <a
-                href='https://www.linkedin.com/in/ryanxhoward/'
+                href='https://www.linkedin.com/in/ryangeorgehoward/'
                 target='_blank'
               >
-                <FaLinkedin />
+                <FaLinkedin className='linkedin-icon' />
               </a>
             </div>
           </div>
@@ -62,13 +62,13 @@ function DevTeam() {
             <h5>Woman</h5>
             <div className='icons'>
               <a href='https://github.com/dstrazzeri' target='_blank'>
-                <FaGithub />
+                <FaGithub className='github-icon' />
               </a>
               <a
                 href='https://www.linkedin.com/in/danielle-yvette-strazzeri/'
                 target='_blank'
               >
-                <FaLinkedin />
+                <FaLinkedin className='linkedin-icon' />
               </a>
             </div>
           </div>

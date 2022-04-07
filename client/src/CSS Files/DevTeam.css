@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   height: 50vh;
-  /* border: 1px solid red; */
+  width: inherit;
 }
 
 .member img {
@@ -19,17 +19,15 @@
   border-radius: 50%;
   padding: 2%;
   margin-right: 5%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .member-title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: var(--one);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .member-title h5 {
@@ -38,17 +36,18 @@
   text-align: center;
 }
 
-.icons {
-  color: var(--one);
-}
-
-/* .github-icon {
+.github-icon {
   color: var(--one);
 }
 
 .linkedin-icon {
   color: var(--one);
-} */
+}
+
+.github-icon,
+.linkedin-icon {
+  margin: 0.5rem;
+}
 
 .team {
   text-align: center;
