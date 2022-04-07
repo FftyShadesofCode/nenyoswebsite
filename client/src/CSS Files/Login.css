@@ -1,19 +1,30 @@
 #the-whole-fucking-thing {
-  border: 1px solid yellow;
-  height: 87.7vh;
+  /* border: 1px solid yellow; */
+  height: 100vh;
   /* height: 100vh; */
 }
 
 .container {
-  /* margin-top: 0; */
-  /* margin-bottom: 11.25rem; */
-  /* display: flex;
-  flex-direction: column; */
+  /* display: flex; */
+  /* flex-direction: column; */
   /* justify-content: center; */
   /* height: 87.5vh; */
-  /* height: 100%; */
-  width: 35vw;
-  border: 1px solid blue;
+  /* height: 50vh; */
+  width: 30vw;
+  /* border: 1px solid blue; */
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 5rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  height: 4rem;
+  margin: 1.5rem;
 }
 
 form {
@@ -58,7 +69,7 @@ button {
 }
 
 button:hover {
-  background: #52b788;
+  background: var(--four);
   text-decoration: underline;
 }
 
@@ -138,20 +149,6 @@ button:hover {
   height: 55vh;
   width: 25vw;
 } */
-
-.container h1 {
-  text-align: center;
-  font-size: 5rem;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  /* margin-bottom: 1rem; */
-}
-
-.container input {
-  height: 4rem;
-  margin: 1.5rem;
-}
 
 .button-container button {
   margin-left: 1%;
