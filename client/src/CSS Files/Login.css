@@ -9,19 +9,19 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .container h1 {
   text-align: center;
   font-size: 5rem;
-  display: flex;
-  flex-direction: row;
 }
 
 .container input {
   height: 4rem;
   margin: 1.5rem;
+  width: 30rem;
 }
 
 form {
@@ -44,7 +44,7 @@ input[type="password"] {
 
 button {
   width: 10rem;
-  height: 5rem;
+  height: 4rem;
   border-radius: 1rem;
   font-size: 1.5rem;
   color: white;
