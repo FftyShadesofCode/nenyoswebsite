@@ -8,7 +8,7 @@
   backdrop-filter: blur(15px);
 }
 
-form{
+form {
   display: flex;
 }
 
@@ -56,12 +56,12 @@ form select {
   text-shadow: 2px 2px 3px darkgrey;
 }
 
-input[type='text'] {
+input[type="text"] {
   color: white;
 }
 
 input .MuiInputBase-root {
-  color:white;
+  color: white;
 }
 
 .input-container {
@@ -69,8 +69,6 @@ input .MuiInputBase-root {
   text-align: start;
   color: white;
 }
-
-
 
 .dropzone {
   color: #6fc363;

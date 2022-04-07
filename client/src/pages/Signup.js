@@ -11,12 +11,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     padding: theme.spacing(2),
-    width: "18vw",
-    height: "65vh",
-    marginTop: "8%",
-    marginLeft: "40%",
+    width: "100vw",
+    height: "87.7vh",
+    // marginLeft: "40%",
     borderRadius: "2rem",
-    backgroundColor: "transparent",
+    // backgroundColor: "transparent"
     backdropFilter: "blur(15px)",
     border: "1px solid #c9c9c980",
 
@@ -29,6 +28,8 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiButtonBase-root": {
       margin: theme.spacing(2),
       display: "flex",
+      height: "3rem",
+      // width: "100%",
     },
   },
 }));
@@ -47,7 +48,7 @@ const Signup = ({ handleClose }) => {
 
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
-      <h1>Sign Up</h1>
+      {/* <h1>Sign Up</h1> */}
       <TextField
         label='First Name'
         variant='filled'
@@ -78,7 +79,7 @@ const Signup = ({ handleClose }) => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <div>
+      <div id='buttons'>
         <Button type='submit' variant='contained' color='primary'>
           Sign Up
         </Button>
