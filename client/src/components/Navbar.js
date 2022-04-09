@@ -13,7 +13,7 @@ export default function NavBar() {
                     <Nav.Link href='/'>Home</Nav.Link>
                     <Nav.Link href='/contact'>Contact Us</Nav.Link>
                     <NavDropdown title='Galleries' >
-                        <NavDropdown title='2022'>
+                        <NavDropdown className='dropright' title='2022'>
                             <NavDropdown.Item href='/jan-2022'>January</NavDropdown.Item>
                             <NavDropdown.Item href='/feb-2022'>February</NavDropdown.Item>
                             <NavDropdown.Item href='/march-2022'>March</NavDropdown.Item>
