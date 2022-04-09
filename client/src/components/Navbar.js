@@ -6,7 +6,7 @@ import '../CSS Files/Navbar.css'
 export default function NavBar() {
 
     return (
-        <Navbar expand='lg' collapseOnSelect >
+        <Navbar className='container-fluid' expand='lg' collapseOnSelect >
             <Navbar.Toggle />
             <Navbar.Collapse>
                 <Nav>
@@ -23,7 +23,6 @@ export default function NavBar() {
                         <NavDropdown.Item href='/uploader'>Uploader</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href='/uploader'>Uploader</Nav.Link>
-                    <Nav.Link href='/login'>Login</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
 
@@ -31,6 +30,12 @@ export default function NavBar() {
                 <input type='search'/>
                 <button>Search</button>
             </form>
+
+            <Navbar.Collapse>
+                <Nav>
+                    <Nav.Link right href='/login'>Login</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     );
 };
