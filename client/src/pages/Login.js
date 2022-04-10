@@ -134,6 +134,10 @@ const Login = () => {
     setErrMsg("");
   }, [user, pwd]);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section>
       <p
@@ -144,7 +148,7 @@ const Login = () => {
         {errMsg}
       </p>
       <h1>Log In</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor='username'>Username: </label>
         <input
           type='text'
@@ -163,7 +167,14 @@ const Login = () => {
           value={pwd}
           required
         />
+        <button>Log In</button>
       </form>
+      <p>
+        Need an Account? <br />
+        <span className='line'>
+          <a href='#'>Sign Up</a>
+        </span>
+      </p>
     </section>
   );
 };
