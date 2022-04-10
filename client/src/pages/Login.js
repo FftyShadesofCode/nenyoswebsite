@@ -143,6 +143,27 @@ const Login = () => {
       >
         {errMsg}
       </p>
+      <h1>Log In</h1>
+      <form>
+        <label htmlFor='username'>Username: </label>
+        <input
+          type='text'
+          id='username'
+          ref={userRef}
+          autoComplete='off'
+          onChange={(e) => setUser(e.target.value)}
+          value={user}
+          required
+        />
+        <label htmlFor='password'>Password: </label>
+        <input
+          type='password'
+          id='password'
+          onChange={(e) => setPwd(e.target.value)}
+          value={pwd}
+          required
+        />
+      </form>
     </section>
   );
 };
