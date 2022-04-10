@@ -118,6 +118,8 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
 
+import "../CSS Files/Login.css";
+
 import axios from "../api/axios";
 const LOGIN_URL = "/auth";
 
@@ -167,7 +169,7 @@ const Login = () => {
       } else if (err.response?.status === 401) {
         setErrMsg("Unauthorized");
       } else {
-        setErrMsg("Log In Failed :(");
+        setErrMsg("Log In Failed");
       }
       errRef.current.focus();
     }
