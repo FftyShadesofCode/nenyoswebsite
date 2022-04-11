@@ -125,6 +125,28 @@ function Login() {
   const initialValue = useRef(true);
 
   let history = useNavigate();
+
+  useEffect(() => {
+    if (!initialValue.current) {
+      console.log(state);
+    } else {
+      initialValue.current = false;
+    }
+
+    return () => {
+      history.push("/");
+    };
+  }, [state, history]);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (email !== "" || password !== "") {
+    }
+  };
 }
 
 export default Login;
