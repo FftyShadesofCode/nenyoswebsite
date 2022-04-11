@@ -25,10 +25,6 @@ export default function NavBar() {
         </Nav>
       </Navbar.Collapse>
 
-      <form action=''>
-        <input type='search' />
-        <button>Search</button>
-      </form>
             <form action=''>
                 <input type='search'/>
                 <button className='search-button'>Search</button>
