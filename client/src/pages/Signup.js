@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { makeStyles } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -34,63 +34,84 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Signup = ({ handleClose }) => {
-  const classes = useStyles();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const Signup = () => {
+  const [ values, setValues ] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    error: '',
+    loading: false,
+    message: '',
+    showForm: true
+  });
+
+
+  const { firstName, lastName, email, password, error, loading, message, showForm } = values
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleClose();
+    console.log( firstName, lastName, email, password, error, loading, message, showForm )
   };
 
+  const handleChange = (e) => {
+    setValues({ ...values, error: false, value: e.target.value})
+  }
+
   return (
-    <form className={classes.root} onSubmit={handleSubmit}>
-      {/* <h1>Sign Up</h1> */}
-      <TextField
-        label='First Name'
-        variant='filled'
-        required
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-      <TextField
-        label='Last Name'
-        variant='filled'
-        required
-        value={lastName}
-        onChange={(e) => setLastName(e.target.value)}
-      />
-      <TextField
-        label='Email'
-        variant='filled'
-        type='email'
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <TextField
-        label='Set your Password'
-        variant='filled'
-        type='password'
-        required
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <div id='buttons'>
-        <Button type='submit' variant='contained' color='primary'>
-          Sign Up
-        </Button>
-        <Button variant='contained' onClick={handleClose} color='secondary'>
-          <a href='/'>Cancel</a>
-        </Button>
-        <div className='login-link'>
-          Already have an account? <a href='/login'>Log In</a>
+      <div className='login-page-wrapper'>
+        <div className='container'>
+          <form onSubmit={handleSubmit} action=''>
+            <div className='form-group'>
+              <input
+                  type='text'
+                  className='form-control'
+                  value={firstName}
+                  onChange={handleChange}
+                  placeholder='First Name'
+              />
+              <input
+                  type='text'
+                  className='form-control'
+                  value={lastName}
+                  onChange={handleChange}
+                  placeholder='Last Name'
+              />
+            </div>
+
+            <div className='form-group'>
+              <input
+                  type='email'
+                  className='form-control'
+                  value={email}
+                  onChange={handleChange}
+                  placeholder='Email Address'
+              />
+            </div>
+
+            <div className='form-group'>
+              <input
+                  type='password'
+                  className='form-control'
+                  value={password}
+                  onChange={handleChange}
+                  placeholder='Password'
+              />
+              <input
+                  type='password'
+                  className='form-control'
+                  value={password}
+                  onChange={handleChange}
+                  placeholder='Password Confirmation'
+              />
+            </div>
+            <div className='button-container'>
+              <button>Sign Up</button>
+              <button>Log In</button>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
   );
 };
 

@@ -29,12 +29,16 @@ export default function NavBar() {
         <input type='search' />
         <button>Search</button>
       </form>
+            <form action=''>
+                <input type='search'/>
+                <button className='search-button'>Search</button>
+            </form>
 
-      <Navbar.Collapse>
-        <Nav>
-          <Nav.Link href='/login'>Login</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-  );
-}
+            <Navbar.Collapse>
+                <Nav>
+                    <Nav.Link href='/login'>Login</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    );
+};

@@ -81,8 +81,18 @@ div .nav-area {
   height: 3rem;
 }
 
-.nav-area button {
+.nav-area .search-button {
   margin-left: 10px;
   text-decoration: none;
   height: 3rem;
+  width: 8rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background: #2d6a4f;
+}
+
+.search-button:hover {
+  background: var(--four);
+  text-decoration: none;
 }

@@ -42,4 +42,4 @@ Thumbs.db
 *.war
 
 # dotenv file
-.env
+backend/.env

@@ -15,7 +15,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
 import January2022 from "./pages/gallery2022/January";
-import UserProfile from "./pages/UserProfile";
+import GrowerProfile from "./pages/GrowerProfile";
 import Footer from "./components/Footer";
 import DevTeam from "./pages/DevTeam";
 
@@ -40,7 +40,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
           <Route exact path='/jan-22' element={<January2022 />} />
-          <Route exact path='/user-profile' element={<UserProfile />} />
+          <Route exact path='/growerprofile' element={<GrowerProfile />} />
           <Route exact path='/devteam' element={<DevTeam />} />
         </Routes>
       </Router>
