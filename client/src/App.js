@@ -20,9 +20,12 @@ import Footer from "./components/Footer";
 import DevTeam from "./pages/DevTeam";
 
 function App() {
-  const state = useSelector((state) => state.UserReducer);
+  // const state = useSelector((state) => state.UserReducer);
   return (
     <div>
+      {/* <Route path='/' exact>
+        {state.user ? <Home /> : <Login />}
+      </Route> */}
       <Router basename='/'>
         <header>
           <div className='nav-area'>

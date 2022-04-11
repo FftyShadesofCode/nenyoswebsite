@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { AuthProvider } from "./context/AuthProvider";
-import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
+import reportWebVitals from "./reportWebVitals";
 import store from "./store";
 
 import "../src/CSS Files/index.css";
