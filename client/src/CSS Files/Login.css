@@ -165,17 +165,15 @@ button:hover {
 .main-login .login-contain .left-side .img-class {
   height: 13rem;
   width: 100%;
-  /* align-self: center; */
-  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-login .login-contain .left-side .img-class #img-id {
   height: 100%;
-  border: 1px solid red;
   /* -o-object-fit: cover; */
-  /* object-fit: center; */
-  display: flex;
-  align-items: center;
+  object-fit: contain;
 }
 
 .left-side form {
@@ -189,7 +187,6 @@ button:hover {
 }
 
 .footer {
-  /* border: 1px solid orange; */
   text-align: center;
   margin-top: 1rem;
 }
@@ -252,7 +249,7 @@ button:hover {
 }
 
 .main-login .login-contain .right-side .welcomeNote h3 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 1rem;
   color: darkgreen;
   text-align: center;
