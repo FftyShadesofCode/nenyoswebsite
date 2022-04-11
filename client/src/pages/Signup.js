@@ -120,14 +120,15 @@ import { useState } from "react";
 import "../CSS Files/Signup.css";
 import { Link } from "react-router-dom";
 import Logo from "../Gallery/logo.png";
-import Image1 from "../Gallery/Stock Photos/orchid-15.png";
+// import Image1 from "../Gallery/Stock Photos/orchid-15.png";
+import Image1 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-water-drops-2021-08-27-09-32-39-utc.jpg";
 
 function Signup() {
-  const [email, setemail] = useState("");
-  const [Fusername, setFusername] = useState("");
-  const [Susername, setSusername] = useState("");
-  const [pwd1, setpwd1] = useState("");
-  const [pwd2, setpwd2] = useState("");
+  const [email, setEmail] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [password1, setPassword1] = useState("");
+  const [password2, setPassword2] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -137,13 +138,16 @@ function Signup() {
     <div className='main-Register'>
       <div className='left-side'>
         <div className='header'>
-          <img src={Logo} id='logo-img' alt='' srcset='' />
+          <img src={Logo} id='logo-img' alt='' srcSet='' />
         </div>
         <div className='body'>
-          <img src={Image1} id='reg-img' alt='' srcset='' />
+          <img src={Image1} id='reg-img' alt='' srcSet='' />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, et.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+          blanditiis sequi laudantium distinctio maxime nobis maiores, minima
+          voluptatem obcaecati accusamus perspiciatis totam aperiam iste quo
+          laboriosam ex ipsum dolor molestias?
         </p>
       </div>
       <div className='right-side'>
@@ -164,9 +168,9 @@ function Signup() {
                 <input
                   type='text'
                   name='Fname'
-                  value={Fusername}
+                  value={firstname}
                   onChange={(e) => {
-                    setFusername(e.target.value);
+                    setFirstname(e.target.value);
                   }}
                   id='fname'
                 />
@@ -176,9 +180,9 @@ function Signup() {
                 <input
                   type='text'
                   name='lname'
-                  value={Susername}
+                  value={lastname}
                   onChange={(e) => {
-                    setSusername(e.target.value);
+                    setLastname(e.target.value);
                   }}
                   id='lname'
                 />
@@ -190,7 +194,7 @@ function Signup() {
                   name='email'
                   value={email}
                   onChange={(e) => {
-                    setemail(e.target.value);
+                    setEmail(e.target.value);
                   }}
                   id='email1'
                 />
@@ -199,10 +203,10 @@ function Signup() {
                 <h5>Password</h5>
                 <input
                   type='password'
-                  value={pwd1}
+                  value={password1}
                   name='pwd'
                   onChange={(e) => {
-                    setpwd1(e.target.value);
+                    setPassword1(e.target.value);
                   }}
                   id='pwd1'
                 />
@@ -212,9 +216,9 @@ function Signup() {
                 <input
                   type='password'
                   name='pwd'
-                  value={pwd2}
+                  value={password2}
                   onChange={(e) => {
-                    setpwd2(e.target.value);
+                    setPassword2(e.target.value);
                   }}
                   id='pwd2'
                 />
