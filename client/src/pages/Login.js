@@ -115,14 +115,15 @@
 
 // export default Login;
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { ApiCall } from "../API Call/ApiCall";
 
 function Login() {
   const state = useSelector((state) => state.UserReducer);
   const dispatch = useDispatch();
-  const initialValue = useRef(true);
+  const initialValue = useRef();
 
   let history = useNavigate();
 
@@ -145,8 +146,59 @@ function Login() {
     e.preventDefault();
 
     if (email !== "" || password !== "") {
+      ApiCall({ email: email, password: password }, dispatch);
+      setEmail("");
+      setPassword("");
     }
   };
+
+  return (
+    <div className='main-login'>
+      <div className='login-container'>
+        <div className='left-side'>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor='email1'>Email: </label>
+            <input
+              placeholder='Email'
+              type='email'
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              id='email'
+            />
+            <label htmlFor='pwd1'>Password: </label>
+            <input
+              placeholder='Password'
+              type='password'
+              autoComplete='false'
+              value={password}
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+              id='password'
+            />
+            <button type='submit' id='sub_butt'>
+              Login
+            </button>
+          </form>
+          <div className='footer'>
+            <h4>
+              Need an Account?{" "}
+              <Link className='link' to='/signup'>
+                Sign Up
+              </Link>
+            </h4>
+          </div>
+        </div>
+        <div className='right-side'>
+          <div className='welcomeNote'>
+            <h3>Welcome Back!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Login;
