@@ -151,21 +151,21 @@ function Signup() {
         </p>
       </div>
       <div className='right-side'>
-        <div className='top-right'>
+        {/* <div className='top-right'>
           <p>
             Already have an account?
             <Link id='Links-signin' to='/login'>
               Log In
             </Link>
           </p>
-        </div>
+        </div> */}
         <div className='body-right'>
           <div className='container'>
-            <h1>Create Account</h1>
+            {/* <h1>Create Account</h1> */}
             <form onSubmit={handleSubmit}>
               <div className='input-group'>
-                <h5>First Name</h5>
                 <input
+                  placeholder='First Name'
                   type='text'
                   name='Fname'
                   value={firstname}
@@ -176,8 +176,8 @@ function Signup() {
                 />
               </div>
               <div className='input-group'>
-                <h5>Last Name</h5>
                 <input
+                  placeholder='Last Name'
                   type='text'
                   name='lname'
                   value={lastname}
@@ -188,8 +188,8 @@ function Signup() {
                 />
               </div>
               <div className='input-group'>
-                <h5>Email</h5>
                 <input
+                  placeholder='Email'
                   type='Email'
                   name='email'
                   value={email}
@@ -200,8 +200,8 @@ function Signup() {
                 />
               </div>
               <div className='input-group'>
-                <h5>Password</h5>
                 <input
+                  placeholder='Password'
                   type='password'
                   value={password1}
                   name='pwd'
@@ -212,8 +212,8 @@ function Signup() {
                 />
               </div>
               <div className='input-group'>
-                <h5>Confrim Password</h5>
                 <input
+                  placeholder='Confirm Password'
                   type='password'
                   name='pwd'
                   value={password2}
@@ -223,7 +223,18 @@ function Signup() {
                   id='pwd2'
                 />
               </div>
-              <input type='submit' id='sbtn' value='Submit' />
+              {/* <input type='submit' id='sbtn' value='Submit' /> */}
+              <button type='submit' id='sbtn'>
+                Sign Up
+              </button>
+              <div className='top-right'>
+                <p>
+                  Already have an account?
+                  <Link id='Links-signin' to='/login'>
+                    Log In
+                  </Link>
+                </p>
+              </div>
             </form>
           </div>
         </div>
