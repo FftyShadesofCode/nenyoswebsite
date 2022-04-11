@@ -119,6 +119,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { ApiCall } from "../API Call/ApiCall";
+import Logo from "../Gallery/logo.png";
 // import { UserReducer } from "../Reducers/UserReducer";
 
 import "../CSS Files/Login.css";
@@ -157,10 +158,13 @@ function Login() {
 
   return (
     <div className='main-login'>
-      <div className='login-container'>
+      <div className='login-contain'>
         <div className='left-side'>
+          <div className='img-class'>
+            <img src={Logo} id='img-id' alt='' />
+          </div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor='email1'>Email: </label>
+            <label htmlFor='emil1'>Email: </label>
             <input
               placeholder='Email'
               type='email'
@@ -197,6 +201,9 @@ function Login() {
         <div className='right-side'>
           <div className='welcomeNote'>
             <h3>Welcome Back!</h3>
+          </div>
+          <div className='welcomeImg'>
+            <img src={Logo} id='wel-img-id' alt='' />
           </div>
         </div>
       </div>
