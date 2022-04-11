@@ -9,11 +9,11 @@ import "../src/CSS Files/index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
-      <AuthProvider>
+    <AuthProvider>
+      <Provider>
         <App />
-      </AuthProvider>
-    </Provider>
+      </Provider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
