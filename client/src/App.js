@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 // CSS Files
 import "../src/CSS Files/Footer.css";
@@ -19,8 +20,12 @@ import Footer from "./components/Footer";
 import DevTeam from "./pages/DevTeam";
 
 function App() {
+  // const state = useSelector((state) => state.UserReducer);
   return (
     <div>
+      {/* <Route path='/' exact>
+        {state.user ? <Home /> : <Login />}
+      </Route> */}
       <Router basename='/'>
         <header>
           <div className='nav-area'>
@@ -29,7 +34,7 @@ function App() {
         </header>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
+          {/* <Route exact path='/about' element={<About />} /> */}
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/uploader' element={<Uploader />} />
           <Route exact path='/login' element={<Login />} />
