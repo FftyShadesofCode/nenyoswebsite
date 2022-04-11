@@ -90,10 +90,10 @@ button:hover {
     linear,
     left top,
     right top,
-    color-stop(50%, #dfdddd),
-    color-stop(50%, #4dd6b6)
+    /* color-stop(50%, #dfdddd),
+    color-stop(50%, #4dd6b6) */
   );
-  background: linear-gradient(to right, #dfdddd 50%, #4dd6b6 50%);
+  background: linear-gradient(to right, #eef 50%, var(--seven) 50%);
 }
 
 .main-login .login-contain {
@@ -146,6 +146,7 @@ button:hover {
   box-shadow: 0.5rem 0.5rem 2rem -1rem #3a3939;
   height: 90%;
   width: 100%;
+  border-radius: 1rem;
 }
 
 .main-login .login-contain .left-side {
@@ -162,25 +163,48 @@ button:hover {
 }
 
 .main-login .login-contain .left-side .img-class {
-  height: 4.5rem;
+  height: 13rem;
+  width: 100%;
+  /* align-self: center; */
+  border: 1px solid blue;
 }
 
 .main-login .login-contain .left-side .img-class #img-id {
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  border: 1px solid red;
+  /* -o-object-fit: cover; */
+  /* object-fit: center; */
+  display: flex;
+  align-items: center;
+}
+
+.left-side form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 50%;
+  width: 75%;
+}
+
+.footer {
+  /* border: 1px solid orange; */
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .main-login .login-contain .left-side input {
+  /* border: 1px solid red; */
   display: block;
   border: none;
-  height: 2rem;
+  border-radius: 1rem;
+  height: 4rem;
   width: 70%;
-  margin: auto;
-  margin-bottom: 1.5rem;
+  margin: 2rem;
   padding: 0.2rem 1rem;
-  font-size: small;
-  color: gray;
+  font-size: medium;
+  color: black;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -201,16 +225,19 @@ button:hover {
   text-align: left;
   width: 78%;
   margin: auto;
-  font-size: small;
+  font-size: large;
   color: darkgreen;
   margin-bottom: 0.5rem;
 }
 
 .main-login .login-contain .left-side #sub_butt {
-  width: 80%;
-  background: #4dd6b6;
+  width: 50%;
+  height: 4rem;
+  background: var(--five);
   color: white;
+  font-size: x-large;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   -webkit-transition: all 0.2s ease;
@@ -236,11 +263,9 @@ button:hover {
   height: 90%;
   width: 100%;
   margin: 0rem auto;
-  /* border: 1px solid red; */
 }
 
 .main-login .login-contain .right-side .welcomeImg #wel-img-id {
-  /* border: 1px solid blue; */
   height: 80%;
   width: 100%;
   -o-object-fit: cover;

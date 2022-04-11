@@ -139,7 +139,7 @@ function Login() {
       initialValue.current = false;
     }
     return () => {
-      navigate.push("/");
+      navigate("/");
     };
   }, [state, navigate]);
 
@@ -163,7 +163,7 @@ function Login() {
             <img src={Logo} id='img-id' alt='' />
           </div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor='emil1'>Email:</label>
+            {/* <label htmlFor='emil1'>Email:</label> */}
             <input
               placeholder='Email'
               type='email'
@@ -173,7 +173,7 @@ function Login() {
               }}
               id='emil1'
             />
-            <label htmlFor='pwd1'>Password:</label>
+            {/* <label htmlFor='pwd1'>Password:</label> */}
             <input
               placeholder='Password'
               type='password'
@@ -185,7 +185,7 @@ function Login() {
               id='pwd1'
             />
             <button type='submit' id='sub_butt'>
-              Login
+              Log In
             </button>
           </form>
           <div className='footer'>
@@ -197,9 +197,9 @@ function Login() {
             </h4>
           </div>
         </div>
-        <div className='right-side'>
+        <div className='right-side' right='true'>
           <div className='welcomeNote'>
-            <h3>Welcome Back!</h3>
+            <h3>Welcome Back</h3>
           </div>
           <div className='welcomeImg'>
             <img src={Image1} id='wel-img-id' alt='' />
