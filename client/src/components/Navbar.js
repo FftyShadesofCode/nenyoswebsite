@@ -33,7 +33,7 @@ export default function NavBar() {
 
             <Navbar.Collapse>
                 <Nav>
-                    <Nav.Link right href='/login'>Login</Nav.Link>
+                    <Nav.Link href='/login'>Login</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
