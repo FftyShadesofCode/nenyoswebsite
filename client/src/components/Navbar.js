@@ -28,7 +28,7 @@ export default function NavBar() {
 
             <form action=''>
                 <input type='search'/>
-                <button>Search</button>
+                <button className='search-button'>Search</button>
             </form>
 
             <Navbar.Collapse>
