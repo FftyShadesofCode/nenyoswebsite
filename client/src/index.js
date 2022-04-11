@@ -4,13 +4,14 @@ import App from "./App";
 import { AuthProvider } from "./context/AuthProvider";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
+import store from "./store";
 
 import "../src/CSS Files/index.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <AuthProvider>
-      <Provider>
+      <Provider store={store}>
         <App />
       </Provider>
     </AuthProvider>
