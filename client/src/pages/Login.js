@@ -121,6 +121,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { ApiCall } from "../API Call/ApiCall";
 // import { UserReducer } from "../Reducers/UserReducer";
 
+import "../CSS Files/Login.css";
+
 function Login() {
   const state = useSelector((state) => state.UserReducer);
   const dispatch = useDispatch();
