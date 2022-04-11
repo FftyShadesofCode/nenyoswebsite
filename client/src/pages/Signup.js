@@ -59,44 +59,59 @@ const Signup = () => {
   }
 
   return (
-      <form onSubmit={handleSubmit} action=''>
-        <div className='form-group'>
-          <input
-              type='text'
-              className='form-control'
-              value={firstName}
-              onChange={handleChange('firstName')}
-              placeholder='First Name'
-          />
-          <input
-              type='text'
-              className='form-control'
-              value={lastName}
-              onChange={handleChange('lastName')}
-              placeholder='Last Name'
-          />
-        </div>
+      <div className='login-page-wrapper'>
+        <div className='container'>
+          <form onSubmit={handleSubmit} action=''>
+            <div className='form-group'>
+              <input
+                  type='text'
+                  className='form-control'
+                  value={firstName}
+                  onChange={handleChange}
+                  placeholder='First Name'
+              />
+              <input
+                  type='text'
+                  className='form-control'
+                  value={lastName}
+                  onChange={handleChange}
+                  placeholder='Last Name'
+              />
+            </div>
 
-        <div className='form-group'>
-          <input
-              type='email'
-              className='form-control'
-              value={email}
-              onChange={handleChange('email')}
-              placeholder='Email Address'
-          />
-        </div>
+            <div className='form-group'>
+              <input
+                  type='email'
+                  className='form-control'
+                  value={email}
+                  onChange={handleChange}
+                  placeholder='Email Address'
+              />
+            </div>
 
-        <div className='form-group'>
-          <input
-              type='password'
-              className='form-control'
-              value={password}
-              onChange={handleChange('password')}
-              placeholder='Password'
-          />
+            <div className='form-group'>
+              <input
+                  type='password'
+                  className='form-control'
+                  value={password}
+                  onChange={handleChange}
+                  placeholder='Password'
+              />
+              <input
+                  type='password'
+                  className='form-control'
+                  value={password}
+                  onChange={handleChange}
+                  placeholder='Password Confirmation'
+              />
+            </div>
+            <div className='button-container'>
+              <button>Sign Up</button>
+              <button>Log In</button>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
   );
 };
 
