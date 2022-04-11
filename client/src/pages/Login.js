@@ -171,7 +171,7 @@ function Login() {
               onChange={(e) => {
                 setemailval(e.target.value);
               }}
-              id='email'
+              id='emil1'
             />
             <label htmlFor='pwd1'>Password:</label>
             <input
@@ -182,7 +182,7 @@ function Login() {
               onChange={(e) => {
                 setpassval(e.target.value);
               }}
-              id='password'
+              id='pwd1'
             />
             <button type='submit' id='sub_butt'>
               Login
