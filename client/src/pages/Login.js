@@ -119,11 +119,12 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { ApiCall } from "../API Call/ApiCall";
+// import { UserReducer } from "../Reducers/UserReducer";
 
 function Login() {
   const state = useSelector((state) => state.UserReducer);
   const dispatch = useDispatch();
-  const initialValue = useRef();
+  const initialValue = useRef(true);
 
   let history = useNavigate();
 
