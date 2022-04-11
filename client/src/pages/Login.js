@@ -120,6 +120,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { ApiCall } from "../API Call/ApiCall";
 import Logo from "../Gallery/logo.png";
+import Image1 from "../Gallery/Stock Photos/orchid-15.png";
 // import { UserReducer } from "../Reducers/UserReducer";
 
 import "../CSS Files/Login.css";
@@ -129,7 +130,7 @@ function Login() {
   const dispatch = useDispatch();
   const initialValue = useRef(true);
 
-  let history = useNavigate();
+  let navigate = useNavigate();
 
   useEffect(() => {
     if (!initialValue.current) {
@@ -137,22 +138,20 @@ function Login() {
     } else {
       initialValue.current = false;
     }
-
     return () => {
-      history.push("/");
+      navigate.push("/");
     };
-  }, [state, history]);
+  }, [state, navigate]);
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailval, setemailval] = useState("");
+  const [passval, setpassval] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (email !== "" || password !== "") {
-      ApiCall({ email: email, password: password }, dispatch);
-      setEmail("");
-      setPassword("");
+    if (emailval !== "" || passval !== "") {
+      ApiCall({ email: emailval, password: passval }, dispatch);
+      setemailval("");
+      setpassval("");
     }
   };
 
@@ -164,24 +163,24 @@ function Login() {
             <img src={Logo} id='img-id' alt='' />
           </div>
           <form onSubmit={handleSubmit}>
-            <label htmlFor='emil1'>Email: </label>
+            <label htmlFor='emil1'>Email:</label>
             <input
               placeholder='Email'
               type='email'
-              value={email}
+              value={emailval}
               onChange={(e) => {
-                setEmail(e.target.value);
+                setemailval(e.target.value);
               }}
               id='email'
             />
-            <label htmlFor='pwd1'>Password: </label>
+            <label htmlFor='pwd1'>Password:</label>
             <input
               placeholder='Password'
               type='password'
               autoComplete='false'
-              value={password}
+              value={passval}
               onChange={(e) => {
-                setPassword(e.target.value);
+                setpassval(e.target.value);
               }}
               id='password'
             />
@@ -203,7 +202,7 @@ function Login() {
             <h3>Welcome Back!</h3>
           </div>
           <div className='welcomeImg'>
-            <img src={Logo} id='wel-img-id' alt='' />
+            <img src={Image1} id='wel-img-id' alt='' />
           </div>
         </div>
       </div>

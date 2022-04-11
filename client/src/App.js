@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 // CSS Files
 import "../src/CSS Files/Footer.css";
@@ -19,6 +20,7 @@ import Footer from "./components/Footer";
 import DevTeam from "./pages/DevTeam";
 
 function App() {
+  const state = useSelector((state) => state.UserReducer);
   return (
     <div>
       <Router basename='/'>
