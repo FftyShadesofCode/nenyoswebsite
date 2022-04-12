@@ -1,4 +1,4 @@
-const Formidable = require('formidable')
+const Formidable = require('formidable-serverless')
 const fs = require('fs')
 const Gallery = require("../models/gallery");
 

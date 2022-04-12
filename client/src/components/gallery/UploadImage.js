@@ -4,7 +4,7 @@ import ProgressBar from "./ProgressBar";
 import graphic from '../../icons/image-files.svg'
 
 export default function UploadImage({ setReload }) {
-    const type = ['image/jpeg', 'image/jpg', 'image/png', 'image/svg', 'image/HEIC']
+    const type = ['image/jpeg', 'image/jpg', 'image/png', 'image/svg']
 
     const [ values, setValues ] = useState({
         file: '',
