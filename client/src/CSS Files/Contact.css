@@ -128,16 +128,17 @@ form .col {
 
 .col .form-group {
   flex: 0 1 100%;
-  /* padding-right: 1rem; */
-  /* margin-top: 1rem; */
-  border: 1px solid blue;
+  /* margin: 0;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  border: 1px solid blue; */
 }
 
-.form-container {
-  /* display: flex;
+.form-container .col .form-group {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   border: 1px solid magenta;
   height: 100%;
 }
