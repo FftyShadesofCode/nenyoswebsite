@@ -53,8 +53,7 @@ form h1 {
   -webkit-box-flex: 0.33;
   -ms-flex: 0.33;
   flex: 0.33;
-  /* background: #26343d; */
-  background: #696969;
+  background: var(--three);
 }
 
 .main-Register .left-side .header {
@@ -67,15 +66,12 @@ form h1 {
 
 .main-Register .left-side .header #logo-img {
   height: 100%;
-  /* width: 55%; */
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .main-Register .left-side .body {
   height: 15rem;
-  /* margin-top: 2rem; */
-  /* background: white; */
 }
 
 .main-Register .left-side .body #reg-img {
@@ -119,11 +115,12 @@ form h1 {
   font-style: 300;
   margin-left: 0.3rem;
   cursor: pointer;
-  color: gray;
+  color: var(--three);
 }
 
 .main-Register .right-side .top-right #Links-signin:hover {
-  color: aqua;
+  color: gray;
+  text-decoration: underline;
 }
 
 .main-Register .right-side .body-right {
@@ -136,11 +133,9 @@ form h1 {
   height: 80%;
   width: 60%;
   margin: 2rem auto;
-  /* padding-top: 1rem; */
   -webkit-box-shadow: 0rem 0rem 2rem 0.1rem #000;
   box-shadow: 0rem 0rem 2rem 0.1rem #000;
   border-radius: 1rem;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,19 +154,13 @@ form,
 .input-group,
 h1,
 input {
-  border: 1px solid blueviolet;
   border-radius: 1rem;
   height: 6rem;
-  margin: 1rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.body-right,
-.container {
-  border: 1px solid blue;
 }
 
 .main-Register .right-side .body-right .container .input-group {
@@ -204,18 +193,30 @@ input {
 }
 
 .main-Register .right-side .body-right #sbtn {
-  width: 63%;
-  background: #26343d;
+  width: 50%;
+  height: 4rem;
+  background: var(--five);
+  margin: 1rem;
   color: white;
-  cursor: pointer;
+  font-size: x-large;
   border: none;
-  padding: 0.5rem 2.5rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.top-right p {
+  color: var(--two);
+  font-size: large;
+  margin-top: 1rem;
 }
 
 .main-Register .right-side .body-right #sbtn:hover {
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0.1rem gray;
-  box-shadow: 0.5rem 0.5rem 1rem 0.1rem gray;
+  -webkit-box-shadow: 4px 3px 9px -1px gray;
+  box-shadow: 4px 3px 9px -1px gray;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 /*# sourceMappingURL=Register.css.map */

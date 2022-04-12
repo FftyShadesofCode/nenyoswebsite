@@ -58,7 +58,7 @@ button:hover {
 
 .main-login .login-contain .link {
   text-decoration: none;
-  color: #4dd6b6;
+  color: var(--three);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -67,6 +67,7 @@ button:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   color: gray;
+  text-decoration: underline;
 }
 
 .main-login .login-contain .left-side,
