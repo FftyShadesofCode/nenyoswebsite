@@ -157,5 +157,5 @@ table {
 body {
   background-size: cover;
   background-color: #95d5b2;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
