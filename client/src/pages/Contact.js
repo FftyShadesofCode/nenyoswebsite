@@ -56,7 +56,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form>
+        <form className='form-container'>
           <div className='col'>
             <div className='form-group'>
               <input type='text' name='firstName' placeholder='First Name' />

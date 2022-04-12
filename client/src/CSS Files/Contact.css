@@ -13,14 +13,18 @@
 }
 
 .contact-info {
-  width: 1200px;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 10px;
+  border: 1px solid red;
+  width: 75%;
+  height: 70%;
+  background-color: var(--five);
+  border-radius: 1rem;
+  /* overflow: hidden; */
+  padding: 3rem;
   display: flex;
-  backdrop-filter: blur(15px);
-  border: 1px solid #c9c9c980;
-  margin-top: 3rem;
+  /* backdrop-filter: blur(15px); */
+  /* border: 1px solid #c9c9c980; */
+  /* border: 1px solid var(--nine); */
+  /* margin-top: 3rem; */
   -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -116,17 +120,26 @@ form {
 
 form .col {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   flex: 0 0 100%;
 }
 
-form .col .form-group {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+.col .form-group {
   flex: 0 1 100%;
-  padding-right: 15px;
-  margin-top: 15px;
+  /* padding-right: 1rem; */
+  /* margin-top: 1rem; */
+  border: 1px solid blue;
+}
+
+.form-container {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  border: 1px solid magenta;
+  height: 100%;
 }
 
 form .col .form-group label {
@@ -135,7 +148,7 @@ form .col .form-group label {
   font-size: 0.9rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 form .col .form-group input[type="text"] {
@@ -168,7 +181,7 @@ form .col .form-group input[type="email"] {
   background: transparent;
   border: none;
   border-bottom: 2px solid rgba(21, 135, 159, 0.75);
-  padding: 10px;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
