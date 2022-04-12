@@ -23,7 +23,7 @@ button:hover {
     /* color-stop(50%, #dfdddd),
     color-stop(50%, #4dd6b6) */
   );
-  background: linear-gradient(to right, #eef 50%, var(--seven) 50%);
+  background: linear-gradient(to right, var(--six) 50%, var(--seven) 50%);
 }
 
 .main-login .login-contain {
@@ -103,7 +103,6 @@ button:hover {
 
 .main-login .login-contain .left-side .img-class #img-id {
   height: 100%;
-  /* -o-object-fit: cover; */
   object-fit: contain;
 }
 
