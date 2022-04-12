@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { motion } from 'framer-motion'
+import CircularProgress from "@material-ui/core/CircularProgress";
 import {getImages, getImageUrl} from "../../api/apicalls";
-import ProgressBar from "./ProgressBar";
 
 const ImageGrid = ({ setSelectedImg, reload, setReload }) => {
     const [ values, setValues ] = useState({
@@ -51,7 +51,7 @@ const ImageGrid = ({ setSelectedImg, reload, setReload }) => {
             ))}
             { images.length === 0 && !error &&
                 (
-                    <ProgressBar />
+                    <CircularProgress color='secondary' />
                 )
             }
         </div>
