@@ -8,23 +8,25 @@ const mongoose = require('mongoose')
 // route import
 const authRoutes = require('./routes/auth')
 const growerRoutes = require('./routes/grower')
+const galleryRoutes = require('./routes/gallery')
 const orchidRoutes = require('./routes/orchid')
 
 // application
 const app = express()
 
-// grower db
-mongoose.connect(process.env.DATABASE_CLOUD, {
-        useNewUrlParser: true
-    }).then(() =>
-    console.log("Connected to Yer MOM!"))
-    .catch((err) =>
-        console.log("DB Error => ", err))
-
 // Middlewares
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(cookieParser())
+
+// db
+mongoose.connect(process.env.DATABASE_CLOUD, {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    }).then(() =>
+    console.log("Connected to Yer MOM!"))
+    .catch(() =>
+        console.log("DB Connection Error"))
 
 //cors
 if (process.env.NODE_ENV === 'development') {
@@ -37,6 +39,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use('/growers/signup', authRoutes)
 app.use('/growers', growerRoutes)
 app.use('/orchids', orchidRoutes)
+app.use('/galleries', galleryRoutes)
 
 
 const port = process.env.PORT || 5000
