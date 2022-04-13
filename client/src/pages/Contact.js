@@ -6,8 +6,7 @@ import "../CSS Files/Contact.css";
 export default function Contact() {
   return (
     <div id='contact-container'>
-      <h1>Contact Us</h1>
-
+      {/* <h1>Contact Us</h1> */}
       <div className='contact-info'>
         <div className='contact'>
           <h4>Contact Information</h4>
@@ -56,29 +55,18 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form>
+        <form className='form-container'>
           <div className='col'>
             <div className='form-group'>
+              <h1>Contact Us</h1>
               <input type='text' name='firstName' placeholder='First Name' />
-            </div>
-            <div className='form-group'>
               <input type='text' name='lastName' placeholder='Last Name' />
-            </div>
-          </div>
-          <div className='col'>
-            <div className='form-group'>
               <input type='email' name='email' placeholder='E-Mail' />
-            </div>
-          </div>
-          <div className='col'>
-            <div className='form-group'>
               <input type='text' name='message' placeholder='Message' />
             </div>
           </div>
-          <div className='col'>
-            <div className='form-group right'>
-              <button className='primary'>Submit</button>
-            </div>
+          <div className='form-group right'>
+            <button className='primary'>Submit</button>
           </div>
         </form>
       </div>

@@ -4,24 +4,27 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 2rem;
-  height: 84.6vh;
+  /* margin-top: 2rem; */
+  height: 86.7vh;
 }
 
-#contact-container h1 {
+/* #contact-container h1 {
   font-size: 3.5rem;
-}
+} */
 
 .contact-info {
-  width: 1200px;
-  border-radius: 15px;
-  overflow: hidden;
-  padding: 10px;
+  /* border: 1px solid red; */
+  width: 80%;
+  /* height: 70%; */
+  background-color: var(--five);
+  border-radius: 1rem;
+  padding: 3rem;
   display: flex;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   border: 1px solid #c9c9c980;
-  margin-top: 3rem;
-  -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75);
+  /* border: 1px solid var(--nine); */
+  /* margin-top: 3rem; */
+  /* -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75); */
 }
 
 .contact {
@@ -32,7 +35,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75);
+  /* -moz-box-shadow: 0 10px 33px 0 rgba(0, 0, 0, 0.75); */
 }
 
 .contact h4 {
@@ -116,77 +119,87 @@ form {
 
 form .col {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   flex: 0 0 100%;
 }
 
-form .col .form-group {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex: 0 1 100%;
-  padding-right: 15px;
-  margin-top: 15px;
+.col .form-group {
+  flex: 1;
 }
 
-form .col .form-group label {
+.form-group h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  /* border: 1px solid turquoise; */
+}
+
+.col .form-group {
+  /* border: 1px solid magenta; */
+  padding: 3rem;
+  margin: 0;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  /* border: 1px solid orangered; */
+  margin-bottom: 4rem;
+}
+
+.col .form-group input {
+  width: 100%;
+  margin: 1rem;
+}
+
+.form-container {
+  /* border: 1px solid yellow; */
+  margin-left: 1rem;
+  background-color: var(--four);
+  height: 100%;
+}
+
+/* form .col .form-group label {
   color: rgba(21, 135, 159, 0.85);
   text-shadow: 2px 2px 2px black;
   font-size: 0.9rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  margin-top: 15px;
-}
+  margin-top: 1rem;
+} */
 
-form .col .form-group input[type="text"] {
-  background: transparent;
+form .col .form-group input {
+  /* background: transparent; */
+  height: 3rem;
   border: none;
-  border-bottom: 2px solid rgba(21, 135, 159, 0.75);
-  padding: 10px;
+  border-radius: 1rem;
+  /* border-bottom: 2px solid rgba(21, 135, 159, 0.75); */
+  padding: 1rem;
   font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
+  cursor: initial;
   color: white;
-  transition: 0.3s all ease-in-out;
+  /* transition: 0.3s all ease-in-out; */
 }
 
-form .col .form-group input[type="text"]:focus {
-  border: none;
+form .col .form-group input:focus {
+  border: 1px solid black;
   outline: none;
-  border-bottom: 4px solid rgba(21, 135, 159, 0.75);
+  /* border-bottom: 4px solid rgba(21, 135, 159, 0.75); */
 }
 
-form .col .form-group input::placeholder {
-  color: #fff;
-}
-
-form .col .form-group label:nth-child(2) {
+/* form .col .form-group label:nth-child(2) {
   padding-right: 0;
-}
+} */
 
-form .col .form-group input[type="email"] {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(21, 135, 159, 0.75);
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s all ease-in-out;
-}
-
-form .col .form-group input[type="email"]:focus {
-  border: none;
-  outline: none;
-  border-bottom: 4px solid rgba(21, 135, 159, 0.75);
-}
-
-form .col .form-group label:nth-child(2) {
+/* form .col .form-group label:nth-child(2) {
   padding-right: 0;
-}
+} */
 
-form .col .form-group textarea {
+/* form .col .form-group textarea {
   width: 75%;
   background: transparent;
   border: none;
@@ -197,7 +210,7 @@ form .col .form-group textarea {
   cursor: pointer;
   color: white;
   transition: 0.3s all ease-in-out;
-}
+} */
 
 form .col .form-group textarea:focus {
   border: none;
