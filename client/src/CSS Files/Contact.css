@@ -134,12 +134,24 @@ form .col {
   border: 1px solid blue; */
 }
 
-.form-container .col .form-group {
+.col .form-group {
+  border: 1px solid magenta;
+  height: 70%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid magenta;
+}
+
+.col .form-group input {
+  width: 100%;
+  margin: 1rem;
+}
+
+.form-container {
+  border: 1px solid yellow;
+  margin-left: 1rem;
+  background-color: var(--four);
   height: 100%;
 }
 
@@ -152,49 +164,28 @@ form .col .form-group label {
   margin-top: 1rem;
 }
 
-form .col .form-group input[type="text"] {
-  background: transparent;
+form .col .form-group input {
+  /* background: transparent; */
+  height: 3rem;
   border: none;
-  border-bottom: 2px solid rgba(21, 135, 159, 0.75);
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s all ease-in-out;
-}
-
-form .col .form-group input[type="text"]:focus {
-  border: none;
-  outline: none;
-  border-bottom: 4px solid rgba(21, 135, 159, 0.75);
-}
-
-form .col .form-group input::placeholder {
-  color: #fff;
-}
-
-form .col .form-group label:nth-child(2) {
-  padding-right: 0;
-}
-
-form .col .form-group input[type="email"] {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(21, 135, 159, 0.75);
+  border-radius: 1rem;
+  /* border-bottom: 2px solid rgba(21, 135, 159, 0.75); */
   padding: 1rem;
   font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
+  cursor: initial;
   color: white;
-  transition: 0.3s all ease-in-out;
+  /* transition: 0.3s all ease-in-out; */
 }
 
-form .col .form-group input[type="email"]:focus {
-  border: none;
+form .col .form-group input:focus {
+  border: 1px solid black;
   outline: none;
-  border-bottom: 4px solid rgba(21, 135, 159, 0.75);
+  /* border-bottom: 4px solid rgba(21, 135, 159, 0.75); */
 }
+
+/* form .col .form-group label:nth-child(2) {
+  padding-right: 0;
+} */
 
 form .col .form-group label:nth-child(2) {
   padding-right: 0;

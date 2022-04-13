@@ -10,7 +10,7 @@ export default function NavBar() {
       <Navbar.Collapse>
         <Nav>
           <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/contact'>Contact Us</Nav.Link>
+          <Nav.Link href='/contact'>Contact</Nav.Link>
           <NavDropdown title='Galleries'>
             <NavDropdown className='dropright' title='2022'>
               <NavDropdown.Item href='/jan-2022'>January</NavDropdown.Item>
@@ -25,16 +25,16 @@ export default function NavBar() {
         </Nav>
       </Navbar.Collapse>
 
-            <form action=''>
-                <input type='search'/>
-                <button className='search-button'>Search</button>
-            </form>
+      <form action=''>
+        <input type='search' />
+        <button className='search-button'>Search</button>
+      </form>
 
-            <Navbar.Collapse>
-                <Nav>
-                    <Nav.Link href='/login'>Login</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    );
-};
+      <Navbar.Collapse>
+        <Nav>
+          <Nav.Link href='/login'>Login</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+}
