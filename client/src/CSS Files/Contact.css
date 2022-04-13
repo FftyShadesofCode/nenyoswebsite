@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 2rem;
-  height: 84.6vh;
+  /* margin-top: 2rem; */
+  height: 86.7vh;
 }
 
 #contact-container h1 {
@@ -13,12 +13,11 @@
 }
 
 .contact-info {
-  border: 1px solid red;
-  width: 75%;
-  height: 70%;
+  /* border: 1px solid red; */
+  width: 80%;
+  /* height: 70%; */
   background-color: var(--five);
   border-radius: 1rem;
-  /* overflow: hidden; */
   padding: 3rem;
   display: flex;
   /* backdrop-filter: blur(15px); */
@@ -127,15 +126,11 @@ form .col {
 }
 
 .col .form-group {
-  flex: 0 1 100%;
-  /* margin: 0;
-  padding-right: 1rem;
-  margin-top: 1rem;
-  border: 1px solid blue; */
+  flex: 1;
 }
 
 .col .form-group {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -149,7 +144,7 @@ form .col {
 }
 
 .form-container {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin-left: 1rem;
   background-color: var(--four);
   height: 100%;
