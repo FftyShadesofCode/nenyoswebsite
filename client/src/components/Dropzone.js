@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useState} from "react"
 // Import the useDropzone hooks from react-dropzone
 import {useDropzone} from "react-dropzone";
 
-import '../CSS Files/Uploader.css'
+import '../CSS Files/pages/Uploader.css'
 
 const Dropzone = () => {
     const [images, setImages] = useState([])

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-import "../CSS Files/Navbar.css";
+import "../CSS Files/components/Navbar.css";
 
 export default function NavBar() {
   return (
@@ -10,7 +10,7 @@ export default function NavBar() {
       <Navbar.Collapse>
         <Nav>
           <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/contact'>Contact</Nav.Link>
+          <Nav.Link href='/contact'>Contact Us</Nav.Link>
           <NavDropdown title='Galleries'>
             <NavDropdown className='dropright' title='2022'>
               <NavDropdown.Item href='/jan-2022'>January</NavDropdown.Item>
@@ -25,16 +25,19 @@ export default function NavBar() {
         </Nav>
       </Navbar.Collapse>
 
-      <form action=''>
-        <input type='search' />
-        <button className='search-button'>Search</button>
-      </form>
+        <form action=''>
+            <input type='search'/>
+            <button className='search-button'>Search</button>
+        </form>
 
-      <Navbar.Collapse>
-        <Nav>
-          <Nav.Link href='/login'>Login</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+        <Navbar.Collapse>
+            <Nav>
+                <NavDropdown title='Account'>
+                    <NavDropdown.Item href='/login'>Login</NavDropdown.Item>
+                    <NavDropdown.Item href='/admin'>Dashboard</NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
+        </Navbar.Collapse>
     </Navbar>
-  );
-}
+    );
+};

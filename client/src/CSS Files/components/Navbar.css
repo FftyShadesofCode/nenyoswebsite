@@ -24,6 +24,7 @@ div .nav-area {
   font-size: 1.25rem;
   color: white;
   z-index: -9999;
+  font-family: 'Cinzel Decorative', cursive, 'Playfair Display SC', serif;
 }
 
 .nav .navbar {
@@ -36,7 +37,7 @@ div .nav-area {
 }
 
 .navbar-nav a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: white !important;
   text-shadow: 1px 1px black;
   display: flex;
@@ -47,7 +48,8 @@ div .nav-area {
 
 .dropdown-menu {
   background: var(--four);
-  border-bottom: 1px solid var(--four);
+  border: 2px solid var(--seven);
+  top: 60px;
 }
 
 .dropdown-menu {
@@ -63,6 +65,7 @@ div .nav-area {
   background-color: var(--seven);
   color: var(--three) !important;
   text-shadow: 1px 1px var(--white);
+  border-radius: 5px;
   transition: 500ms ease-in-out;
 
 }

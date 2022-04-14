@@ -3,7 +3,7 @@ import { Container, Typography, Grid, TextField, Button } from '@material-ui/cor
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 import {createTheme, CssBaseline, styled, ThemeProvider} from "@mui/material";
 
-import '../../CSS Files/Uploader.css'
+import '../../CSS Files/pages/Uploader.css'
 
 const OrchidName = ({ prevStep, nextStep, handleChange, values }) => {
 

@@ -146,16 +146,19 @@ table {
   --seven: #95d5b2;
   --eight: #b7e4c7;
   --nine: #d8f3dc;
+  --ten: #ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cinzel Decorative', cursive, 'Playfair Display SC', serif;
 }
 
 body {
   background-size: cover;
   background-color: #95d5b2;
+  font-family: 'Cinzel Decorative', cursive;
   /*overflow: hidden;*/
 }

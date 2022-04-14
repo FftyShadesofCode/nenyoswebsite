@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import "../CSS Files/DevTeam.css";
+import "../CSS Files/pages/DevTeam.css";
 // import "../CSS Files/Footer.css";
 
 function DevTeam() {

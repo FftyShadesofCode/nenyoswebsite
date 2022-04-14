@@ -3,7 +3,7 @@ import { Container, Grid, List, ListItem, ListItemText, Button } from '@material
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 import {createTheme, CssBaseline, ThemeProvider, Typography} from "@mui/material";
 
-import '../../CSS Files/Uploader.css'
+import '../../CSS Files/pages/Uploader.css'
 
 const Confirmation = ({ prevStep, nextStep, values }) => {
     console.log(values);

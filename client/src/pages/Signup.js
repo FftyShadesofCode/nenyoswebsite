@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../CSS Files/Signup.css";
+import "../CSS Files/pages/Signup.css";
 import { Link } from "react-router-dom";
 import Logo from "../Gallery/logo.png";
 import Image1 from "../Gallery/Stock Photos/banner-of-pink-orchid-macro-with-water-drops-2021-08-27-09-32-39-utc.jpg";

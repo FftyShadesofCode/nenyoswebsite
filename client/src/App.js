@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 // CSS Files
-import "../src/CSS Files/Footer.css";
+import "./CSS Files/components/Footer.css";
 import "../src/CSS Files/App.css";
 
 // Pages and Components
@@ -11,13 +11,15 @@ import NavBar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Uploader from "./pages/Uploader";
 import January2022 from "./pages/gallery2022/January";
 import GrowerProfile from "./pages/GrowerProfile";
 import Footer from "./components/Footer";
 import DevTeam from "./pages/DevTeam";
+
+// Dashboard Navigation Imports
+// import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   // const state = useSelector((state) => state.UserReducer);
@@ -34,7 +36,6 @@ function App() {
         </header>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          {/* <Route exact path='/about' element={<About />} /> */}
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/uploader' element={<Uploader />} />
           <Route exact path='/login' element={<Login />} />
@@ -42,6 +43,9 @@ function App() {
           <Route exact path='/jan-22' element={<January2022 />} />
           <Route exact path='/growerprofile' element={<GrowerProfile />} />
           <Route exact path='/devteam' element={<DevTeam />} />
+
+          // Dashboard Navigation Routes
+          {/*<Route index path='/admin' element={<AdminDashboard />} />*/}
         </Routes>
       </Router>
       <Footer />

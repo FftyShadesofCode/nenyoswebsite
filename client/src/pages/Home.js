@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS Files/Home.css";
+import "../CSS Files/pages/Home.css";
 import Logo from "../Gallery/logo.png";
 import Image1 from "../Gallery/Stock Photos/orchid-15.png";
 import Image2 from "../Gallery/Phalaenopsis-3.png";
@@ -10,7 +10,7 @@ export default function Home() {
       <div className='home-banner'>
         <div className='banner-text'>
           <h1>Welcome to NENYOS</h1>
-          <h4>The North Eastern New York Orchid Society</h4>
+          <h4>The North Eastern<br/>New York Orchid Society</h4>
         </div>
         <div className='logo'>
           <img src={Logo} alt='NENYOS Logo' className='logo-image' />

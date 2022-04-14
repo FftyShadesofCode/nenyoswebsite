@@ -2,7 +2,7 @@ import React from 'react'
 import {UploaderHeader} from "../../components/Uploader/UploaderHeader";
 import {Container, createTheme, CssBaseline, Grid, ThemeProvider, Typography} from "@mui/material";
 
-import '../../CSS Files/Uploader.css'
+import '../../CSS Files/pages/Uploader.css'
 
 const theme = createTheme();
 

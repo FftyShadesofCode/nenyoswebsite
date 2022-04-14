@@ -12,7 +12,7 @@
 //           State and open without restriction to all who are interested in
 //           orchids. The organization was formed in 1963 by orchid lovers in the
 //           Capital district who were passionate about growing, studying and
-//           enjoying orchids. Members range for beginner to expert and grow them
+//           enjoying orchids. MemberEdit range for beginner to expert and grow them
 //           in a variety of conditions, from windowsill to greenhouse.
 //         </p>
 //       </div>
@@ -23,7 +23,7 @@
 //           understand their requirements. The majority are epiphytes, meaning
 //           attached to trees or structures, and require humid but fresh air
 //           surrounding their roots. Many are terrestrial or lithophytes, growing
-//           in rich humus-y, soils or across rocks. Members of this largest of all
+//           in rich humus-y, soils or across rocks. MemberEdit of this largest of all
 //           flowering plant families are found in every environment on earth. In
 //           fact, there are many more NATIVE orchid species in Alaska than in
 //           Hawaii. A common misconception is that orchids must be kept hot with

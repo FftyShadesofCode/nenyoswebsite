@@ -5,7 +5,7 @@ import { ApiCall } from "../API Call/ApiCall";
 import Logo from "../Gallery/logo.png";
 import Image1 from "../Gallery/Stock Photos/orchid-15.png";
 
-import "../CSS Files/Login.css";
+import "../CSS Files/pages/Login.css";
 
 function Login() {
   const state = useSelector((state) => state.UserReducer);
