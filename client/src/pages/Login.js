@@ -71,12 +71,12 @@ function Login() {
             </button>
           </form>
           <div className='footer'>
-            <h4>
+            <p>
               Need an Account?{" "}
               <Link className='link' to='/signup'>
                 Sign Up
               </Link>
-            </h4>
+            </p>
           </div>
         </div>
         <div className='right-side' right='true'>

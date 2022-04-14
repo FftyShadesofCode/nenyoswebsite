@@ -38,7 +38,7 @@ function Signup() {
             <form onSubmit={handleSubmit}>
               <div className='input-group'>
                 <input
-                  placeholder='  First Name'
+                  placeholder='First Name'
                   type='text'
                   name='Fname'
                   value={firstname}
@@ -50,7 +50,7 @@ function Signup() {
               </div>
               <div className='input-group'>
                 <input
-                  placeholder='  Last Name'
+                  placeholder='Last Name'
                   type='text'
                   name='lname'
                   value={lastname}
@@ -62,7 +62,7 @@ function Signup() {
               </div>
               <div className='input-group'>
                 <input
-                  placeholder='  Email'
+                  placeholder='Email'
                   type='Email'
                   name='email'
                   value={email}
@@ -74,7 +74,7 @@ function Signup() {
               </div>
               <div className='input-group'>
                 <input
-                  placeholder='  Password'
+                  placeholder='Password'
                   type='password'
                   value={password1}
                   name='pwd'
@@ -86,7 +86,7 @@ function Signup() {
               </div>
               <div className='input-group'>
                 <input
-                  placeholder='  Confirm Password'
+                  placeholder='Confirm Password'
                   type='password'
                   name='pwd'
                   value={password2}
