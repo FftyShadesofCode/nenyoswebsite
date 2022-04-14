@@ -3,6 +3,7 @@ import { Button, FormGroup } from "reactstrap";
 import { motion } from "framer-motion";
 import ProgressBar from "./ProgressBar";
 import graphic from "../../icons/image-files.svg";
+import Dropzone from "../Dropzone";
 
 const initialValues = {
   nickname: "",
@@ -110,6 +111,7 @@ export default function UploadImage({ setReload }) {
           <div className='submit'>
             <Button id='submit-login'>Submit</Button>
           </div>
+          <Dropzone />
         </FormGroup>
       </form>
     </div>
