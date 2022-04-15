@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, FormGroup } from "reactstrap";
-import { motion } from "framer-motion";
-import ProgressBar from "./ProgressBar";
-import graphic from "../../icons/image-files.svg";
+// import { motion } from "framer-motion";
+// import ProgressBar from "./ProgressBar";
+// import graphic from "../../icons/image-files.svg";
 import Dropzone from "../Dropzone";
 import axiosWithAuth from "../../api/axiosWithAuth";
 import { useNavigate } from "react-router-dom";
