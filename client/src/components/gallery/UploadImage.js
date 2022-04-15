@@ -83,7 +83,7 @@ export default function UploadImage({ setReload }) {
               onChange={handleChange2}
             />
           </div>
-          <motion.img
+          {/* <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
@@ -98,7 +98,6 @@ export default function UploadImage({ setReload }) {
               type='file'
               placeholder='Choose File'
             />
-            {/* <span>Add</span> */}
           </label>
           {file && (
             <ProgressBar
@@ -106,12 +105,12 @@ export default function UploadImage({ setReload }) {
               values={values}
               setValues={setValues}
             />
-          )}
+          )} */}
           {error && <h1 className='error'>{error}</h1>}
+          <Dropzone />
           <div className='submit'>
             <Button id='submit-login'>Submit</Button>
           </div>
-          <Dropzone />
         </FormGroup>
       </form>
     </div>
