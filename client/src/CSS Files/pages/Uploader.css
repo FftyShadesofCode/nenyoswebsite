@@ -73,13 +73,15 @@ input .MuiInputBase-root {
 }
 
 .dropzone {
-  color: #6fc363;
+  color: var(--nine);
   text-align: center;
-  padding: 20px;
+  position: relative;
+  padding: 1rem;
   border: 3px #c535a0 dashed;
   width: 100%;
   height: 25vh;
-  margin: 20px;
+  margin-top: 2rem;
+  /* border: 1px solid blue; */
 }
 
 .selected-images {
@@ -94,10 +96,17 @@ input .MuiInputBase-root {
   margin: 2rem 0;
 }
 
+/* ----- Ryan's bullshit ----- */
+
 .form-group {
   border: 1px solid red;
   position: center;
-  margin-top: 30rem;
-  /* height: 100%; */
-  width: 25%;
+  width: 50%;
+}
+
+.form-group input {
+  border: 1px solid magenta;
+  margin-bottom: 1rem;
+  height: 4rem;
+  width: 100%;
 }

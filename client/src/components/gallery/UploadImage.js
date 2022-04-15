@@ -63,12 +63,12 @@ export default function UploadImage({ setReload }) {
   return (
     <form className='form-container login-form' onSubmit={handleAdd}>
       <div className='form-title'>
-        <h1>Add a Plant</h1>
+        <h1>Add your Plants</h1>
       </div>
       <FormGroup className='form-group'>
         <div className='username-input form-spacing'>
           <input
-            placeholder='Name/Nickname'
+            placeholder='  Name/Nickname'
             name='nickname'
             type='text'
             onChange={handleChange2}
@@ -76,7 +76,7 @@ export default function UploadImage({ setReload }) {
         </div>
         <div className='password-input form-spacing'>
           <input
-            placeholder='Species'
+            placeholder='  Species'
             name='species'
             type='text'
             onChange={handleChange2}
@@ -84,7 +84,7 @@ export default function UploadImage({ setReload }) {
         </div>
         <div className='password-input form-spacing'>
           <input
-            placeholder='Water Frequency'
+            placeholder='  Water Frequency'
             name='h20_freq'
             type='text'
             onChange={handleChange2}
@@ -92,7 +92,7 @@ export default function UploadImage({ setReload }) {
         </div>
         <div className='password-input form-spacing'>
           <input
-            placeholder='Light Conditions'
+            placeholder='  Light Conditions'
             name='light_conditions'
             type='text'
             onChange={handleChange2}
