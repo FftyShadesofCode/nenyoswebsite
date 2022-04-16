@@ -18,7 +18,6 @@ function App() {
           <div className='nav-area'>
             <NavBar />
           </div>
-          <Route render={(props) => ()}
           <Routing />
         </header>
       </Router>
