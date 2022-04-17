@@ -1,40 +1,45 @@
 import React, {useEffect} from 'react'
-import {BrowserRouter, Route} from "react-router-dom";
-import Routing from "../Routing";
-import {useDispatch, useSelector} from "react-redux";
 import Sidebar from "../components/Dashboard/Sidebar";
-import ThemeAction from '../components/Dashboard/redux/action/ThemeAction'
+import Dashboard from '../components/Dashboard/Dashboard'
+import Scrollreveal from "scrollreveal";
 
-import '../CSS Files/components/Dashboard/index.css'
-import '../CSS Files/components/Dashboard/grid.css'
+import '../CSS Files/components/Dashboard/AdminDashboard.css'
 
 export default function AdminDashboard() {
-
-    const themeReducer = useSelector(state => state.ThemeReducer)
-
-    const dispatch = useDispatch()
-
     useEffect(() => {
-        const themeClass = localStorage.getItem('themeMode', 'theme-mode-light')
-
-        const colorClass = localStorage.getItem('colorMode', 'theme-mode-light')
-
-        dispatch(ThemeAction.setMode(themeClass))
-
-        dispatch(ThemeAction.setColor(colorClass))
-    }, [dispatch])
+        const sr = Scrollreveal({
+            origin: "left",
+            distance: "80px",
+            duration: 1000,
+            reset: false,
+        });
+        sr.reveal(
+            `
+       #sidebar
+    `,
+            {
+                opacity: 0,
+            }
+        );
+        const sr2 = Scrollreveal({
+            origin: "right",
+            distance: "80px",
+            duration: 1000,
+            reset: false,
+        });
+        sr2.reveal(
+            `
+       #rightSidebar
+    `,
+            {
+                opacity: 0,
+            }
+        );
+    }, []);
     return (
-        <BrowserRouter>
-            <Route render={(props) => (
-                <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-                    <Sidebar {...props}/>
-                    <div className="layout__content">
-                        <div className="layout__content-main">
-                            <Routing />
-                        </div>
-                    </div>
-                </div>
-            )}/>
-        </BrowserRouter>
+        <div className="admin-dashboard">
+            <Sidebar />
+            <Dashboard />
+        </div>
     );
 };

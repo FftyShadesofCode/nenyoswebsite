@@ -1,51 +1,43 @@
 import React from 'react'
-
-import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faMapPin, faChalkboardTeacher, faUsers, faLeaf } from '@fortawesome/free-solid-svg-icons'
 
 import '../../CSS Files/components/Dashboard/Sidebar.css'
 
-import logo from '../../Gallery/logo.png'
-
-import sidebar_items from '../Dashboard/JSONData/AdminNavigationRoutes.json'
-
-const SidebarItem = props => {
-
-    const active = props.active ? 'active' : ''
-
-    return (
-        <div className="sidebar__item">
-            <div className={`sidebar__item-inner ${active}`}>
-                <i className={props.icon}/>
-                <span>
-                    {props.title}
-                </span>
-            </div>
-        </div>
-    )
-}
-
-const Sidebar = props => {
-
-    const activeItem = sidebar_items.findIndex(item => item.route === props.location.pathname)
-
+export default function Sidebar() {
     return (
         <div className='sidebar'>
-            <div className="sidebar__logo">
-                <img src={logo} alt="company logo" />
-            </div>
-            {
-                sidebar_items.map((item, index) => (
-                    <Link to={item.route} key={index}>
-                        <SidebarItem
-                            title={item.display_name}
-                            icon={item.icon}
-                            active={index === activeItem}
-                        />
-                    </Link>
-                ))
-            }
-        </div>
-    )
-}
 
-export default Sidebar
+            <ul className='links'>
+                <li className='selected'>
+                    <FontAwesomeIcon icon={faBars} />
+                </li>
+            </ul>
+            <ul className='links'>
+                <li className='selected'>
+                    <FontAwesomeIcon icon={faMapPin} />
+                </li>
+            </ul>
+            <ul className='links'>
+                <li className='selected'>
+                    <FontAwesomeIcon icon={faChalkboardTeacher} />
+                </li>
+            </ul>
+            <ul className='links'>
+                <li className='selected'>
+                    <FontAwesomeIcon icon={faUsers} />
+                </li>
+            </ul>
+            <ul className='links'>
+                <li className='selected'>
+                    <FontAwesomeIcon icon={faLeaf} />
+                </li>
+            </ul>
+            <ul className='links'>
+                <li className='selected'>
+
+                </li>
+            </ul>
+        </div>
+    );
+};

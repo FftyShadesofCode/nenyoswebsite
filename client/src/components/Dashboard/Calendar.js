@@ -11,7 +11,7 @@ function EventCalendar() {
     return (
         <Section>
             <div className="calendar-container">
-            <Calendar onChange={setDate} value={date} selectRange={true} />
+                <Calendar onChange={setDate} value={date} selectRange={true} />
                 {date.length > 0 ? (
                     <p className='text-center'>
                         <span className='bold'>Start:</span>{' '}

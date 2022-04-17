@@ -1,55 +1,76 @@
 .sidebar {
-    min-width: var(--sidebar-width);
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: var(--main-bg);
-    box-shadow: var(--box-shadow);
-}
-
-.sidebar__logo {
-    height: 150px;
+    background-color: var(--four);
+    height: 100%;
+    width: 7.5rem;
+    padding: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-left: 2px solid var(--two);
+    border-right: 2px solid var(--two);
 }
 
-.sidebar__logo > img {
-    height: 45px;
+.help svg {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    color: white;
 }
 
-.sidebar__item {
-    padding: 0 20px;
+.help svg:hover {
+    color: var(--six);
 }
 
-.sidebar__item-inner {
-    padding: 15px 25px;
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    transition: color 0.3s ease 0s;
-}
-
-.sidebar__item-inner > i {
-    margin-right: 10px;
+svg {
+    color: var(--two);
     font-size: 1.5rem;
 }
 
-.sidebar__item-inner > span {
-    text-transform: capitalize;
+.links {
+     display: flex;
+     flex-direction: column;
+     list-style-type: none;
+ }
+
+li {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sidebar__item-inner:hover {
-    color: var(--main-color);
+li svg {
+    color: white;
+    font-size: 4rem;
 }
 
-.sidebar__item-inner.active {
-    border-radius: var(--border-radius);
-    background-image: linear-gradient(
-            to right,
-            var(--main-color),
-            var(--second-color)
-    );
-    color: var(--txt-white);
+li:hover {
+    box-shadow: 0 0 60px 8px var(--eight);
+}
+
+li svg:hover {
+    color: var(--eight);
+}
+
+.selected {
+    box-shadow: 0 0 60px 8px var(--six);
+}
+
+.selected svg {
+    color: var(--six);
+    background-color: transparent;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+    }
+    .links,
+    .help {
+        display: none;
+    }
 }
