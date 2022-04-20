@@ -1,0 +1,5 @@
+<% MeetingLocation.forEach(function(MeetingLocation) { %>
+    <a href="/admin/meetinglocations/<%= MeetingLocation.slug %>">
+        <%= MeetingLocation.name %>
+    </a>
+<% }); %>

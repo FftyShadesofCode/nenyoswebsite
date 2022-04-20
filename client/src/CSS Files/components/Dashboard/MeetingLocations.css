@@ -1,13 +1,17 @@
-.admin-dashboard {
+.locations-container {
+    height: 100%;
+    width: 100%;
+    background: var(--three);
+}
+
+.locations-table {
     display: grid;
-    grid-template-columns: 2fr 12fr 1fr;
-    min-height: 90vh;
-    height: max-content;
+    grid-template-columns: 4fr 8fr 4fr;
 }
 
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-    .admin-dashboard {
+    .location-container {
         display: grid;
         grid-template-columns: 1fr;
         height: max-content;

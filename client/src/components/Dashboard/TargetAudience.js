@@ -6,32 +6,32 @@ import { BarChart, Bar, Tooltip, ResponsiveContainer } from "recharts";
 function TargetAudience() {
     const data = [
         {
-            uv: 4000,
+            attendance: 4000,
         },
         {
-            uv: 3000,
+            attendance: 3000,
         },
         {
-            uv: 2000,
+            attendance: 2000,
         },
         {
-            uv: 2780,
+            attendance: 2780,
         },
         {
-            uv: 1890,
+            attendance: 1890,
         },
         {
-            uv: 2390,
+            attendance: 2390,
         },
         {
-            uv: 3490,
+            attendance: 3490,
         },
     ];
     return (
         <Section>
             <div className="title-container">
                 <div className="title">
-                    <h4>Target Audience</h4>
+                    <h4>Attendance</h4>
                     <BsThreeDots />
                 </div>
             </div>
@@ -50,7 +50,7 @@ function TargetAudience() {
                             </linearGradient>
                         </defs>
                         <Bar
-                            dataKey="uv"
+                            dataKey="attendance"
                             stackId="a"
                             fill="url(#colorview)"
                             animationBegin={800}

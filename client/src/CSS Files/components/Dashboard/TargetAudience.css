@@ -1,0 +1,43 @@
+.section {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--two);
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.section .title-container {
+    margin-bottom: 1rem;
+}
+
+.section .title-container .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .title-container .title svg {
+    color: var(--four);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.chart {
+    height: 13rem;
+}
+
+.chart .recharts-default {
+    background-color: var(--two) !important;
+    border: none !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 60px 8px var(--four);
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    section {
+        height: max-content;
+    }
+}

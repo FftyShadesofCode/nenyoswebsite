@@ -17,6 +17,10 @@ import January2022 from "./pages/gallery2022/January";
 import GrowerProfile from "./pages/GrowerProfile";
 import DevTeam from "./pages/DevTeam";
 import AdminDashboard from "./pages/AdminDashboard";
+import TreasureReport from "./pages/Dashboard/TreasureReport";
+import MeetingLocations from "./pages/Dashboard/MeetingLocations";
+import Memberships from "./pages/Dashboard/Memberships";
+import Speakers from "./pages/Dashboard/Speakers";
 
 function App() {
 
@@ -38,8 +42,13 @@ function App() {
               <Route exact path='/jan-22' element={<January2022 />} />
               <Route exact path='/growerprofile' element={<GrowerProfile />} />
               <Route exact path='/devteam' element={<DevTeam />} />
-              Dashboard Routes
+               {/*Dashboard Routes*/}
               <Route exact path='/admin' element={<AdminDashboard />} />
+              <Route exact path='/admin/meetinglocations' element={<MeetingLocations />} />
+              <Route exact path='/admin/speakers' element={<Speakers />} />
+              <Route exact path='/admin/membership' element={<Memberships />} />
+              <Route exact path='/admin/cultureinformation' element={<Memberships />} />
+              <Route exact path='/admin/treasurereport' element={<TreasureReport />} />
           </Routes>
       </Router>
       <Footer />

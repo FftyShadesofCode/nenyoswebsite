@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import Sidebar from "../components/Dashboard/Sidebar";
+import Sidebar from "../components/Sidebar";
 import Dashboard from '../components/Dashboard/Dashboard'
 import Scrollreveal from "scrollreveal";
 
@@ -16,20 +16,6 @@ export default function AdminDashboard() {
         sr.reveal(
             `
        #sidebar
-    `,
-            {
-                opacity: 0,
-            }
-        );
-        const sr2 = Scrollreveal({
-            origin: "right",
-            distance: "80px",
-            duration: 1000,
-            reset: false,
-        });
-        sr2.reveal(
-            `
-       #rightSidebar
     `,
             {
                 opacity: 0,
